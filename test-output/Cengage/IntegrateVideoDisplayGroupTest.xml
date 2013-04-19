@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntegrateVideoDisplayGroupTest" failures="1" tests="9" time="6.875" errors="0">
+  <properties/>
+  <testcase name="searchIntegrateVideoDisplayGroup" time="3.875" classname="k12.IntegrateVideoDisplayGroupTest"/>
+  <testcase name="verifyVideoBucketisDisplayed" time="0.031" classname="k12.IntegrateVideoDisplayGroupTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.IntegrateVideoDisplayGroupTest.verifyVideoBucketisDisplayed(IntegrateVideoDisplayGroupTest.java:25)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyViewAllLinkisDisplayed" time="0.0" classname="k12.IntegrateVideoDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyCountOfVideoIsPresent" time="0.0" classname="k12.IntegrateVideoDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateVideoCountLinksWithOcean" time="0.0" classname="k12.IntegrateVideoDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateVideoBucketCountWithOcean" time="0.0" classname="k12.IntegrateVideoDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyVideoIconIsDisplayed" time="0.0" classname="k12.IntegrateVideoDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyViewAllIsWorking" time="0.0" classname="k12.IntegrateVideoDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyVideoIconIsDisplayedInDocument" time="0.0" classname="k12.IntegrateVideoDisplayGroupTest">
+    <skipped/>
+  </testcase>
+</testsuite>

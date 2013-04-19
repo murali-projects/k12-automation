@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MaximiseAudioTabWhenLinkingOutTest" failures="0" tests="3" time="92.969" errors="0">
+  <properties/>
+  <testcase name="verifyWindowMaximisedForAudio" time="22.922" classname="k12.MaximiseAudioTabWhenLinkingOutTest"/>
+  <testcase name="verifyWindoMaximisedAfterminimised" time="18.578" classname="k12.MaximiseAudioTabWhenLinkingOutTest"/>
+  <testcase name="verifyWindowMaximisedForSecondTime" time="19.64" classname="k12.MaximiseAudioTabWhenLinkingOutTest"/>
+</testsuite>

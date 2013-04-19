@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntegrateAcademicJournalsTest" failures="1" tests="10" time="22.061" errors="0">
+  <properties/>
+  <testcase name="checkJounalsDisplayedInDisplayGroup" time="0.203" classname="k12.IntegrateAcademicJournalsTest"/>
+  <testcase name="verifyViewAllIsNotDisplayed" time="0.75" classname="k12.IntegrateAcademicJournalsTest"/>
+  <testcase name="verifyViewAllIsDisplayed" time="0.062" classname="k12.IntegrateAcademicJournalsTest"/>
+  <testcase name="verifyCountIsDisplayed" time="0.094" classname="k12.IntegrateAcademicJournalsTest"/>
+  <testcase name="verifyViewAllIsAccessible" time="5.281" classname="k12.IntegrateAcademicJournalsTest"/>
+  <testcase name="verifyGroupNameIsDisplayedInCaps" time="0.047" classname="k12.IntegrateAcademicJournalsTest"/>
+  <testcase name="verifyPublicationDetailsPresent" time="0.031" classname="k12.IntegrateAcademicJournalsTest"/>
+  <testcase name="verifyContentLinkIsWorking" time="5.39" classname="k12.IntegrateAcademicJournalsTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@class=&amp;apos;portlet _details&amp;apos;]/h2 not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@class='portlet _details']/h2 not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+	at webPageContainers4Testing.IntegrateAcademicJournalsDisplayGroup.verifyContentLinkIsWorking(IntegrateAcademicJournalsDisplayGroup.java:145)
+	at k12.IntegrateAcademicJournalsTest.verifyContentLinkIsWorking(IntegrateAcademicJournalsTest.java:68)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyAcademicJournalCanBeMarked" time="0.0" classname="k12.IntegrateAcademicJournalsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAfterClickingAcademicJournalsLink" time="0.0" classname="k12.IntegrateAcademicJournalsTest">
+    <skipped/>
+  </testcase>
+</testsuite>

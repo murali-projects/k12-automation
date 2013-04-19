@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FindOutMorePortletTest" failures="0" tests="4" time="13.28" errors="0">
+  <properties/>
+  <testcase name="verifyViewPointRecords" time="0.062" classname="k12.FindOutMorePortletTest"/>
+  <testcase name="verifyDetailedViewPage" time="4.109" classname="k12.FindOutMorePortletTest"/>
+  <testcase name="verifyFindOutMorePortletIsDisplayed" time="0.047" classname="k12.FindOutMorePortletTest"/>
+  <testcase name="verifyAssignmentTextIsDisplayed" time="0.062" classname="k12.FindOutMorePortletTest"/>
+</testsuite>

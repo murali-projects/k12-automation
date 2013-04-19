@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TakeQuizTest" failures="1" tests="15" time="28.177" errors="0">
+  <properties/>
+  <testcase name="verifyTakeQuizLinkIsPresent" time="3.952" classname="k12.TakeQuizTest"/>
+  <testcase name="verifyNewWindowIsDisplayed" time="6.607" classname="k12.TakeQuizTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.TakeQuizTest.verifyNewWindowIsDisplayed(TakeQuizTest.java:28)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyOptionsPresentForSelectedDocument" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocumentTilteIsPresent" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrintOptions" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyEmailOptions" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyRequiredFieldsForEmailQuiz" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPopupIsDisplayed" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+  <testcase name="sendingMailWithTwoOrMoreSenders" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyMessageDisplayed" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNewWindowOpenedForStartButton" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyStatusBar" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifySubmissionOfAnswers" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyTheDocumentTitleInAllOptions" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyCosingPopUp" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+</testsuite>

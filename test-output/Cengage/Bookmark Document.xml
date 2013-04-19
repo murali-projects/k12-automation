@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Bookmark Document" failures="1" tests="3" time="20.423" errors="0">
+  <properties/>
+  <testcase name="verifyBookmarkLink" time="4.875" classname="k12.BookmarkDocumentTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.BookmarkDocumentTest.verifyBookmarkLink(BookmarkDocumentTest.java:21)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyBookmarkLinkIsWorking" time="0.0" classname="k12.BookmarkDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyBookmarkLinkUrlIsWorking" time="0.0" classname="k12.BookmarkDocumentTest">
+    <skipped/>
+  </testcase>
+</testsuite>

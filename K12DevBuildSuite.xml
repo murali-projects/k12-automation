@@ -1,0 +1,190 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="K12 Development Team Tests">
+ 
+ 
+	<test name="detailsPageTests" enabled="true" >
+		<classes>
+			<class name="k12.dev.details.BioDetailsTest"/>
+			<class name="k12.dev.details.CommonDetailTests"/>
+		</classes>
+	</test>
+
+	<test name="breadcrumbsTests" enabled="true" >
+		<classes>
+            <class name="k12.dev.breadcrumbs.BreadCrumbsTest"/>
+		</classes>
+	</test>
+	
+    <test name="portalPageTests" enabled="true" >
+        <classes>
+            <class name="k12.dev.portals.PortalPagesTest"/>
+        </classes>
+    </test>
+
+<!--	 Beware: Evil test, kills any test following it -->
+	<test name="criticalThinkingDetailsTest" enabled="true" >
+		<classes>
+			<class name="k12.dev.details.CriticalThinkingDetailsTest"/>
+		</classes>
+	</test>
+
+	<test name="SearchResultPageTests" enabled="true">
+		<classes>
+			<class name="k12.dev.searchresults.SearchAssistTest"/>
+			<class name="k12.dev.searchresults.SearchResultsStatusTest"/>
+  			<class name="k12.dev.searchresults.MagazinesSearchResultsTest"/>
+			<class name="k12.dev.searchresults.NewsSearchResultsTest"/>
+			<class name="k12.dev.searchresults.PrimarySourcesSearchResultsTest"/>
+			<class name="k12.dev.searchresults.ReferenceSearchResultsTest"/>
+			
+		</classes>
+	</test>
+	
+	<test name="AcademicJournalsSearchResultsTest" enabled="true">
+		<classes>
+			<class name="k12.dev.searchresults.AcademicJournalsSearchResultsTest"/>
+		</classes>
+	</test>
+	<test name="ViewpointsSearchResultsTest" enabled="true">
+		<classes>
+			<class name="k12.dev.searchresults.ViewpointsSearchResultsTest"/>
+		</classes>
+	</test>
+	
+	<test name="WebsitesSearchResultsTest" enabled="true">
+		<classes>
+			<class name="k12.dev.searchresults.WebsitesSearchResultsTest"/>
+			<class name="k12.dev.searchresults.AudioSearchResultsTest"/>
+			<class name="k12.dev.searchresults.ImagesSearchResultsTest"/>
+			<class name="k12.dev.searchresults.VideosSearchResultsTest"/>
+			<class name="k12.dev.searchresults.StatisticsSearchResultsTest"/>
+			<class name="k12.dev.searchresults.PortalPagesSearchResultsTest"/>
+		</classes>
+	</test>
+ 
+	<test name="ViewAllPageTests" enabled="true">
+		<classes>
+		  	<class name="k12.dev.viewall.MagazinesViewAllTest"/>
+			<class name="k12.dev.viewall.ViewpointViewAllTest"/>
+			<class name="k12.dev.viewall.ReferenceViewAllTest"/>
+			<class name="k12.dev.viewall.NewsViewAllTest"/>
+			<class name="k12.dev.viewall.PrimarySourcesViewAllTest"/>
+			<class name="k12.dev.viewall.WebsitesViewAllTest"/>
+			<class name="k12.dev.viewall.StatisticsViewAllTest"/>
+			<class name="k12.dev.viewall.VideosViewAllTest"/>
+			<class name="k12.dev.viewall.ImagesViewAllTest"/>
+			<class name="k12.dev.viewall.AcademicJournalsViewAllTest"/> 
+			<class name="k12.dev.viewall.AudioViewAllTest"/>
+			<class name="k12.dev.viewall.SearchWithinResultsTest"/>
+			<class name="k12.dev.viewall.BrowseIndexSearchResultsTest"/>		
+			<class name="k12.dev.viewall.ContentLevelViewAllTest"/>
+		</classes>
+	</test>
+	
+	<test name="DisplayGroupSearchTest" enabled="true">
+		<classes>
+		  	<class name="k12.dev.viewall.DisplayGroupsOnBasicSearchTest"/>
+		</classes>
+	</test>
+	
+	<test name="AudioViewAllWithCATIDTest" enabled="true">
+		<classes>
+			<class name="k12.dev.viewall.AudioViewAllWithCATIDTest"/>
+		</classes>
+	</test>
+	
+	<test name="ImagesViewAllWithCATIDTest" enabled="true">
+		<classes>
+
+			<class name="k12.dev.viewall.ImagesViewAllWithCATIDTest"/>
+
+		</classes>
+	</test>
+	
+	<test name="StatisticsViewAllWithCATIDTest" enabled="true">
+		<classes>
+
+			<class name="k12.dev.viewall.StatisticsViewAllWithCATIDTest"/>
+	
+		</classes>
+	</test>
+	
+		<test name="VideosViewAllWithCATIDTest" enabled="true">
+		<classes>
+
+			<class name="k12.dev.viewall.VideosViewAllWithCATIDTest"/>
+		
+		</classes>
+	</test>
+	
+		<test name="WebsitesViewAllWithCATIDTest" enabled="true">
+		<classes>
+
+			<class name="k12.dev.viewall.WebsitesViewAllWithCATIDTest"/>
+		</classes>
+	</test>
+	
+	<test name="ViewpointViewAllWithCATIDTest" enabled="true">
+		<classes>
+
+			<class name="k12.dev.viewall.ViewpointViewAllWithCATIDTest"/>
+
+		</classes>
+	</test>
+	
+	<test name="advancedSearchTest" enabled="true" >
+        <classes>
+            <class name="k12.dev.advancedsearch.AdvancedSearchTest"/>
+        </classes>
+    </test>
+
+	<test name="ImageDetailsTest" enabled="true">
+		<classes>
+			<class name="k12.dev.details.ImageDetailsTest"/>
+		</classes>
+	</test>
+	
+	<test name="ViewpointToolsTest" enabled="true">
+		<classes>
+			<class name="k12.dev.doctools.ViewpointToolsTest"/>
+		</classes>
+	</test>
+	<test name="MagazineToolsTest" enabled="true">
+		<classes>
+			<class name="k12.dev.doctools.MagazineToolsTest"/>
+		</classes>
+	</test>
+	<test name="NewsToolsTest" enabled="true">
+		<classes>
+			<class name="k12.dev.doctools.NewsToolsTest"/>
+		</classes>
+	</test>
+	<test name="PrimarySourceToolsTest" enabled="true">
+		<classes>
+			<class name="k12.dev.doctools.PrimarySourceToolsTest"/>
+		</classes>
+	</test>
+	<test name="ReferenceToolsTest" enabled="true">
+		<classes>
+			<class name="k12.dev.doctools.ReferenceToolsTest"/>
+		</classes>
+	</test>
+	<test name="ImagesToolsTest" enabled="true">
+		<classes>
+			<class name="k12.dev.doctools.ImagesToolsTest"/>
+		</classes>
+	</test>
+	<test name="StatisticsToolsTest" enabled="true">
+		<classes>
+			<class name="k12.dev.doctools.StatisticsToolsTest"/>
+		</classes>
+	</test>
+	<test name="WebsitesToolsTest" enabled="true">
+		<classes>
+			<class name="k12.dev.doctools.WebsitesToolsTest"/>
+		</classes>
+	</test>
+</suite>
+
+

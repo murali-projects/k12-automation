@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntegrateWebsitesFavIconsOnViewAllPageTest" failures="0" tests="5" time="109.587" errors="0">
+  <properties/>
+  <testcase name="verifyfaviconsOnViewAllPage" time="16.623" classname="k12.IntegrateWebsitesFavIconsOnViewAllPageTest"/>
+  <testcase name="verifyfaviconsNotPresentInSearchResultsPage" time="8.241" classname="k12.IntegrateWebsitesFavIconsOnViewAllPageTest"/>
+  <testcase name="verifyFavIconsForAllDisplayGroupsinViewAllpage" time="35.759" classname="k12.IntegrateWebsitesFavIconsOnViewAllPageTest"/>
+  <testcase name="verifyFaviconsOnLeftsideOfRecord" time="17.513" classname="k12.IntegrateWebsitesFavIconsOnViewAllPageTest"/>
+  <testcase name="verifyDisplayOfGenericIcon" time="16.544" classname="k12.IntegrateWebsitesFavIconsOnViewAllPageTest"/>
+</testsuite>

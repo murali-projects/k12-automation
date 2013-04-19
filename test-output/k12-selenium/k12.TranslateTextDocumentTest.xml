@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="k12.TranslateTextDocumentTest" failures="0" tests="10" time="120.231" errors="0">
+  <properties/>
+  <testcase name="verifyIsTranslateOptionAvailableFromViewAll" time="12.795" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyIsTranslateOptionAvailableFromSearchResultsPage" time="6.88" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyIsTranslateOptionAvailableFromDetailedPage" time="12.53" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyIsTranslateNotAppliedWhenButtonNotPressed" time="6.942" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyAvailableOptionsInDropDownBox" time="6.834" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifySelectionOfSpanishOption" time="7.02" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyIsLanguageChanged" time="18.138" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyIsCitationAvaialableForTranslatedDocument" time="16.8" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyCanTranlatedDocumentBeClosed" time="7.285" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="veirifyWhetherSelectedOptionAvailableinDropDownAfterActionPerformed" time="10.499" classname="k12.TranslateTextDocumentTest"/>
+</testsuite>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewTopicportalPageWithAllPortalsTest" failures="1" tests="7" time="49.483" errors="0">
+  <properties/>
+  <testcase name="verifyUserisInportalPageAfterclickingTopic" time="3.555" classname="k12.ViewTopicportalPageWithAllPortalsTest"/>
+  <testcase name="verifyPortletsInPortalPage" time="9.108" classname="k12.ViewTopicportalPageWithAllPortalsTest"/>
+  <testcase name="verifyPageforKeywordNotHavingPortalPage" time="3.353" classname="k12.ViewTopicportalPageWithAllPortalsTest"/>
+  <testcase name="verifyPortletsFromOceanServices" time="2.885" classname="k12.ViewTopicportalPageWithAllPortalsTest"/>
+  <testcase name="verifyDifferentMethodsForNavigationToPortalPage" time="11.306" classname="k12.ViewTopicportalPageWithAllPortalsTest"/>
+  <testcase name="verifyBasicSearchOptionFromPortalPage" time="4.819" classname="k12.ViewTopicportalPageWithAllPortalsTest"/>
+  <testcase name="verifyBreadcrumb" time="3.462" classname="k12.ViewTopicportalPageWithAllPortalsTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@id=&amp;apos;breadcrumb_container&amp;apos;]/ul[@id=&amp;apos;breadcrumb_navigation&amp;apos;]/li[2]/a not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@id='breadcrumb_container']/ul[@id='breadcrumb_navigation']/li[2]/a not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+	at webPageContainers4Testing.ViewTopicportalPageWithAllPortals.verifyBreadcrumb(ViewTopicportalPageWithAllPortals.java:70)
+	at k12.ViewTopicportalPageWithAllPortalsTest.verifyBreadcrumb(ViewTopicportalPageWithAllPortalsTest.java:63)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

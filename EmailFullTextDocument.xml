@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="EmailFullTextDocument">
+	<test name="EmailFullTextDocument" enabled="true">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="displayGroup" value="statistics" />
+		<parameter name="inValidMailAddress" value="123" />
+		<parameter name="content" value="abc" />
+		<parameter name="mailId" value="sreehari.ghali@applabs.com" />
+		<parameter name="mailIds"
+			value="sreehari.ghali@applabs.com,sheshajee.dasar@applabs.com" />
+		<classes>
+			<class name="k12.EmailFullTextDocumentTest">
+				<methods>
+					<include name="verifyDetailsOfDocument" />
+					<include name="verifyEmailOption" />
+					<include name="verifyEmailOptionFromDisplayGroups" />
+					<include name="verifyModalWindowIsDisplayed" />
+					<include name="verifyNoSelectionInModalWindowMode" />
+					<include name="verifyModalWindowName" />
+					<include name="verifyButtons" />
+					<include name="verifyRadioButtonsIsPresent" />
+					<include name="verifyRadioButtonsAvailability" />
+					<include name="verifyFieldsProminance" />
+					<include name="verifyAllFieldsArePresent" />
+					<include name="verifyEmailNotDelivered" />
+					<include name="sendingMailWithInvalidMailAddress" />
+					<include name="verifyMaxCharacterLength" />
+					<include name="verifyEmailSentMessage" />
+					<include name="verifyEmailSentMessageForMoreSenders" />
+					<include name="verifyEmailWindowClosed" />
+					<include name="closeSendEmailWindowUsingEsc" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
+

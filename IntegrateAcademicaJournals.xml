@@ -1,0 +1,26 @@
+<suite name="IntegrateAcademicJournalsDisplayGroup">
+	<parameter name="displayGroupName" value="academicJournals" />
+	<parameter name="searchTerm" value="war" />
+	<parameter name="sortBy" value="PublicationDate" />
+	<parameter name="tabName" value="news" />
+	<test name="IntegrateAcademicJournalsTest" enabled="true">
+		<classes>
+			<class name="k12.IntegrateAcademicJournalsTest">
+				<methods>
+					<include name="checkJounalsDisplayedInDisplayGroup" />
+					<include name="verifyViewAllIsNotDisplayed" />
+					<include name="verifyViewAllIsDisplayed" />
+					<include name="verifyCountIsDisplayed" />
+					<!--Sort By Publication date is not yet implemented in the Ocean Services.-->
+					<!--<include name="verifyContentLinksAreSortedByPublicationDate" />-->
+					<include name="verifyViewAllIsAccessible" />
+					<include name="verifyGroupNameIsDisplayedInCaps" />
+					<include name="verifyPublicationDetailsPresent" />
+					<include name="verifyContentLinkIsWorking" />
+					<include name="verifyAcademicJournalCanBeMarked" />
+					<include name="verifyAfterClickingAcademicJournalsLink" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,18 @@
+<suite name="View Websites Document">
+	<parameter name="searchTerm" value="war" />
+	<test name="ViewWebsitesDocumentTest" enabled="true">
+		<classes>
+			<class name="k12.ViewWebsitesDocumentTest">
+				<methods>
+					<include name="verifyDocumentTitlePresent" />
+					<include name="verifyShortCitationPresent" />
+					<include name="verifyWebsiteAnnotationPresent" />
+					<include name="verifyAnnotationPresent" />
+					<include name="verifySourceCitationPresent" />
+					<include name="verifyGaleDocumentNoPresent" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

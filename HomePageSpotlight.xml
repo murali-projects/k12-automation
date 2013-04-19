@@ -1,0 +1,27 @@
+<suite name="HomePageSpotlight">
+	<parameter name="searchTerm" value="war" />
+	<test name="HomePageSpotlightTest" enabled="true">
+		<classes>
+			<class name="k12.HomePageSpotlightTest">
+				<methods>
+					<include name="verifySpotlightPortletPage" />
+					<include name="verifyImageInPortlet" />
+					<include name="verifyDocumentTitleOrPortalPageTile" />
+					<include name="verifyPageLeadToDetailedViewPage" />
+					<include name="verifySnippetForDocumentLink" />
+					<include name="verifySnippetForPortalPageTilte" />
+					<include name="verifyReadMoreLink" />
+					<include name="readMoreLinkDetailPage" />
+					<include name="verifyPortalOrDocumentCountInSpotlight" />
+					<include name="verifyEachItemIsAppearedAsNumber" />
+					<include name="verifySpotlightUpdates" />
+					<include name="verifySpotlightUpdatesForAllFive" />
+					<include name="verifyGreyedOutForCurrentPage" />
+					<include name="verifyPortletForViewAllPage" />
+					<include name="verifySpotlightNavigation" />
+					<include name="veriyfLinkNavigationInSpotlight" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

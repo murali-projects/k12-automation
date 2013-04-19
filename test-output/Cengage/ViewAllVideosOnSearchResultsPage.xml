@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllVideosOnSearchResultsPage" failures="1" tests="11" time="8.39" errors="0">
+  <properties/>
+  <testcase name="verifyContentResultsInVideos" time="0.047" classname="k12.ViewAllVideosOnSearchResultsPageTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ViewAllVideosOnSearchResultsPageTest.verifyContentResultsInVideos(ViewAllVideosOnSearchResultsPageTest.java:26)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyViewAllIsDisplayed" time="0.0" classname="k12.ViewAllVideosOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyVideosCountIsDisplayed" time="0.0" classname="k12.ViewAllVideosOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyViewAllIsNotDisplayed" time="0.0" classname="k12.ViewAllVideosOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyVideosHeading" time="0.0" classname="k12.ViewAllVideosOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyMarkMeForVideos" time="0.0" classname="k12.ViewAllVideosOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyMouseOverOfVideo" time="0.0" classname="k12.ViewAllVideosOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDetailVideoNavigation" time="0.0" classname="k12.ViewAllVideosOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNextLinkIsWorking" time="0.0" classname="k12.ViewAllVideosOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPreviousLinkIsWorking" time="0.0" classname="k12.ViewAllVideosOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyVideoDisplayGroupIsNotDisplayed" time="0.0" classname="k12.ViewAllVideosOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TranslateTestDocuemnt" failures="0" tests="13" time="196.407" errors="0">
+  <properties/>
+  <testcase name="verifyIsTranslateOptionAvailableFromViewAll" time="15.547" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyIsTranslateOptionAvailableFromSearchResultsPage" time="9.36" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyIsTranslateOptionAvailableFromDetailedPage" time="17.672" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyIsTranslateNotAppliedWhenButtonNotPressed" time="9.234" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyAvailableOptionsInDropDownBox" time="18.078" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyIsMultipleSelectNotAllowed" time="8.375" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifySelectionOfSpanishOption" time="8.828" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyIsLanguageChanged" time="21.032" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyIsCitationAvaialableForTranslatedDocument" time="19.734" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyCanTranlatedDocumentBeClosed" time="9.828" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="veirifyWhetherSelectedOptionAvailableinDropDownAfterActionPerformed" time="15.375" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyIsLanguageChangingForAllLanguages" time="9.281" classname="k12.TranslateTextDocumentTest"/>
+  <testcase name="verifyIsDesclaimerAvailableForTranslatedDocument" time="12.625" classname="k12.TranslateTextDocumentTest"/>
+</testsuite>

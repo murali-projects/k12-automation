@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAudioDisplayGroup" failures="1" tests="9" time="21.843" errors="0">
+  <properties/>
+  <testcase name="checkAudioArticlesDisplayGroupIsPresent" time="0.047" classname="k12.ViewAudioDisplayGroupTest"/>
+  <testcase name="checkAudioContentLinksArePresent" time="0.094" classname="k12.ViewAudioDisplayGroupTest"/>
+  <testcase name="verifyAudioArticleNameIsLink" time="0.109" classname="k12.ViewAudioDisplayGroupTest"/>
+  <testcase name="verifyAudioArticlesCount" time="0.063" classname="k12.ViewAudioDisplayGroupTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ViewAudioDisplayGroupTest.verifyAudioArticlesCount(ViewAudioDisplayGroupTest.java:44)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyDetailedViewIsDisplayed" time="13.312" classname="k12.ViewAudioDisplayGroupTest"/>
+  <testcase name="checkAudioArticlesDisplayGroupIsNotPresent" time="2.079" classname="k12.ViewAudioDisplayGroupTest"/>
+  <testcase name="verifyPublicatinDatesArePresent" time="0.031" classname="k12.ViewAudioDisplayGroupTest"/>
+  <testcase name="verifyAudioArticlesSortedByPublicationDates" time="0.031" classname="k12.ViewAudioDisplayGroupTest"/>
+  <testcase name="verifyPublicatinNamesArePresent" time="0.031" classname="k12.ViewAudioDisplayGroupTest"/>
+</testsuite>

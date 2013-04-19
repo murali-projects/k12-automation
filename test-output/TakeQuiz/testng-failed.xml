@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [TakeQuiz]" junit="false" annotations="JDK" data-provider-thread-count="10">
+  <parameter name="searchTerm" value="Emphasis on Diversity"/>
+  <test name="TakeQuizTest(failed)" junit="false" annotations="JDK">
+    <parameter name="searchTerm" value="Emphasis on Diversity"/>
+    <classes>
+      <class name="k12.TakeQuizTest">
+        <methods>
+          <include name="verifyDocumentTilteIsPresent"/>
+          <include name="verifyEmailOptions"/>
+          <include name="verifyMessageDisplayed"/>
+          <include name="verifyTakeQuizLinkIsPresent"/>
+          <include name="startBrowserSession"/>
+          <include name="verifyPrintOptions"/>
+          <include name="verifyNewWindowIsDisplayed"/>
+          <include name="start"/>
+          <include name="sendingMailWithTwoOrMoreSenders"/>
+          <include name="verifyOptionsPresentForSelectedDocument"/>
+          <include name="verifySubmissionOfAnswers"/>
+          <include name="verifyRequiredFieldsForEmailQuiz"/>
+          <include name="verifyPopupIsDisplayed"/>
+          <include name="verifyStatusBar"/>
+          <include name="verifyTheDocumentTitleInAllOptions"/>
+          <include name="verifyNewWindowOpenedForStartButton"/>
+          <include name="verifyCosingPopUp"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

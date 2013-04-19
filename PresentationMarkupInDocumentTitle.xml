@@ -1,0 +1,113 @@
+<suite name="PresentationMarkupInDocumentTitle">
+	<parameter name="searchTerm" value="war" />
+	<test name="PresentationMarkupInDocumentTitleForReference" enabled="true">
+	<parameter name="displayName" value="reference" />
+		<classes>
+			<class name="k12.PresentationMarkupInDocumentTitleTest">
+				<methods>
+				    <include name="basicSearch" />
+					<include name="verifyDocumentTitleIsBold" />
+					<include name="verifyDocumentTitleIsHyperLinked" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="PresentationMarkupInDocumentTitleForAudio" enabled="true">
+	<parameter name="displayName" value="audio" />
+		<classes>
+			<class name="k12.PresentationMarkupInDocumentTitleTest">
+				<methods>
+				    <include name="basicSearch" />
+					<include name="verifyDocumentTitleIsBold" />
+					<include name="verifyDocumentTitleIsHyperLinked" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="PresentationMarkupInDocumentTitleForMagazines" enabled="true">
+	<parameter name="displayName" value="magazines" />
+		<classes>
+			<class name="k12.PresentationMarkupInDocumentTitleTest">
+				<methods>
+				    <include name="basicSearch" />
+					<include name="verifyDocumentTitleIsBold" />
+					<include name="verifyDocumentTitleIsHyperLinked" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="PresentationMarkupInDocumentTitleForNews" enabled="true">
+	<parameter name="displayName" value="news" />
+		<classes>
+			<class name="k12.PresentationMarkupInDocumentTitleTest">
+				<methods>
+				    <include name="basicSearch" />
+					<include name="verifyDocumentTitleIsBold" />
+					<include name="verifyDocumentTitleIsHyperLinked" />
+				</methods>
+			</class>
+		</classes>
+	</test><!--
+	Functionality Not Yet implemented,once it is done we can uncomment this
+	--><!--<test name="PresentationMarkupInDocumentTitleForAcademicJournals" enabled="true">
+	<parameter name="displayName" value="academicJournals" />
+		<classes>
+			<class name="k12.PresentationMarkupInDocumentTitleTest">
+				<methods>
+				    <include name="basicSearch" />
+					<include name="verifyDocumentTitleIsBold" />
+					<include name="verifyDocumentTitleIsHyperLinked" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	--><test name="PresentationMarkupInDocumentTitleForPrimarySource" enabled="true">
+	<parameter name="displayName" value="primarySource" />
+		<classes>
+			<class name="k12.PresentationMarkupInDocumentTitleTest">
+				<methods>
+				    <include name="basicSearch" />
+					<include name="verifyDocumentTitleIsBold" />
+					<include name="verifyDocumentTitleIsHyperLinked" />
+				</methods>
+			</class>
+		</classes>
+	</test><!--
+	Functionality Not Yet implemented,once it is done we can uncomment this
+	--><!--<test name="PresentationMarkupInDocumentTitleForStatistics" enabled="true">
+	<parameter name="displayName" value="statistics" />
+		<classes>
+			<class name="k12.PresentationMarkupInDocumentTitleTest">
+				<methods>
+				    <include name="basicSearch" />
+					<include name="verifyDocumentTitleIsBold" />
+					<include name="verifyDocumentTitleIsHyperLinked" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	--><test name="PresentationMarkupInDocumentTitleForViewPoints" enabled="true">
+	<parameter name="displayName" value="viewpoints" />
+		<classes>
+			<class name="k12.PresentationMarkupInDocumentTitleTest">
+				<methods>
+				    <include name="basicSearch" />
+					<include name="verifyDocumentTitleIsBold" />
+					<include name="verifyDocumentTitleIsHyperLinked" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="PresentationMarkupInDocumentTitleForWebSites" enabled="true">
+	<parameter name="displayName" value="websites" />
+		<classes>
+			<class name="k12.PresentationMarkupInDocumentTitleTest">
+				<methods>
+				    <include name="basicSearch" />
+					<include name="verifyDocumentTitleIsBold" />
+					<include name="verifyDocumentTitleIsHyperLinked" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

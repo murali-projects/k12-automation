@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Biography Information In Document Display" failures="1" tests="3" time="50.09" errors="0">
+  <properties/>
+  <testcase name="isNarrativeBiographyDocInfoTypePresent" time="27.779" classname="k12.BiographyInfoInDocumentDisplayTest"/>
+  <testcase name="verifyDocInfoTypeWithDB" time="2.359" classname="k12.BiographyInfoInDocumentDisplayTest">
+    <failure type="java.lang.IndexOutOfBoundsException" message="Index: 71, Size: 0">
+      <![CDATA[java.lang.IndexOutOfBoundsException: Index: 71, Size: 0
+	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+	at java.util.ArrayList.get(ArrayList.java:322)
+	at webPageContainers4Testing.BiographyInfoInDocumentDisplay.verifyWithDB(BiographyInfoInDocumentDisplay.java:71)
+	at webPageContainers4Testing.BiographyInfoInDocumentDisplay.verifyDocInfoTypeWithDB(BiographyInfoInDocumentDisplay.java:59)
+	at k12.BiographyInfoInDocumentDisplayTest.verifyDocInfoTypeWithDB(BiographyInfoInDocumentDisplayTest.java:26)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="isNarrativeBiographyDocInfoTypePresentInOtherPages" time="0.0" classname="k12.BiographyInfoInDocumentDisplayTest">
+    <skipped/>
+  </testcase>
+</testsuite>

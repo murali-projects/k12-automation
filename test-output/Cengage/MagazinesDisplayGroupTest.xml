@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MagazinesDisplayGroupTest" failures="2" tests="9" time="18.904" errors="0">
+  <properties/>
+  <testcase name="checkMagazinesDisplayedInDisplayGroup" time="0.109" classname="k12.IntegrateMagazinesDisplayGroupTest"/>
+  <testcase name="verifyViewAllIsNotDisplayed" time="0.094" classname="k12.IntegrateMagazinesDisplayGroupTest"/>
+  <testcase name="verifyViewAllIsDisplayed" time="0.032" classname="k12.IntegrateMagazinesDisplayGroupTest"/>
+  <testcase name="verifyCountIsDisplayed" time="0.062" classname="k12.IntegrateMagazinesDisplayGroupTest"/>
+  <testcase name="verifyPublicationDetailsPresent" time="0.328" classname="k12.IntegrateMagazinesDisplayGroupTest"/>
+  <testcase name="verifyViewAllIsAccessible" time="4.734" classname="k12.IntegrateMagazinesDisplayGroupTest"/>
+  <testcase name="verifyGroupNameIsDisplayedInCaps" time="0.031" classname="k12.IntegrateMagazinesDisplayGroupTest"/>
+  <testcase name="verifyContentLinkIsWorking" time="4.406" classname="k12.IntegrateMagazinesDisplayGroupTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@class=&amp;apos;portlet _details&amp;apos;]/h2 not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@class='portlet _details']/h2 not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+	at webPageContainers4Testing.IntegrateMagazinesDisplayGroup.verifyContentLinkIsWorking(IntegrateMagazinesDisplayGroup.java:136)
+	at k12.IntegrateMagazinesDisplayGroupTest.verifyContentLinkIsWorking(IntegrateMagazinesDisplayGroupTest.java:76)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyMagazinesCanBeMarked" time="0.046" classname="k12.IntegrateMagazinesDisplayGroupTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //input[@name=&amp;apos;search_input&amp;apos;] not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //input[@name='search_input'] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:291)
+	at webPageElements4Testing.TextBox.type(TextBox.java:11)
+	at k12.BaseWebPageTest.doBasicSearchUsingSearchTerm(BaseWebPageTest.java:48)
+	at k12.IntegrateMagazinesDisplayGroupTest.verifyMagazinesCanBeMarked(IntegrateMagazinesDisplayGroupTest.java:82)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

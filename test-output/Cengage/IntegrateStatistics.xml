@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntegrateStatistics" failures="1" tests="10" time="9.186" errors="0">
+  <properties/>
+  <testcase name="checkContentResultsArePresent" time="0.047" classname="k12.IntegrateStatisticsDisplayGroupTest"/>
+  <testcase name="verifyThreeDocumentsArePresent" time="0.422" classname="k12.IntegrateStatisticsDisplayGroupTest"/>
+  <testcase name="verifyViewAllIsDisplayedWithResultsCount" time="0.094" classname="k12.IntegrateStatisticsDisplayGroupTest"/>
+  <testcase name="validateDocumentTitlesWithDB" time="0.312" classname="k12.IntegrateStatisticsDisplayGroupTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.IntegrateStatisticsDisplayGroupTest.validateDocumentTitlesWithDB(IntegrateStatisticsDisplayGroupTest.java:43)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyDefaultSortIsByRelevance" time="0.0" classname="k12.IntegrateStatisticsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="ensureDocumentsAreRelatedToStatistics" time="0.0" classname="k12.IntegrateStatisticsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyGroupNameIsDisplayedInViewAllPage" time="0.0" classname="k12.IntegrateStatisticsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifySearchMessageIsPresent" time="0.0" classname="k12.IntegrateStatisticsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyContentLevelIsPresent" time="0.0" classname="k12.IntegrateStatisticsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="ensureDetailedViewIsDisplayed" time="0.0" classname="k12.IntegrateStatisticsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+</testsuite>

@@ -1,0 +1,33 @@
+<suite name="IntegrateMagazinesDisplayGroup">
+	<parameter name="displayGroupName" value="magazines" />
+	<parameter name="searchTerm" value="war" />
+	<parameter name="sortBy" value="PublicationDate" />
+	<test name="MagazinesDisplayGroupTest" enabled="true">
+		<classes>
+			<class name="k12.IntegrateMagazinesDisplayGroupTest">
+				<methods>
+					<include name="checkMagazinesDisplayedInDisplayGroup" />
+					<include name="verifyViewAllIsNotDisplayed" />
+					<include name="verifyViewAllIsDisplayed" />
+					<include name="verifyCountIsDisplayed" />
+					<!--
+						Note:-Publication date values are wrongly displyed,clarification
+						has been raised once it si confirmed we can uncomment this test.
+					-->
+					<!--
+						<include name="verifyContentLinksAreSortedByPublicationDate" />
+					-->
+					<include name="verifyPublicationDetailsPresent" />
+					<include name="verifyViewAllIsAccessible" />
+					<include name="verifyGroupNameIsDisplayedInCaps" />
+					<!--
+						Magazines content is not displayed once magazines link is clicked
+					-->
+					<!--<include name="verifyContentLinkIsWorking" />
+				-->
+					<include name="verifyMagazinesCanBeMarked" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

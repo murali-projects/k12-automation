@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="QuestionToThinkAbout" failures="0" tests="5" time="20.373" errors="0">
+  <properties/>
+  <testcase name="verifyViewPointsDisplayGroup" time="4.047" classname="k12.QuestionToThinkAboutTest"/>
+  <testcase name="verifyDetailedDocument" time="4.453" classname="k12.QuestionToThinkAboutTest"/>
+  <testcase name="verifyQuestionTable" time="0.046" classname="k12.QuestionToThinkAboutTest"/>
+  <testcase name="verifyQuestionsInNumbered" time="0.047" classname="k12.QuestionToThinkAboutTest"/>
+  <testcase name="verifyNotDisplayed" time="8.014" classname="k12.QuestionToThinkAboutTest"/>
+</testsuite>

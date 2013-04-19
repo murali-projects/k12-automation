@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewVideosDocumentTest" failures="1" tests="4" time="82.977" errors="0">
+  <properties/>
+  <testcase name="clickDocumentVideoDisplayGroup" time="7.528" classname="k12.ViewVideosDocumentTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@id=&amp;apos;media_jbpns_2fdefault_2fsearchResults_2fVideosListWindowsnpbj&amp;apos;]/ul/li[1]/h3/a not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@id='media_jbpns_2fdefault_2fsearchResults_2fVideosListWindowsnpbj']/ul/li[1]/h3/a not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.ViewVideosDocument.clickDocumentVideoDisplayGroup(ViewVideosDocument.java:18)
+	at k12.ViewVideosDocumentTest.clickDocumentVideoDisplayGroup(ViewVideosDocumentTest.java:25)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyDocumentTitleInDetailedPage" time="0.0" classname="k12.ViewVideosDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyVideoCaptionAvailable" time="0.0" classname="k12.ViewVideosDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyVideoFromViewAll" time="0.0" classname="k12.ViewVideosDocumentTest">
+    <skipped/>
+  </testcase>
+</testsuite>

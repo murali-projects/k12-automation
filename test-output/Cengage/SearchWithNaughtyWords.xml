@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SearchWithNaughtyWords" failures="0" tests="8" time="28.683" errors="0">
+  <properties/>
+  <testcase name="doCheckWithSingleNaughtyWord" time="2.391" classname="k12.NaughtyWordsTest"/>
+  <testcase name="doCheckWithTwoNaughtyWordsInSentenceWithoutQuotes" time="3.469" classname="k12.NaughtyWordsTest"/>
+  <testcase name="doCheckWithMultipleNaughtyWordsInSentenceWithoutQuotes" time="3.203" classname="k12.NaughtyWordsTest"/>
+  <testcase name="doCheckWithMultipleStopAndNaughtyWordsInSentenceWithoutQuotes" time="3.687" classname="k12.NaughtyWordsTest"/>
+  <testcase name="doCheckWithSingleNaughtyWordInSentenceWithQuotes" time="3.156" classname="k12.NaughtyWordsTest"/>
+  <testcase name="doCheckWithTwoNaughtyWordsInSentenceWithQuotes" time="3.14" classname="k12.NaughtyWordsTest"/>
+  <testcase name="doCheckWithMultipleNaughtyWordsInSentenceWithQuotes" time="3.453" classname="k12.NaughtyWordsTest"/>
+  <testcase name="doCheckWithMultipleStopAndNaughtyWordsInSentenceWithQuotes" time="2.843" classname="k12.NaughtyWordsTest"/>
+</testsuite>

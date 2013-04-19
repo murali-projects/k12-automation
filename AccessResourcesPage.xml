@@ -1,0 +1,17 @@
+<suite name="AccessResourcesPage">
+	<test name="AccessResourcesPageTest" enabled="true">
+		<classes>
+			<class name="k12.AccessResourcesPageTest">
+				<methods>
+					<include name="verifyResourcesLinkIsPresentAndAccesible" />
+					<include name="verifyTabsUnderResourceLink" />
+					<include name="verifyBasicSearchAndFooterArePresent" />
+					<include name="verifyOptionsForGettingStarted" />
+					<include name="verifyOptionsForWrappingItUp" />
+					<include name="verifyOptionsForResearchGuide" />
+					<include name="verifyBreadCrumb" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

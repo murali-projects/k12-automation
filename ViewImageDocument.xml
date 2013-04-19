@@ -1,0 +1,23 @@
+<suite name="ViewImageDocument">
+	<parameter name="displayGroupName" value="academicJournals" />
+	<parameter name="searchTerm" value="war" />
+	<parameter name="sortBy" value="PublicationDate" />
+	<parameter name="tabName" value="news" />
+	<test name="ViewImageDocumentTest" enabled="true">
+		<classes>
+			<class name="k12.ViewImageDocumentTest">
+				<methods>
+					<include name="verifyDetailedViewOfImageIsDisplayed" />
+					<include name="verifyDetailedViewOfImageIsDisplayedFromViewAll" />
+					<include name="verifyImagesForNext" />
+					<include name="verifyImagesForPrevious" />
+					<!--<include name="verifyFullSizeImageIsDisplayed" />
+					--><include name="verifyToolsArePresent" />
+					<include name="verifyNextAndPreviousButtonsPresent" />
+					<include name="checkSearchButtonIsPresent" />
+					<include name="verifyElementsAreDisplayedOnPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntegrateTextDoucmentTest" failures="5" tests="10" time="8.156" errors="0">
+  <properties/>
+  <testcase name="verifyDocumetIsDisplayedForMagazines" time="4.422" classname="k12.IntegrateTextDocumentTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div/h2[@id=&amp;apos;title&amp;apos;] not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div/h2[@id='title'] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+	at webPageContainers4Testing.IntegrateTextDocument.verifyDocumentDisplay(IntegrateTextDocument.java:17)
+	at k12.IntegrateTextDocumentTest.verifyDocumetIsDisplayedForMagazines(IntegrateTextDocumentTest.java:38)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyGaleDocumentNumberForMagazines" time="0.0" classname="k12.IntegrateTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocumetIsDisplayedForPrimarySources" time="0.047" classname="k12.IntegrateTextDocumentTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //input[@name=&amp;apos;search_input&amp;apos;] not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //input[@name='search_input'] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:291)
+	at webPageElements4Testing.TextBox.type(TextBox.java:11)
+	at k12.BaseWebPageTest.doBasicSearchUsingSearchTerm(BaseWebPageTest.java:48)
+	at k12.IntegrateTextDocumentTest.verifyDocumetIsDisplayedForPrimarySources(IntegrateTextDocumentTest.java:60)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyGaleDocumentNumberForPrimarySources" time="0.016" classname="k12.IntegrateTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocumetIsDisplayedForReference" time="0.047" classname="k12.IntegrateTextDocumentTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //input[@name=&amp;apos;search_input&amp;apos;] not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //input[@name='search_input'] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:291)
+	at webPageElements4Testing.TextBox.type(TextBox.java:11)
+	at k12.BaseWebPageTest.doBasicSearchUsingSearchTerm(BaseWebPageTest.java:48)
+	at k12.IntegrateTextDocumentTest.verifyDocumetIsDisplayedForReference(IntegrateTextDocumentTest.java:25)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyGaleDocumentNumberForReference" time="0.0" classname="k12.IntegrateTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocumetIsDisplayedForViewPoints" time="0.047" classname="k12.IntegrateTextDocumentTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //input[@name=&amp;apos;search_input&amp;apos;] not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //input[@name='search_input'] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:291)
+	at webPageElements4Testing.TextBox.type(TextBox.java:11)
+	at k12.BaseWebPageTest.doBasicSearchUsingSearchTerm(BaseWebPageTest.java:48)
+	at k12.IntegrateTextDocumentTest.verifyDocumetIsDisplayedForViewPoints(IntegrateTextDocumentTest.java:49)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyGaleDocumentNumberForViewPoints" time="0.0" classname="k12.IntegrateTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocumetIsDisplayedForWebsites" time="0.063" classname="k12.IntegrateTextDocumentTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //input[@name=&amp;apos;search_input&amp;apos;] not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //input[@name='search_input'] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:291)
+	at webPageElements4Testing.TextBox.type(TextBox.java:11)
+	at k12.BaseWebPageTest.doBasicSearchUsingSearchTerm(BaseWebPageTest.java:48)
+	at k12.IntegrateTextDocumentTest.verifyDocumetIsDisplayedForWebsites(IntegrateTextDocumentTest.java:71)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyGaleDocumentNumberForWebsites" time="0.0" classname="k12.IntegrateTextDocumentTest">
+    <skipped/>
+  </testcase>
+</testsuite>

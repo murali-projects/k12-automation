@@ -1,0 +1,29 @@
+<suite name="IntegrateNewsDisplayGroup">
+	<parameter name="searchTerm" value="war" />
+	<parameter name="displayGroupName" value="News" />
+	<parameter name="sortBy" value="PublicationDate" />
+	<test name="NewsDisplayGroupTest" enabled="true">
+		<classes>
+			<class name="k12.NewsDisplayGroupTest">
+				<methods>
+					<include name="verifyNewsDisplayGroupPresent" />
+					<include name="verifyNewsTextIsDisplayed" />
+					<include name="verifyNewsViewAllIsDisplayed" />
+					<include name="verifyNewsCountIsInlineWithViewAll" />
+					<include name="verifyViewAllIsLink" />
+					<include name="verifyViewAllIsWorking" />
+					<include name="verifyThreeContentLinksAreDisplayed" />
+					<include name="verifyNewsArticlesAreSortedWithPubDate" />
+					<include name="verifyPublisherNames" />
+					<include name="verifyDocTypes" />
+					<include name="validateNewsContentLinks" />
+					<include name="verifyNewsTitlesAreLinks" />
+					<include name="verifyNewsIconIsInLineWithNewsTitle" />
+					<include name="verifyContentAfterClickingNewsLink" />
+					<include name="verifyLinkBackOptionAvailable" />
+					<include name="verifyContentAfterClickingNewsIcon" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

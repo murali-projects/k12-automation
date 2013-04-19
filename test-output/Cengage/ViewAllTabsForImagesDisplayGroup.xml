@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllTabsForImagesDisplayGroup" failures="1" tests="14" time="27.732" errors="0">
+  <properties/>
+  <testcase name="viewDisplayGroupsForSeachTerm" time="10.499" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="validateDisplayGroupContent" time="13.343" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="validateDisplayGroupCount" time="0.047" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="validateDisplayGroupNext" time="0.046" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="validateDisplayGroupPrevious" time="0.047" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="validateTabsAfterNext" time="0.047" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="validateTabsAfterPrevious" time="0.031" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="verifySearchInViewAll" time="0.063" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="verifyTabsFromDetailedPage" time="0.046" classname="k12.ViewAllTabsDisplayGroupTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@class=&amp;apos;content&amp;apos;]/ul/li[1]/a[1]/img not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@class='content']/ul/li[1]/a[1]/img not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.ViewAllTabsDisplayGroup.verifyTabsFromDetailedPage(ViewAllTabsDisplayGroup.java:286)
+	at k12.ViewAllTabsDisplayGroupTest.verifyTabsFromDetailedPage(ViewAllTabsDisplayGroupTest.java:88)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyTabsForDetailedPage" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="ensureSingleTabIsSelectedOnce" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="headingMatch" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyRecordsCountWithViewAll" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifySearchResult" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+</testsuite>

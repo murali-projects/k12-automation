@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContentLevelOnSearchResultsPage" failures="1" tests="28" time="20.358" errors="0">
+  <properties/>
+  <testcase name="verifyContentLevelIsDisplayedForReference" time="10.046" classname="k12.ContentLevelOnSearchResultsPageTest"/>
+  <testcase name="verifyToolTipIsDisplayedForReference" time="2.64" classname="k12.ContentLevelOnSearchResultsPageTest"/>
+  <testcase name="validateToolTipWithOCeanForReference" time="2.969" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ContentLevelOnSearchResultsPageTest.validateToolTipWithOCeanForReference(ContentLevelOnSearchResultsPageTest.java:37)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyContentLevelIsDisplayedForAllContentsForReference" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyContentLevelIsDisplayedForPrimarySources" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyToolTipIsDisplayedForPrimarySources" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateToolTipWithOCeanForPrimarySources" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyContentLevelIsDisplayedForAllContentsForPrimarySources" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyContentLevelIsDisplayedForStatistics" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyToolTipIsDisplayedForStatistics" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateToolTipWithOCeanForStatistics" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyContentLevelIsDisplayedForAllContentsForStatistics" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyContentLevelIsDisplayedForNews" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyToolTipIsDisplayedForNews" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateToolTipWithOCeanForNews" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyContentLevelIsDisplayedForAllContentsForNews" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyContentLevelIsDisplayedForMagazines" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyToolTipIsDisplayedForMagazines" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateToolTipWithOCeanForMagazines" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyContentLevelIsDisplayedForAllContentsForMagazines" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyContentLevelIsDisplayedForViewPoints" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyToolTipIsDisplayedForViewPoints" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateToolTipWithOCeanForViewPoints" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyContentLevelIsDisplayedForAllContentsForViewPoints" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyContentLevelIsDisplayedForAcademicJournals" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyToolTipIsDisplayedForAcademicJournals" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateToolTipWithOCeanForAcademicJournals" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyContentLevelIsDisplayedForAllContentsForAcademicJournals" time="0.0" classname="k12.ContentLevelOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+</testsuite>

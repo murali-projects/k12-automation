@@ -1,0 +1,21 @@
+<suite name="UpdateTranslationTooltoUseSeparateDialogBox">
+	<parameter name="searchTerm" value="war" />
+	<parameter name="language" value="French" />
+	<parameter name="displayGroup" value="news" />
+	<test name="UpdateTranslationTooltoUseSeparateDialogBoxTest" enabled="true">
+		<classes>
+			<class name="k12.UpdateTranslationTooltoUseSeparateDialogBoxTest">
+				<methods>
+					<include name="verifyTranslateOption" />
+					<include name="verifyTranslateDialogBox" />
+					<include name="verifyOptionsInTranslateDialogBox" />
+					<include name="verifySelectionOfTranslate" />
+					<include name="verifyCancelOfTranslate" />
+					<include name="verifySelectionOfTranslateAfterCancelling" />
+					<include name="verifyDialogBoxIsClosed" />
+					<include name="verifyTranslateFromViewAll" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

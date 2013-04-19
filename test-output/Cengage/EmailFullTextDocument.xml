@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EmailFullTextDocument" failures="1" tests="16" time="8.874" errors="0">
+  <properties/>
+  <testcase name="verifyDetailsOfDocument" time="0.563" classname="k12.EmailFullTextDocumentTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@class=&amp;apos;portlet _details&amp;apos;]/h2 not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@class='portlet _details']/h2 not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+	at webPageContainers4Testing.EmailFullTextDocument.verifyDetailsOfDocumentLink(EmailFullTextDocument.java:26)
+	at k12.EmailFullTextDocumentTest.verifyDetailsOfDocument(EmailFullTextDocumentTest.java:30)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyEmailOption" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyEmailOptionFromDisplayGroups" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyModalWindowIsDisplayed" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyModalWindowName" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyButtons" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyRadioButtonsIsPresent" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyRadioButtonsAvailability" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyFieldsProminance" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAllFieldsArePresent" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="sendingMailWithInvalidMailAddress" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyMaxCharacterLength" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyEmailSentMessage" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyEmailSentMessageForMoreSenders" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyEmailWindowClosed" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="closeSendEmailWindowUsingEsc" time="0.0" classname="k12.EmailFullTextDocumentTest">
+    <skipped/>
+  </testcase>
+</testsuite>

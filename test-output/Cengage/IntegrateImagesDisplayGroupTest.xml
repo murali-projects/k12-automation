@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntegrateImagesDisplayGroupTest" failures="1" tests="8" time="10.061" errors="0">
+  <properties/>
+  <testcase name="verifyContentResultsInImages" time="0.047" classname="k12.IntegrateImagesDisplayGroupTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.IntegrateImagesDisplayGroupTest.verifyContentResultsInImages(IntegrateImagesDisplayGroupTest.java:22)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyImagesCount" time="0.0" classname="k12.IntegrateImagesDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyViewAllIsNotDisplayed" time="0.0" classname="k12.IntegrateImagesDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyViewwAllIsDisplayed" time="0.0" classname="k12.IntegrateImagesDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyBoldImagesText" time="0.0" classname="k12.IntegrateImagesDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNoImagesDisplayed" time="0.0" classname="k12.IntegrateImagesDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyMarkMeForImages" time="0.0" classname="k12.IntegrateImagesDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDetailImageNavigation" time="0.0" classname="k12.IntegrateImagesDisplayGroupTest">
+    <skipped/>
+  </testcase>
+</testsuite>

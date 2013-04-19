@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PublicationTitles" failures="0" tests="8" time="8.749" errors="0">
+  <properties/>
+  <testcase name="checkPubTitlesAreDisplayedInReference" time="0.125" classname="k12.IntegratePublicationTitlesTest"/>
+  <testcase name="checkPubTitlesAreDisplayedInMagazines" time="0.109" classname="k12.IntegratePublicationTitlesTest"/>
+  <testcase name="checkPubTitlesAreDisplayedInNews" time="0.109" classname="k12.IntegratePublicationTitlesTest"/>
+  <testcase name="checkPubTitlesAreDisplayedInPrimarySources" time="0.125" classname="k12.IntegratePublicationTitlesTest"/>
+  <testcase name="checkPubTitlesAreDisplayedInViewPoints" time="0.156" classname="k12.IntegratePublicationTitlesTest"/>
+  <testcase name="checkPubTitlesAreDisplayedInAcademicJournals" time="0.282" classname="k12.IntegratePublicationTitlesTest"/>
+  <testcase name="verfiyPublicationTitlesInPrimarySources" time="0.343" classname="k12.IntegratePublicationTitlesTest"/>
+  <testcase name="verfiyPublicationTitlesInReference" time="0.313" classname="k12.IntegratePublicationTitlesTest"/>
+</testsuite>

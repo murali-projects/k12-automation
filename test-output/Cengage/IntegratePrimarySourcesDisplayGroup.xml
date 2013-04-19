@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntegratePrimarySourcesDisplayGroup" failures="0" tests="7" time="17.592" errors="0">
+  <properties/>
+  <testcase name="verifySearchTermInMsg" time="0.047" classname="k12.IntegratePrimarySourcesDisplayGroupTest"/>
+  <testcase name="verifyPrimarySourcesDisplayGroupIsDisplayed" time="0.047" classname="k12.IntegratePrimarySourcesDisplayGroupTest"/>
+  <testcase name="verifyCountIsDisplayed" time="0.078" classname="k12.IntegratePrimarySourcesDisplayGroupTest"/>
+  <testcase name="verifyLinkCountInFirstPage" time="0.125" classname="k12.IntegratePrimarySourcesDisplayGroupTest"/>
+  <testcase name="verifyViewAllLinkIsDisplayed" time="0.031" classname="k12.IntegratePrimarySourcesDisplayGroupTest"/>
+  <testcase name="verifyViewAllLinkIsWorking" time="4.531" classname="k12.IntegratePrimarySourcesDisplayGroupTest"/>
+  <testcase name="verifyViewAllLinkIsNotDisplayed" time="3.765" classname="k12.IntegratePrimarySourcesDisplayGroupTest"/>
+</testsuite>

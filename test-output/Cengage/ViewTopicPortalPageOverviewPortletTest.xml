@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewTopicPortalPageOverviewPortletTest" failures="0" tests="9" time="162.06" errors="0">
+  <properties/>
+  <testcase name="verifyNavigationByclickingoOnTopics" time="11.909" classname="k12.ViewTopicPortalPageOverviewPortletTest"/>
+  <testcase name="verifyOverviewTextWithDocumentText" time="18.667" classname="k12.ViewTopicPortalPageOverviewPortletTest"/>
+  <testcase name="verifyOverviewDisplayed" time="10.614" classname="k12.ViewTopicPortalPageOverviewPortletTest"/>
+  <testcase name="verifyElipsisPresent" time="10.457" classname="k12.ViewTopicPortalPageOverviewPortletTest"/>
+  <testcase name="verifyViewMoreOptionAvailable" time="10.504" classname="k12.ViewTopicPortalPageOverviewPortletTest"/>
+  <testcase name="verifyNavigationByclickingViewMore" time="19.526" classname="k12.ViewTopicPortalPageOverviewPortletTest"/>
+  <testcase name="verifyOverviewTextWithDetailedPageText" time="19.495" classname="k12.ViewTopicPortalPageOverviewPortletTest"/>
+  <testcase name="verifyBreadCrumb" time="32.902" classname="k12.ViewTopicPortalPageOverviewPortletTest"/>
+  <testcase name="verifyToolsAvailableInDetailPage" time="14.734" classname="k12.ViewTopicPortalPageOverviewPortletTest"/>
+</testsuite>

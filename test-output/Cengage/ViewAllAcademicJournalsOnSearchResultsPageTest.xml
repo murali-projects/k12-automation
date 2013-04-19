@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllAcademicJournalsOnSearchResultsPageTest" failures="0" tests="8" time="19.873" errors="0">
+  <properties/>
+  <testcase name="basicSearch" time="4.108" classname="k12.ViewAllAcademicJournalsOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForAcademicJournalsIsDispalyed" time="0.079" classname="k12.ViewAllAcademicJournalsOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForAcademicJournalsIsWorking" time="4.968" classname="k12.ViewAllAcademicJournalsOnSearchResultsPageTest"/>
+  <testcase name="viewAllNavigationForAcademicJournals" time="0.047" classname="k12.ViewAllAcademicJournalsOnSearchResultsPageTest"/>
+  <testcase name="verifyDocumentDisplayPageResultsForAcademicJournals" time="0.062" classname="k12.ViewAllAcademicJournalsOnSearchResultsPageTest"/>
+  <testcase name="verifyNextLinkForAcademicJournals" time="0.094" classname="k12.ViewAllAcademicJournalsOnSearchResultsPageTest"/>
+  <testcase name="verifyNextLinkIsworkingForAcademicJournals" time="6.702" classname="k12.ViewAllAcademicJournalsOnSearchResultsPageTest"/>
+  <testcase name="verifyPreviousLinkForAcademicJournals" time="0.047" classname="k12.ViewAllAcademicJournalsOnSearchResultsPageTest"/>
+</testsuite>

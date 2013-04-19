@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LinkToRelatedSubjects" failures="0" tests="4" time="77.147" errors="0">
+  <properties/>
+  <testcase name="verifyIntegrateRelatedTopicsPresent" time="17.047" classname="k12.LinkToRelatedSubjectTest"/>
+  <testcase name="verifyTermsDisplayedInRelatedTopics" time="12.317" classname="k12.LinkToRelatedSubjectTest"/>
+  <testcase name="verifyRelatedTopicsFromViewAll" time="22.089" classname="k12.LinkToRelatedSubjectTest"/>
+  <testcase name="verifyPageNavigationByClickingSubjects" time="19.013" classname="k12.LinkToRelatedSubjectTest"/>
+</testsuite>

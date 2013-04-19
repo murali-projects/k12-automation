@@ -1,0 +1,21 @@
+<suite name="Document Title Maximum Length">
+	<parameter name="searchTerm" value="war" />
+	<parameter name="displayGroupName" value="reference" />
+	<test name="DocumentTitleMaximumLengthTest" enabled="true">
+		<classes>
+			<class name="k12.DocumentTitleMaximumLengthTest">
+				<methods>
+					<include name="verifyElipsesDisplayedInSearchResultsPage" />
+					<include name="verifyDetailedPageDocTitleFromSearchResultsPage" />
+					<include name="verifyDocumentTitlesLengthInViewAllPage" />
+					<include name="verifyElipsesDisplayedInViewAllPage" />
+					<include name="verifyDetailedPageDocTitleFromViewAllPage" />
+					<include name="verifyNoElipsesAreDisplayedInDetailedPage" />
+					<include name="verifyDocTitleLengthForAllBuckets" />
+					<include name="verifyDocumentTitlesLessThanMaxlengthAreAccessible" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

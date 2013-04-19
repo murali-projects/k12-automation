@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HitCount" failures="1" tests="21" time="20.497" errors="0">
+  <properties/>
+  <testcase name="verifyReferenceArticleCountisDisplayed" time="3.703" classname="k12.HitCountTest"/>
+  <testcase name="verifyReferenceArticleCountisDisplayedAfterClicking" time="9.092" classname="k12.HitCountTest"/>
+  <testcase name="validateReferenceArticleCount" time="4.14" classname="k12.HitCountTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.HitCountTest.validateReferenceArticleCount(HitCountTest.java:34)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyMagazineseCountisDisplayed" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyMagazinesCountisDisplayedAfterClicking" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateMagazinesCount" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAudioCountisDisplayed" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAudioCountisDisplayedAfterClicking" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateAudioCount" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyVideoCountisDisplayed" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyVideoCountisDisplayedAfterClicking" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateVideoCount" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNewsCountisDisplayed" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNewsCountisDisplayedAfterClicking" time="0.016" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateNewsCount" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAcademicJournalsCountisDisplayed" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAcademicJournalsCountisDisplayedAfterClicking" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateAcademicJournalsCount" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrimarySourcesCountisDisplayed" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrimarySourcesCountisDisplayedAfterClicking" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validatePrimarySourcesCount" time="0.016" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+</testsuite>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllMagazinesOnSearchResultsPageTest" failures="1" tests="10" time="41.885" errors="0">
+  <properties/>
+  <testcase name="basicSearch" time="3.906" classname="k12.ViewAllMagazinesOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForMagazinesIsDispalyed" time="0.062" classname="k12.ViewAllMagazinesOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForMagazinesIsWorking" time="4.671" classname="k12.ViewAllMagazinesOnSearchResultsPageTest"/>
+  <testcase name="viewAllNavigationForMagazines" time="0.031" classname="k12.ViewAllMagazinesOnSearchResultsPageTest"/>
+  <testcase name="verifyDocumentDisplayPageResultsForMagazines" time="0.063" classname="k12.ViewAllMagazinesOnSearchResultsPageTest"/>
+  <testcase name="verifyNextLinkForMagazines" time="0.094" classname="k12.ViewAllMagazinesOnSearchResultsPageTest"/>
+  <testcase name="verifyNextLinkIsworkingForMagazines" time="6.499" classname="k12.ViewAllMagazinesOnSearchResultsPageTest"/>
+  <testcase name="verifyPreviousLinkForMagazines" time="0.078" classname="k12.ViewAllMagazinesOnSearchResultsPageTest"/>
+  <testcase name="verifyPreviousLinkIsworkingForMagazines" time="4.64" classname="k12.ViewAllMagazinesOnSearchResultsPageTest"/>
+  <testcase name="validateDocumentTitlesWithDB" time="18.341" classname="k12.ViewAllMagazinesOnSearchResultsPageTest">
+    <failure type="java.lang.IndexOutOfBoundsException" message="Index: 37, Size: 0">
+      <![CDATA[java.lang.IndexOutOfBoundsException: Index: 37, Size: 0
+	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+	at java.util.ArrayList.get(ArrayList.java:322)
+	at webPageContainers4Testing.ViewAllMagazinesOnSearchResultsPage.validateWithDatabase(ViewAllMagazinesOnSearchResultsPage.java:144)
+	at k12.ViewAllMagazinesOnSearchResultsPageTest.validateDocumentTitlesWithDB(ViewAllMagazinesOnSearchResultsPageTest.java:81)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

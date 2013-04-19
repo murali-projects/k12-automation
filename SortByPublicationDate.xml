@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SortByPublicationDate">
+
+	<test name="SortByPublicationDate" enabled="true">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="newsDisplayGroup" value="news" />
+		<parameter name="journalsDisplayGroup" value="academicJournals" />
+		<parameter name="magazinesDisplayGroup" value="magazines" />
+		<parameter name="audioDisplayGroup" value="audio" />
+		<parameter name="videoDisplayGroup" value="video" />
+		
+		<classes>
+			<class name="k12.SortByPublicationDatesTest">
+				<methods><!--
+					<include name="arePublicationDatesSortedForMagazines" />
+					--><include name="arePublicationDatesSortedForAudio" /><!--
+					<include name="arePublicationDatesSortedForNews" />
+					<include name="arePublicationDatesSortedForJournals" />
+					<include name="arePublicationDatesSortedForVideo" />
+				--></methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JumpToPortalPageFromBasicSearchTest" failures="0" tests="3" time="31.498" errors="0">
+  <properties/>
+  <testcase name="verifyNavigationByEnteringTopic" time="5.198" classname="k12.JumpToPortalPageFromBasicSearchTest"/>
+  <testcase name="verifyNavigationByEnteringNonTopicSearchTerm" time="7.071" classname="k12.JumpToPortalPageFromBasicSearchTest"/>
+  <testcase name="verifyTopicRelatedPage" time="5.759" classname="k12.JumpToPortalPageFromBasicSearchTest"/>
+</testsuite>

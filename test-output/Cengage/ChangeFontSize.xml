@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChangeFontSize" failures="2" tests="2" time="2.671" errors="0">
+  <properties/>
+  <testcase name="basicSearch" time="0.0" classname="k12.ChangeFontSizeTest">
+    <failure type="org.testng.TestNGException" message="
+Parameter &amp;apos;searchTerm&amp;apos; is required by @Test on method basicSearch
+but has not been marked @Optional or defined in D:\Workspace\k12-selenium\K12BuildSuite.xml">
+      <![CDATA[org.testng.TestNGException: 
+Parameter 'searchTerm' is required by @Test on method basicSearch
+but has not been marked @Optional or defined in D:\Workspace\k12-selenium\K12BuildSuite.xml
+... Removed 20 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyChangeFontSizeIsDisplayed" time="0.047" classname="k12.ChangeFontSizeTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ChangeFontSizeTest.verifyChangeFontSizeIsDisplayed(ChangeFontSizeTest.java:27)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

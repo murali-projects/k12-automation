@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BasicSearch" failures="1" tests="5" time="17.921" errors="0">
+  <properties/>
+  <testcase name="basicSearchBoxIsDisplayedInHomePage" time="0.063" classname="k12.BasicSearchTest"/>
+  <testcase name="basicSearchButtonIsDisplayedInBasicSearchResultsPage" time="0.015" classname="k12.BasicSearchTest"/>
+  <testcase name="basicSearchButtonIsDisplayedInHomePage" time="0.047" classname="k12.BasicSearchTest"/>
+  <testcase name="resultsPageTitleDisplayed" time="0.047" classname="k12.BasicSearchTest"/>
+  <testcase name="searchValidationMessageIsDisplayed" time="7.332" classname="k12.BasicSearchTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;search results: Keyword= Obama&amp;gt; but was:&amp;lt;You searched for: Obama&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<search results: Keyword= Obama> but was:<You searched for: Obama>
+	at k12.BasicSearchTest.searchValidationMessageIsDisplayed(BasicSearchTest.java:33)
+... Removed 27 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

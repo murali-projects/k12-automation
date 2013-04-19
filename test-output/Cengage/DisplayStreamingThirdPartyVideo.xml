@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DisplayStreamingThirdPartyVideo" failures="1" tests="2" time="6.78" errors="0">
+  <properties/>
+  <testcase name="checkDetailedPageIsDisplayed" time="0.047" classname="k12.DisplayStreamingThirdPartyVideoTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@id=&amp;apos;videos&amp;apos;]/div[@id=&amp;apos;media_jbpns_2fdefault_2fsearchResults_2fVideosListWindowsnpbj&amp;apos;]/ul/li[1]/h3/a not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@id='videos']/div[@id='media_jbpns_2fdefault_2fsearchResults_2fVideosListWindowsnpbj']/ul/li[1]/h3/a not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+	at webPageContainers4Testing.ViewVideoDetails.verifyDetailedViewOfVideoIsDisplayed(ViewVideoDetails.java:23)
+	at k12.DisplayStreamingThirdPartyVideoTest.checkDetailedPageIsDisplayed(DisplayStreamingThirdPartyVideoTest.java:22)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyVideoIsDispayed" time="0.0" classname="k12.DisplayStreamingThirdPartyVideoTest">
+    <skipped/>
+  </testcase>
+</testsuite>

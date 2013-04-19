@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntegrateViewpointsDisplayGroup" failures="1" tests="5" time="9.14" errors="0">
+  <properties/>
+  <testcase name="verifyViewpointsDisplayGroupIsDisplayed" time="0.031" classname="k12.IntegrateViewpointsDisplayGroupTest"/>
+  <testcase name="verifyCountIsDisplayed" time="0.078" classname="k12.IntegrateViewpointsDisplayGroupTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.IntegrateViewpointsDisplayGroupTest.verifyCountIsDisplayed(IntegrateViewpointsDisplayGroupTest.java:29)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyViewAllLinkIsDisplayed" time="0.0" classname="k12.IntegrateViewpointsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyLinkCountInFirstPage" time="0.0" classname="k12.IntegrateViewpointsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyViewAllLinkIsWorking" time="0.0" classname="k12.IntegrateViewpointsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+</testsuite>

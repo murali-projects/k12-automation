@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewHomePageTest" failures="1" tests="3" time="3.859" errors="0">
+  <properties/>
+  <testcase name="verifyBasicSearchBoxIsPresent" time="0.11" classname="k12.ViewHomePageTest"/>
+  <testcase name="verifyBottomMenuBarIsPresent" time="0.047" classname="k12.ViewHomePageTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ViewHomePageTest.verifyBottomMenuBarIsPresent(ViewHomePageTest.java:30)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyTopMenuBarIsPresent" time="0.031" classname="k12.ViewHomePageTest"/>
+</testsuite>

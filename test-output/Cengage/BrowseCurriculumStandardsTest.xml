@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BrowseCurriculumStandardsTest" failures="1" tests="13" time="22.909" errors="0">
+  <properties/>
+  <testcase name="verifyClickingonResourcesLink" time="1.905" classname="k12.BrowseCurriculumStandardsTest"/>
+  <testcase name="verifySelectingCurriculumStandards" time="2.655" classname="k12.BrowseCurriculumStandardsTest">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.BrowseCurriculumStandards.verifySelectingCurriculumStandards(BrowseCurriculumStandards.java:21)
+	at k12.BrowseCurriculumStandardsTest.verifySelectingCurriculumStandards(BrowseCurriculumStandardsTest.java:26)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyCountryLinkPresent" time="0.0" classname="k12.BrowseCurriculumStandardsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNationalStandardsLinkispresent" time="0.0" classname="k12.BrowseCurriculumStandardsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNationalStandards" time="0.0" classname="k12.BrowseCurriculumStandardsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyClickingNationalStandards" time="0.0" classname="k12.BrowseCurriculumStandardsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNationalStandardsPopupClosable" time="0.0" classname="k12.BrowseCurriculumStandardsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyStateStandardsLink" time="0.0" classname="k12.BrowseCurriculumStandardsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyClickingStateStandards" time="0.0" classname="k12.BrowseCurriculumStandardsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyClickingOnListOfStates" time="0.0" classname="k12.BrowseCurriculumStandardsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyStateStandardsPoppupClosable" time="0.0" classname="k12.BrowseCurriculumStandardsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNavigationThroughBreadcurmb" time="0.0" classname="k12.BrowseCurriculumStandardsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyBreadcrumb" time="0.0" classname="k12.BrowseCurriculumStandardsTest">
+    <skipped/>
+  </testcase>
+</testsuite>

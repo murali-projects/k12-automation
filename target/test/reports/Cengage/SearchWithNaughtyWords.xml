@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SearchWithNaughtyWords" failures="1" tests="8" time="24.719" errors="0">
+  <properties/>
+  <testcase name="doCheckWithMultipleNaughtyWordsInSentenceWithQuotes" time="2.453" classname="k12.NaughtyWordsTest"/>
+  <testcase name="doCheckWithMultipleNaughtyWordsInSentenceWithoutQuotes" time="2.328" classname="k12.NaughtyWordsTest"/>
+  <testcase name="doCheckWithMultipleStopAndNaughtyWordsInSentenceWithQuotes" time="2.328" classname="k12.NaughtyWordsTest"/>
+  <testcase name="doCheckWithMultipleStopAndNaughtyWordsInSentenceWithoutQuotes" time="2.157" classname="k12.NaughtyWordsTest"/>
+  <testcase name="doCheckWithSingleNaughtyWord" time="1.422" classname="k12.NaughtyWordsTest">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+	at webPageContainers4Testing.StopAndNaughtyWords.searchWithNaughtyWord(StopAndNaughtyWords.java:95)
+	at k12.NaughtyWordsTest.doCheckWithSingleNaughtyWord(NaughtyWordsTest.java:22)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="doCheckWithSingleNaughtyWordInSentenceWithQuotes" time="1.953" classname="k12.NaughtyWordsTest"/>
+  <testcase name="doCheckWithTwoNaughtyWordsInSentenceWithQuotes" time="1.953" classname="k12.NaughtyWordsTest"/>
+  <testcase name="doCheckWithTwoNaughtyWordsInSentenceWithoutQuotes" time="2.281" classname="k12.NaughtyWordsTest"/>
+</testsuite>

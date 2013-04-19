@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Submit Advanced Search" failures="0" tests="11" time="14.671" errors="0">
+  <properties/>
+  <testcase name="verifyAdvancedSearchOptionIsAccessible" time="1.735" classname="k12.SubmitAdvancedSearchTest"/>
+  <testcase name="verifyNoErrorMsgIsisplayed" time="0.062" classname="k12.SubmitAdvancedSearchTest"/>
+  <testcase name="verifyAdvanceSearchIsAccessibleAfterBasicSearch" time="5.875" classname="k12.SubmitAdvancedSearchTest"/>
+  <testcase name="verifyLimitToCheckboxesAreUnchecked" time="0.281" classname="k12.SubmitAdvancedSearchTest"/>
+  <testcase name="verifyDisplayGroupCheckboxesPresent" time="2.0" classname="k12.SubmitAdvancedSearchTest"/>
+  <testcase name="verifyDocTypeOptions" time="0.047" classname="k12.SubmitAdvancedSearchTest"/>
+  <testcase name="verifyContentLevelCheckboxesPresent" time="0.5" classname="k12.SubmitAdvancedSearchTest"/>
+  <testcase name="verifyTwoSearchButtonsPresent" time="0.078" classname="k12.SubmitAdvancedSearchTest"/>
+  <testcase name="verifyLexileScoreInstructions" time="0.141" classname="k12.SubmitAdvancedSearchTest"/>
+  <testcase name="dateDropdownBoxesPresent" time="0.734" classname="k12.SubmitAdvancedSearchTest"/>
+  <testcase name="isSearchByIndexWorking" time="0.406" classname="k12.SubmitAdvancedSearchTest"/>
+</testsuite>

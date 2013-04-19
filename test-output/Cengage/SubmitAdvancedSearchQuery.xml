@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SubmitAdvancedSearchQuery" failures="1" tests="3" time="10.281" errors="0">
+  <properties/>
+  <testcase name="verifyDefaultIndexIsKeyword" time="1.672" classname="k12.SubmitAdvancedSearchQueryTest"/>
+  <testcase name="verifyUserCanSearchMultipleTermsUsingConnectors" time="0.172" classname="k12.SubmitAdvancedSearchQueryTest"/>
+  <testcase name="verifyResultsWithCombinationOfAnd" time="3.563" classname="k12.SubmitAdvancedSearchQueryTest">
+    <failure type="java.lang.IndexOutOfBoundsException" message="Index: 0, Size: 0">
+      <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+	at java.util.ArrayList.get(ArrayList.java:322)
+	at webPageContainers4Testing.SubmitAdvancedSearchQuery.verifyResultsWithCombinationOfBooleanOperators(SubmitAdvancedSearchQuery.java:58)
+	at k12.SubmitAdvancedSearchQueryTest.verifyResultsWithCombinationOfAnd(SubmitAdvancedSearchQueryTest.java:46)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

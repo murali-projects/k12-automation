@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewPublicationDates" failures="0" tests="6" time="7.905" errors="0">
+  <properties/>
+  <testcase name="verifyPublicationDatesAreDisplayedForAudio" time="0.078" classname="k12.ViewPublicationDatesTest"/>
+  <testcase name="verifyPublicationDatesAreDisplayedForMagazines" time="0.125" classname="k12.ViewPublicationDatesTest"/>
+  <testcase name="verifyPublicationDatesAreDisplayedForNews" time="0.11" classname="k12.ViewPublicationDatesTest"/>
+  <testcase name="verifyPublicationDatesAreDisplayedForPrimarySources" time="0.109" classname="k12.ViewPublicationDatesTest"/>
+  <testcase name="verifyPublicationDatesAreDisplayedForReference" time="0.109" classname="k12.ViewPublicationDatesTest"/>
+  <testcase name="verifyPublicationDatesAreDisplayedForViewPoints" time="0.297" classname="k12.ViewPublicationDatesTest"/>
+</testsuite>

@@ -1,0 +1,17 @@
+<suite name="AccessResearchGuide">
+	<parameter name="linksInResearchGuide"
+		value="How to Cite a Source,How to Organize a Report,How to Build an Argument,How to Write a Conclusion,How to Write a Thesis Statement,How to Create a Visual,How to Footnote,Distinguishing Fact from Opinion and Bias from Reason,Between Primary and Secondary Sources,Evaluating Information Sources,Review the Author's/Publisher's Credentials and Affiliations,Identify the Article's Supporting Material,Student Resource Center and Critical Thinking" />
+	<test name="AccessResearchGuideTest" enabled="true">
+		<classes>
+			<class name="k12.AccessResearchGuideTest">
+				<methods>
+					<include name="verifyResearchToolsOption" />
+					<include name="verifyResearchToolsPage" />
+					<include name="verifyResearchGuideTab" />
+					<include name="verifyResearchGuideLinks" />
+					<include name="verifyEachLinkAccessbility" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

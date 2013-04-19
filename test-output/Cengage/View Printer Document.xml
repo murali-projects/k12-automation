@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="View Printer Document" failures="1" tests="15" time="12.733" errors="0">
+  <properties/>
+  <testcase name="verifyPrintOptionAvailableForReference" time="4.703" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ViewPrinterFriendlyDocumentTest.verifyPrintOptionAvailableForReference(ViewPrinterFriendlyDocumentTest.java:44)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyPrintOptionAvailableForMagazines" time="0.0" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrintOptionAvailableForNews" time="0.0" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrintOptionAvailableForPrimarysources" time="0.0" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrintOptionAvailableForViewpoints" time="0.0" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrintOptionAvailableForStatistics" time="0.0" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrintOptionAvailableForImages" time="0.0" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrintOptionAvailableForVideo" time="0.0" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrintOptionAvailableForWebsites" time="0.016" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrintOptionAvailableForAudio" time="0.0" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrintOptionAvailableFromViewAll" time="0.0" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocumentOpensInNewWindow" time="0.0" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrintOptionNotAvailableInNewWindow" time="0.0" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAfterClickingCancelOnPopup" time="0.0" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrintOptionWorking" time="0.0" classname="k12.ViewPrinterFriendlyDocumentTest">
+    <skipped/>
+  </testcase>
+</testsuite>

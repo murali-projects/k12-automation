@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="k12.HitcountAndSortingDocumentsRelatedSubjectsTest" failures="1" tests="1" time="34.656" errors="0">
+  <properties/>
+  <testcase name="verifyHitcountByaddingAllDispalyGroups" time="17.531" classname="k12.HitcountAndSortingDocumentsRelatedSubjectsTest">
+    <failure type="java.lang.IndexOutOfBoundsException" message="Index: 0, Size: 0">
+      <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+	at java.util.ArrayList.get(ArrayList.java:322)
+	at webPageContainers4Testing.HitcountAndSortingDocumentRelatedSubjects.verifyHitcountByaddingAllDispalyGroups(HitcountAndSortingDocumentRelatedSubjects.java:173)
+	at k12.HitcountAndSortingDocumentsRelatedSubjectsTest.verifyHitcountByaddingAllDispalyGroups(HitcountAndSortingDocumentsRelatedSubjectsTest.java:131)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

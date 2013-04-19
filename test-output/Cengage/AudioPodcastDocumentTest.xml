@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AudioPodcastDocumentTest" failures="1" tests="8" time="7.484" errors="0">
+  <properties/>
+  <testcase name="basicSearchTest" time="3.547" classname="k12.AudioPodcastDocumentTest"/>
+  <testcase name="verifyPodcastDetailedPageIsDisplayed" time="0.547" classname="k12.AudioPodcastDocumentTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@class=&amp;apos;portlet _details&amp;apos;]/h2 not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@class='portlet _details']/h2 not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.Link.getLinkText(Link.java:46)
+	at webPageContainers4Testing.AudioPodcastDocument.titleOfThePodcast(AudioPodcastDocument.java:19)
+	at webPageContainers4Testing.AudioPodcastDocument.podcastDetailedPageIsDisplayed(AudioPodcastDocument.java:26)
+	at k12.AudioPodcastDocumentTest.verifyPodcastDetailedPageIsDisplayed(AudioPodcastDocumentTest.java:26)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyPodcastDetailedPageTitleIsDisplayed" time="0.0" classname="k12.AudioPodcastDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPodcastDetailedPageSearchBoxIsDisplayed" time="0.0" classname="k12.AudioPodcastDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPodcastDetailedPageSearchButtonIsDisplayed" time="0.0" classname="k12.AudioPodcastDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPodcastDetailedPageCopyrightIsDisplayed" time="0.0" classname="k12.AudioPodcastDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPodcastDetailedPageSourceCitationIsDisplayed" time="0.0" classname="k12.AudioPodcastDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPodcastDetailedPageGalaeDocumentIsDisplayed" time="0.0" classname="k12.AudioPodcastDocumentTest">
+    <skipped/>
+  </testcase>
+</testsuite>

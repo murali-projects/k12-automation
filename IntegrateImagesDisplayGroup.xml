@@ -1,0 +1,24 @@
+<suite name="IntegrateImagesDisplayGroup">
+	<parameter name="searchTerm" value="war" />
+	<test name="IntegrateImagesDisplayGroupTest" enabled="true">
+		<classes>
+			<class name="k12.IntegrateImagesDisplayGroupTest">
+				<methods>
+					<include name="verifyContentResultsInImages" />
+					<include name="verifyImagesCount" />
+					<include name="verifyViewAllIsNotDisplayed" />
+					<include name="verifyViewwAllIsDisplayed" />
+					<include name="verifyBoldImagesText" />
+					<include name="verifyNoImagesDisplayed" />
+					<include name="verifyMarkMeForImages" />
+					<include name="verifyDetailImageNavigation" /><!--
+					Functionality Not Yet Implemented
+					-->
+					<!--<include name="verifyMouseOverOfImage" />
+					<include name="verifyImageContent" />
+					<include name="validateImagesWithOcean" />
+				--></methods>
+			</class>
+		</classes>
+	</test>
+</suite>

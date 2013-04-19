@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Integrate News DisplayGroup" failures="1" tests="14" time="28.684" errors="0">
+  <properties/>
+  <testcase name="verifyNewsDisplayGroupPresent" time="3.969" classname="k12.IntegrateNewsDisplayGroupTest"/>
+  <testcase name="verifyNewsTextIsDisplayed" time="0.046" classname="k12.IntegrateNewsDisplayGroupTest"/>
+  <testcase name="verifyGroupNameIsInCaps" time="0.032" classname="k12.IntegrateNewsDisplayGroupTest"/>
+  <testcase name="verifyNewsViewAllIsDisplayed" time="0.016" classname="k12.IntegrateNewsDisplayGroupTest"/>
+  <testcase name="verifyNewsCountIsInlineWithViewAll" time="0.046" classname="k12.IntegrateNewsDisplayGroupTest"/>
+  <testcase name="verifyViewAllIsLink" time="0.031" classname="k12.IntegrateNewsDisplayGroupTest"/>
+  <testcase name="verifyThreeContentLinksAreDisplayed" time="0.469" classname="k12.IntegrateNewsDisplayGroupTest"/>
+  <testcase name="verifyNewsTitlesAreLinks" time="0.812" classname="k12.IntegrateNewsDisplayGroupTest"/>
+  <testcase name="verifyPublicationDetailsAreDisplayed" time="0.297" classname="k12.IntegrateNewsDisplayGroupTest"/>
+  <testcase name="verifyViewAllIsWorking" time="5.937" classname="k12.IntegrateNewsDisplayGroupTest"/>
+  <testcase name="verifyDocTypes" time="9.093" classname="k12.IntegrateNewsDisplayGroupTest"/>
+  <testcase name="verifyIntroTextInlineWithDocTitle" time="2.656" classname="k12.IntegrateNewsDisplayGroupTest"/>
+  <testcase name="verifyNewsLinkOpensInNewWindow" time="1.032" classname="k12.IntegrateNewsDisplayGroupTest"/>
+  <testcase name="verifyContentAfterClickingNewsLink" time="0.515" classname="k12.IntegrateNewsDisplayGroupTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@class=&amp;apos;portlet _details&amp;apos;]/h2 not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@class='portlet _details']/h2 not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+	at webPageContainers4Testing.IntegrateNewsDisplayGroup.verifyContentAfterClickingNewsLink(IntegrateNewsDisplayGroup.java:169)
+	at k12.IntegrateNewsDisplayGroupTest.verifyContentAfterClickingNewsLink(IntegrateNewsDisplayGroupTest.java:108)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

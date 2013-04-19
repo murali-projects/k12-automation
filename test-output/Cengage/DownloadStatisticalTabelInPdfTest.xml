@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DownloadStatisticalTabelInPdfTest" failures="1" tests="9" time="6.984" errors="0">
+  <properties/>
+  <testcase name="basicSearch" time="3.687" classname="k12.DownloadStatisticalTabelInPdfTest"/>
+  <testcase name="verifyDownloadOptionAvailable" time="0.563" classname="k12.DownloadStatisticalTabelInPdfTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.DownloadStatisticalTabelInPdfTest.verifyDownloadOptionAvailable(DownloadStatisticalTabelInPdfTest.java:29)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyDownloadOptionInViewAllPage" time="0.0" classname="k12.DownloadStatisticalTabelInPdfTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyModalWindoIsDisplayed" time="0.0" classname="k12.DownloadStatisticalTabelInPdfTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyRadioButtonsPresent" time="0.0" classname="k12.DownloadStatisticalTabelInPdfTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyCancelAndDownloadButtons" time="0.0" classname="k12.DownloadStatisticalTabelInPdfTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyModalWindowIsClosed" time="0.0" classname="k12.DownloadStatisticalTabelInPdfTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDownloadCancelled" time="0.016" classname="k12.DownloadStatisticalTabelInPdfTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPdfDownloaded" time="0.0" classname="k12.DownloadStatisticalTabelInPdfTest">
+    <skipped/>
+  </testcase>
+</testsuite>

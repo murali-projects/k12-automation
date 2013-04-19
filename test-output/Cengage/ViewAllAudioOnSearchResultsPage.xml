@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllAudioOnSearchResultsPage" failures="0" tests="13" time="9.187" errors="0">
+  <properties/>
+  <testcase name="basicSearch" time="4.453" classname="k12.ViewAllAudioOnSearchResultsPageTest"/>
+  <testcase name="checkAudioTextIsDisplayed" time="0.031" classname="k12.ViewAllAudioOnSearchResultsPageTest"/>
+  <testcase name="checkViewAllForAudio" time="0.109" classname="k12.ViewAllAudioOnSearchResultsPageTest"/>
+  <testcase name="verifyInLineAudioCount" time="0.312" classname="k12.ViewAllAudioOnSearchResultsPageTest"/>
+  <testcase name="verifyInLineAudioViewAll" time="0.063" classname="k12.ViewAllAudioOnSearchResultsPageTest"/>
+  <testcase name="verifyAudioLinksDisplayed" time="0.093" classname="k12.ViewAllAudioOnSearchResultsPageTest"/>
+  <testcase name="validateAudioLinksWithOcean" time="0.031" classname="k12.ViewAllAudioOnSearchResultsPageTest"/>
+  <testcase name="verifyViewAllIsLink" time="0.063" classname="k12.ViewAllAudioOnSearchResultsPageTest"/>
+  <testcase name="verifyViewAllLinkIsWorking" time="0.031" classname="k12.ViewAllAudioOnSearchResultsPageTest"/>
+  <testcase name="pageHidination" time="0.094" classname="k12.ViewAllAudioOnSearchResultsPageTest"/>
+  <testcase name="pageNumberNavigation" time="0.0" classname="k12.ViewAllAudioOnSearchResultsPageTest"/>
+  <testcase name="lastPageVerification" time="0.047" classname="k12.ViewAllAudioOnSearchResultsPageTest"/>
+  <testcase name="firstPageVerification" time="0.031" classname="k12.ViewAllAudioOnSearchResultsPageTest"/>
+</testsuite>

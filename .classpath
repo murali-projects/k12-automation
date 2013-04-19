@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="selenium"/>
+	<classpathentry kind="src" path="testingDSL"/>
+	<classpathentry kind="src" path="webAppGuiTests"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry kind="con" path="org.maven.ide.eclipse.MAVEN2_CLASSPATH_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/selenium-java-client-driver.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-server.jar"/>
+	<classpathentry kind="lib" path="lib/testng-5.11-jdk15.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

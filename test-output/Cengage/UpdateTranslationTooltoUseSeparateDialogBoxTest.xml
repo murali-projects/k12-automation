@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UpdateTranslationTooltoUseSeparateDialogBoxTest" failures="0" tests="8" time="126.609" errors="0">
+  <properties/>
+  <testcase name="verifyTranslateOption" time="8.476" classname="k12.UpdateTranslationTooltoUseSeparateDialogBoxTest"/>
+  <testcase name="verifyTranslateDialogBox" time="12.613" classname="k12.UpdateTranslationTooltoUseSeparateDialogBoxTest"/>
+  <testcase name="verifyOptionsInTranslateDialogBox" time="7.649" classname="k12.UpdateTranslationTooltoUseSeparateDialogBoxTest"/>
+  <testcase name="verifySelectionOfTranslate" time="19.294" classname="k12.UpdateTranslationTooltoUseSeparateDialogBoxTest"/>
+  <testcase name="verifyCancelOfTranslate" time="13.097" classname="k12.UpdateTranslationTooltoUseSeparateDialogBoxTest"/>
+  <testcase name="verifySelectionOfTranslateAfterCancelling" time="18.498" classname="k12.UpdateTranslationTooltoUseSeparateDialogBoxTest"/>
+  <testcase name="verifyDialogBoxIsClosed" time="12.628" classname="k12.UpdateTranslationTooltoUseSeparateDialogBoxTest"/>
+  <testcase name="verifyTranslateFromViewAll" time="15.813" classname="k12.UpdateTranslationTooltoUseSeparateDialogBoxTest"/>
+</testsuite>

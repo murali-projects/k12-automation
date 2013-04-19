@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewFirstNCharacters" failures="1" tests="4" time="11.499" errors="0">
+  <properties/>
+  <testcase name="verifyDescriptionIsPresent" time="1.5" classname="k12.ViewFirstNCharactersTest"/>
+  <testcase name="verifyDescriptionInDetailedPage" time="1.297" classname="k12.ViewFirstNCharactersTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@class=&amp;apos;transcript&amp;apos;] not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@class='transcript'] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+	at webPageContainers4Testing.ViewFirstNCharacters.verifyDescriptionInDetailedPage(ViewFirstNCharacters.java:36)
+	at k12.ViewFirstNCharactersTest.verifyDescriptionInDetailedPage(ViewFirstNCharactersTest.java:27)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyDesriptionFromViewAllPage" time="0.0" classname="k12.ViewFirstNCharactersTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDescIsSameInBucketAndViewAllPage" time="0.015" classname="k12.ViewFirstNCharactersTest">
+    <skipped/>
+  </testcase>
+</testsuite>

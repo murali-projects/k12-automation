@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewVideoThumbnails" failures="1" tests="4" time="8.718" errors="0">
+  <properties/>
+  <testcase name="verifyThumbnailsPresentFromViewAllPage" time="0.046" classname="k12.ViewVideoThumbnailsTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@id=&amp;apos;videos&amp;apos;]/a not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@id='videos']/a not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.ViewVideoThumbnails.verifyThumbnailsPresentFromViewAllPage(ViewVideoThumbnails.java:13)
+	at k12.ViewVideoThumbnailsTest.verifyThumbnailsPresentFromViewAllPage(ViewVideoThumbnailsTest.java:24)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyThumbnailsPresentAfterNavigation" time="0.0" classname="k12.ViewVideoThumbnailsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyThumbnailInDetailPageFromViewAll" time="0.0" classname="k12.ViewVideoThumbnailsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyThumbnailInDetailPageFromSearchResults" time="0.0" classname="k12.ViewVideoThumbnailsTest">
+    <skipped/>
+  </testcase>
+</testsuite>

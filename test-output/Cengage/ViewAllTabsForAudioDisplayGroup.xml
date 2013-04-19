@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllTabsForAudioDisplayGroup" failures="0" tests="14" time="45.355" errors="0">
+  <properties/>
+  <testcase name="viewDisplayGroupsForSeachTerm" time="10.639" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="validateDisplayGroupContent" time="12.499" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="validateDisplayGroupCount" time="0.063" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="validateDisplayGroupNext" time="0.047" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="validateDisplayGroupPrevious" time="0.047" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="validateTabsAfterNext" time="0.047" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="validateTabsAfterPrevious" time="0.047" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="verifySearchInViewAll" time="0.047" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="verifyTabsFromDetailedPage" time="1.5" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="verifyTabsForDetailedPage" time="0.515" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="ensureSingleTabIsSelectedOnce" time="7.484" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="headingMatch" time="0.062" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="verifyRecordsCountWithViewAll" time="4.015" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="verifySearchResult" time="5.015" classname="k12.ViewAllTabsDisplayGroupTest"/>
+</testsuite>

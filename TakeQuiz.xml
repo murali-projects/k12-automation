@@ -1,0 +1,26 @@
+<suite name="TakeQuiz">
+	<parameter name="searchTerm" value="Emphasis on Diversity" />
+	<test name="TakeQuizTest" enabled="true">
+		<classes>
+			<class name="k12.TakeQuizTest">
+				<methods>
+					<include name="verifyTakeQuizLinkIsPresent" />
+					<include name="verifyNewWindowIsDisplayed" />
+					<include name="verifyOptionsPresentForSelectedDocument" />
+					<include name="verifyDocumentTilteIsPresent" />
+					<include name="verifyPrintOptions" />
+					<include name="verifyEmailOptions" />
+					<include name="verifyRequiredFieldsForEmailQuiz" />
+					<include name="verifyMessageDisplayed" />
+					<include name="verifyPopupIsDisplayed" />
+					<include name="sendingMailWithTwoOrMoreSenders" />
+					<include name="verifyNewWindowOpenedForStartButton" />
+					<include name="verifyStatusBar" />
+					<include name="verifySubmissionOfAnswers" />
+					<include name="verifyTheDocumentTitleInAllOptions" />
+					<include name="verifyCosingPopUp" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

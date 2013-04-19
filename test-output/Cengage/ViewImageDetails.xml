@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewImageDetails" failures="1" tests="11" time="6.937" errors="0">
+  <properties/>
+  <testcase name="verifyGalleryViewIsDisplayed" time="0.047" classname="k12.ViewImageDetailsTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ViewImageDetailsTest.verifyGalleryViewIsDisplayed(ViewImageDetailsTest.java:25)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyDetailedViewOfImageIsDisplayed" time="0.0" classname="k12.ViewImageDetailsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="checkPictureIsDisplayedOnLeftSide" time="0.0" classname="k12.ViewImageDetailsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="checkSearchButtonIsPresent" time="0.0" classname="k12.ViewImageDetailsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="ensureMarkOptionIsAvailable" time="0.0" classname="k12.ViewImageDetailsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyTooltipIsDisplayed" time="0.0" classname="k12.ViewImageDetailsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAfterMarkingImage" time="0.0" classname="k12.ViewImageDetailsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNextAndPreviousButtonsPresent" time="0.0" classname="k12.ViewImageDetailsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNavigationOfPreviousNextButtons" time="0.0" classname="k12.ViewImageDetailsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyElementsAreDisplayedOnPage" time="0.0" classname="k12.ViewImageDetailsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyToolsArePresent" time="0.0" classname="k12.ViewImageDetailsTest">
+    <skipped/>
+  </testcase>
+</testsuite>

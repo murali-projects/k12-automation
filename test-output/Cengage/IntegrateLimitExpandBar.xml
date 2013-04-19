@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntegrateLimitExpandBar" failures="1" tests="11" time="243.161" errors="0">
+  <properties/>
+  <testcase name="verifyLimitSearchNotPresentInHomepage" time="10.093" classname="k12.IntegrateLimitExpandBarTest"/>
+  <testcase name="verifyLimitSearchNotPresentInDetailPage" time="10.42" classname="k12.IntegrateLimitExpandBarTest"/>
+  <testcase name="verifyDisplaygroupsPresentAlongWithLimitSearch" time="13.624" classname="k12.IntegrateLimitExpandBarTest"/>
+  <testcase name="verifyViewAllResultsPresentAlongWithLimitSearch" time="12.373" classname="k12.IntegrateLimitExpandBarTest"/>
+  <testcase name="verifyBasicSearchPresentAlongWithLimitSearch" time="10.733" classname="k12.IntegrateLimitExpandBarTest"/>
+  <testcase name="verifyLimitSearchPortletPresent" time="13.155" classname="k12.IntegrateLimitExpandBarTest"/>
+  <testcase name="verifyLimitBydocumentIsPresent" time="11.045" classname="k12.IntegrateLimitExpandBarTest"/>
+  <testcase name="verifyMoreDisplayed" time="10.749" classname="k12.IntegrateLimitExpandBarTest"/>
+  <testcase name="verifyLessLink" time="10.967" classname="k12.IntegrateLimitExpandBarTest"/>
+  <testcase name="verifyLessLinkDisplaying5Items" time="10.577" classname="k12.IntegrateLimitExpandBarTest"/>
+  <testcase name="verifyClickingOnTermsNavigatesPage" time="111.16" classname="k12.IntegrateLimitExpandBarTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.IntegrateLimitExpandBarTest.verifyClickingOnTermsNavigatesPage(IntegrateLimitExpandBarTest.java:84)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,577 @@
+<html>
+<head>
+<title>TestNG:  IntegratePubLogosOnViewAllPageTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>IntegratePubLogosOnViewAllPageTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/11/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 24 19:38:48 IST 2010</td>
+</tr>
+<tr><td>Total time:</td><td>80 seconds (80421 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Instance</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='k12.IntegratePubLogosOnViewAllPageTest.noBrokenImageInstedOfBookCover()'><b>noBrokenImageInstedOfBookCover</b><br>Test class:IntegratePubLogosOnViewAllPageTest<br>Parameters: war</td>
+<td>k12.IntegratePubLogosOnViewAllPageTest@137d090</td><td>8</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at k12.IntegratePubLogosOnViewAllPageTest.noBrokenImageInstedOfBookCover(IntegratePubLogosOnViewAllPageTest.java:47)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25706868", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25706868'><pre>java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.testng.Assert.fail(Assert.java:87)
+	at org.testng.Assert.failNotEquals(Assert.java:441)
+	at org.testng.Assert.assertTrue(Assert.java:35)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at k12.IntegratePubLogosOnViewAllPageTest.noBrokenImageInstedOfBookCover(IntegratePubLogosOnViewAllPageTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:644)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:546)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:700)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1002)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRun(TestRunner.java:617)
+	at org.testng.TestRunner.run(TestRunner.java:498)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:324)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:201)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:915)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:879)
+	at org.testng.TestNG.run(TestNG.java:787)
+	at org.testng.TestNG.privateMain(TestNG.java:952)
+	at org.testng.TestNG.main(TestNG.java:925)
+</pre></div></td>
+</tr>
+<tr>
+<td title='k12.IntegratePubLogosOnViewAllPageTest.noBrokenImageInstedOfPubLogo()'><b>noBrokenImageInstedOfPubLogo</b><br>Test class:IntegratePubLogosOnViewAllPageTest<br>Parameters: war</td>
+<td>k12.IntegratePubLogosOnViewAllPageTest@137d090</td><td>6</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at k12.IntegratePubLogosOnViewAllPageTest.noBrokenImageInstedOfPubLogo(IntegratePubLogosOnViewAllPageTest.java:54)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace14556042", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace14556042'><pre>java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.testng.Assert.fail(Assert.java:87)
+	at org.testng.Assert.failNotEquals(Assert.java:441)
+	at org.testng.Assert.assertTrue(Assert.java:35)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at k12.IntegratePubLogosOnViewAllPageTest.noBrokenImageInstedOfPubLogo(IntegratePubLogosOnViewAllPageTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:644)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:546)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:700)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1002)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRun(TestRunner.java:617)
+	at org.testng.TestRunner.run(TestRunner.java:498)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:324)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:201)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:915)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:879)
+	at org.testng.TestNG.run(TestNG.java:787)
+	at org.testng.TestNG.privateMain(TestNG.java:952)
+	at org.testng.TestNG.main(TestNG.java:925)
+</pre></div></td>
+</tr>
+<tr>
+<td title='k12.IntegratePubLogosOnViewAllPageTest.nonAvailabilityOfBookCoversandLogosForOtherDisplayGroups()'><b>nonAvailabilityOfBookCoversandLogosForOtherDisplayGroups</b><br>Test class:IntegratePubLogosOnViewAllPageTest<br>Parameters: war</td>
+<td>k12.IntegratePubLogosOnViewAllPageTest@137d090</td><td>5</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at k12.IntegratePubLogosOnViewAllPageTest.nonAvailabilityOfBookCoversandLogosForOtherDisplayGroups(IntegratePubLogosOnViewAllPageTest.java:40)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15623809", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15623809'><pre>java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.testng.Assert.fail(Assert.java:87)
+	at org.testng.Assert.failNotEquals(Assert.java:441)
+	at org.testng.Assert.assertTrue(Assert.java:35)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at k12.IntegratePubLogosOnViewAllPageTest.nonAvailabilityOfBookCoversandLogosForOtherDisplayGroups(IntegratePubLogosOnViewAllPageTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:644)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:546)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:700)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1002)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRun(TestRunner.java:617)
+	at org.testng.TestRunner.run(TestRunner.java:498)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:324)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:201)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:915)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:879)
+	at org.testng.TestNG.run(TestNG.java:787)
+	at org.testng.TestNG.privateMain(TestNG.java:952)
+	at org.testng.TestNG.main(TestNG.java:925)
+</pre></div></td>
+</tr>
+<tr>
+<td title='k12.IntegratePubLogosOnViewAllPageTest.verifyBookcoverInDetailedView()'><b>verifyBookcoverInDetailedView</b><br>Test class:IntegratePubLogosOnViewAllPageTest<br>Parameters: war</td>
+<td>k12.IntegratePubLogosOnViewAllPageTest@137d090</td><td>4</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyBookcoverInDetailedView(IntegratePubLogosOnViewAllPage.java:111)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyBookcoverInDetailedView(IntegratePubLogosOnViewAllPageTest.java:94)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3098834", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3098834'><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyBookcoverInDetailedView(IntegratePubLogosOnViewAllPage.java:111)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyBookcoverInDetailedView(IntegratePubLogosOnViewAllPageTest.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:644)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:546)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:700)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1002)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRun(TestRunner.java:617)
+	at org.testng.TestRunner.run(TestRunner.java:498)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:324)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:201)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:915)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:879)
+	at org.testng.TestNG.run(TestNG.java:787)
+	at org.testng.TestNG.privateMain(TestNG.java:952)
+	at org.testng.TestNG.main(TestNG.java:925)
+</pre></div></td>
+</tr>
+<tr>
+<td title='k12.IntegratePubLogosOnViewAllPageTest.verifyImagesAfterPagination()'><b>verifyImagesAfterPagination</b><br>Test class:IntegratePubLogosOnViewAllPageTest<br>Parameters: war</td>
+<td>k12.IntegratePubLogosOnViewAllPageTest@137d090</td><td>7</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyImagesAfterPagination(IntegratePubLogosOnViewAllPage.java:103)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyImagesAfterPagination(IntegratePubLogosOnViewAllPageTest.java:81)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29422309", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29422309'><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyImagesAfterPagination(IntegratePubLogosOnViewAllPage.java:103)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyImagesAfterPagination(IntegratePubLogosOnViewAllPageTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:644)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:546)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:700)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1002)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRun(TestRunner.java:617)
+	at org.testng.TestRunner.run(TestRunner.java:498)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:324)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:201)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:915)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:879)
+	at org.testng.TestNG.run(TestNG.java:787)
+	at org.testng.TestNG.privateMain(TestNG.java:952)
+	at org.testng.TestNG.main(TestNG.java:925)
+</pre></div></td>
+</tr>
+<tr>
+<td title='k12.IntegratePubLogosOnViewAllPageTest.verifyImagesinViewAllPage()'><b>verifyImagesinViewAllPage</b><br>Test class:IntegratePubLogosOnViewAllPageTest<br>Parameters: war</td>
+<td>k12.IntegratePubLogosOnViewAllPageTest@137d090</td><td>6</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getBoolean(HttpCommandProcessor.java:335)
+	at com.thoughtworks.selenium.DefaultSelenium.isElementPresent(DefaultSelenium.java:495)
+	at webPageElements4Testing.PageElementWithIdAttribute.isPresent(PageElementWithIdAttribute.java:13)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyImagesinViewAllPage(IntegratePubLogosOnViewAllPage.java:96)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyImagesinViewAllPage(IntegratePubLogosOnViewAllPageTest.java:88)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace21479899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21479899'><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getBoolean(HttpCommandProcessor.java:335)
+	at com.thoughtworks.selenium.DefaultSelenium.isElementPresent(DefaultSelenium.java:495)
+	at webPageElements4Testing.PageElementWithIdAttribute.isPresent(PageElementWithIdAttribute.java:13)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyImagesinViewAllPage(IntegratePubLogosOnViewAllPage.java:96)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyImagesinViewAllPage(IntegratePubLogosOnViewAllPageTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:644)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:546)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:700)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1002)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRun(TestRunner.java:617)
+	at org.testng.TestRunner.run(TestRunner.java:498)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:324)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:201)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:915)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:879)
+	at org.testng.TestNG.run(TestNG.java:787)
+	at org.testng.TestNG.privateMain(TestNG.java:952)
+	at org.testng.TestNG.main(TestNG.java:925)
+</pre></div></td>
+</tr>
+<tr>
+<td title='k12.IntegratePubLogosOnViewAllPageTest.verifyMouseOverBookCover()'><b>verifyMouseOverBookCover</b><br>Test class:IntegratePubLogosOnViewAllPageTest<br>Parameters: war</td>
+<td>k12.IntegratePubLogosOnViewAllPageTest@137d090</td><td>4</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.mouseOver(DefaultSelenium.java:243)
+	at webPageElements4Testing.Url.mouseOver(Url.java:36)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyMouseOverBookCover(IntegratePubLogosOnViewAllPage.java:71)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyMouseOverBookCover(IntegratePubLogosOnViewAllPageTest.java:61)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9717476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace9717476'><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.mouseOver(DefaultSelenium.java:243)
+	at webPageElements4Testing.Url.mouseOver(Url.java:36)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyMouseOverBookCover(IntegratePubLogosOnViewAllPage.java:71)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyMouseOverBookCover(IntegratePubLogosOnViewAllPageTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:644)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:546)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:700)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1002)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRun(TestRunner.java:617)
+	at org.testng.TestRunner.run(TestRunner.java:498)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:324)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:201)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:915)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:879)
+	at org.testng.TestNG.run(TestNG.java:787)
+	at org.testng.TestNG.privateMain(TestNG.java:952)
+	at org.testng.TestNG.main(TestNG.java:925)
+</pre></div></td>
+</tr>
+<tr>
+<td title='k12.IntegratePubLogosOnViewAllPageTest.verifyMouseOverPubLogoNoEnlargeImage()'><b>verifyMouseOverPubLogoNoEnlargeImage</b><br>Test class:IntegratePubLogosOnViewAllPageTest<br>Parameters: war</td>
+<td>k12.IntegratePubLogosOnViewAllPageTest@137d090</td><td>6</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.mouseOver(DefaultSelenium.java:243)
+	at webPageElements4Testing.Url.mouseOver(Url.java:36)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyMouseOverPubLogoNoEnlargeImage(IntegratePubLogosOnViewAllPage.java:79)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyMouseOverPubLogoNoEnlargeImage(IntegratePubLogosOnViewAllPageTest.java:68)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26704795", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26704795'><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.mouseOver(DefaultSelenium.java:243)
+	at webPageElements4Testing.Url.mouseOver(Url.java:36)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyMouseOverPubLogoNoEnlargeImage(IntegratePubLogosOnViewAllPage.java:79)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyMouseOverPubLogoNoEnlargeImage(IntegratePubLogosOnViewAllPageTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:644)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:546)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:700)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1002)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRun(TestRunner.java:617)
+	at org.testng.TestRunner.run(TestRunner.java:498)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:324)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:201)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:915)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:879)
+	at org.testng.TestNG.run(TestNG.java:787)
+	at org.testng.TestNG.privateMain(TestNG.java:952)
+	at org.testng.TestNG.main(TestNG.java:925)
+</pre></div></td>
+</tr>
+<tr>
+<td title='k12.IntegratePubLogosOnViewAllPageTest.verifyMouseOverPubLogoToolTipAvailable()'><b>verifyMouseOverPubLogoToolTipAvailable</b><br>Test class:IntegratePubLogosOnViewAllPageTest<br>Parameters: war</td>
+<td>k12.IntegratePubLogosOnViewAllPageTest@137d090</td><td>7</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.mouseOver(DefaultSelenium.java:243)
+	at webPageElements4Testing.Url.mouseOver(Url.java:36)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyMouseOverPubLogoToolTipAvailable(IntegratePubLogosOnViewAllPage.java:87)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyMouseOverPubLogoToolTipAvailable(IntegratePubLogosOnViewAllPageTest.java:74)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16711231", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16711231'><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.mouseOver(DefaultSelenium.java:243)
+	at webPageElements4Testing.Url.mouseOver(Url.java:36)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyMouseOverPubLogoToolTipAvailable(IntegratePubLogosOnViewAllPage.java:87)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyMouseOverPubLogoToolTipAvailable(IntegratePubLogosOnViewAllPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:644)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:546)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:700)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1002)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRun(TestRunner.java:617)
+	at org.testng.TestRunner.run(TestRunner.java:498)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:324)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:201)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:915)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:879)
+	at org.testng.TestNG.run(TestNG.java:787)
+	at org.testng.TestNG.privateMain(TestNG.java:952)
+	at org.testng.TestNG.main(TestNG.java:925)
+</pre></div></td>
+</tr>
+<tr>
+<td title='k12.IntegratePubLogosOnViewAllPageTest.verifyMouseoverBookcoverInDetailedView()'><b>verifyMouseoverBookcoverInDetailedView</b><br>Test class:IntegratePubLogosOnViewAllPageTest<br>Parameters: war</td>
+<td>k12.IntegratePubLogosOnViewAllPageTest@137d090</td><td>4</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyMouseoverBookcoverInDetailedView(IntegratePubLogosOnViewAllPage.java:119)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyMouseoverBookcoverInDetailedView(IntegratePubLogosOnViewAllPageTest.java:100)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12759798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12759798'><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyMouseoverBookcoverInDetailedView(IntegratePubLogosOnViewAllPage.java:119)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyMouseoverBookcoverInDetailedView(IntegratePubLogosOnViewAllPageTest.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:644)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:546)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:700)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1002)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRun(TestRunner.java:617)
+	at org.testng.TestRunner.run(TestRunner.java:498)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:324)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:201)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:915)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:879)
+	at org.testng.TestNG.run(TestNG.java:787)
+	at org.testng.TestNG.privateMain(TestNG.java:952)
+	at org.testng.TestNG.main(TestNG.java:925)
+</pre></div></td>
+</tr>
+<tr>
+<td title='k12.IntegratePubLogosOnViewAllPageTest.verifyPubLogoInDetailedView()'><b>verifyPubLogoInDetailedView</b><br>Test class:IntegratePubLogosOnViewAllPageTest<br>Parameters: war</td>
+<td>k12.IntegratePubLogosOnViewAllPageTest@137d090</td><td>5</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyPubLogoInDetailedView(IntegratePubLogosOnViewAllPage.java:128)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyPubLogoInDetailedView(IntegratePubLogosOnViewAllPageTest.java:107)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7318012", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7318012'><pre>java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyPubLogoInDetailedView(IntegratePubLogosOnViewAllPage.java:128)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyPubLogoInDetailedView(IntegratePubLogosOnViewAllPageTest.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:644)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:546)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:700)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1002)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRun(TestRunner.java:617)
+	at org.testng.TestRunner.run(TestRunner.java:498)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:324)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:201)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:915)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:879)
+	at org.testng.TestNG.run(TestNG.java:787)
+	at org.testng.TestNG.privateMain(TestNG.java:952)
+	at org.testng.TestNG.main(TestNG.java:925)
+</pre></div></td>
+</tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Instance</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='k12.IntegratePubLogosOnViewAllPageTest.verifyBookCoversIsAvailableInSearchResults()'><b>verifyBookCoversIsAvailableInSearchResults</b><br>Test class:IntegratePubLogosOnViewAllPageTest<br>Parameters: war</td>
+<td>k12.IntegratePubLogosOnViewAllPageTest@137d090</td><td>4</td>
+<td></td>
+</tr>
+<tr>
+<td title='k12.IntegratePubLogosOnViewAllPageTest.verifyPubLogoAvailableInSearchResults()'><b>verifyPubLogoAvailableInSearchResults</b><br>Test class:IntegratePubLogosOnViewAllPageTest<br>Parameters: war</td>
+<td>k12.IntegratePubLogosOnViewAllPageTest@137d090</td><td>4</td>
+<td></td>
+</tr>
+</table><p>
+</body>
+</html>

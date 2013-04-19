@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewImageDocumentTest" failures="1" tests="8" time="8.14" errors="0">
+  <properties/>
+  <testcase name="verifyDetailedViewOfImageIsDisplayed" time="0.203" classname="k12.ViewImageDocumentTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@id=&amp;apos;images&amp;apos;]/a not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@id='images']/a not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.Link.getLinkText(Link.java:46)
+	at webPageContainers4Testing.ViewImageDocument.verifyDetailedViewOfImageIsDisplayed(ViewImageDocument.java:24)
+	at k12.ViewImageDocumentTest.verifyDetailedViewOfImageIsDisplayed(ViewImageDocumentTest.java:25)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyDetailedViewOfImageIsDisplayedFromViewAll" time="0.0" classname="k12.ViewImageDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyImagesForNext" time="0.0" classname="k12.ViewImageDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyImagesForPrevious" time="0.0" classname="k12.ViewImageDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyToolsArePresent" time="0.0" classname="k12.ViewImageDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNextAndPreviousButtonsPresent" time="0.0" classname="k12.ViewImageDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="checkSearchButtonIsPresent" time="0.0" classname="k12.ViewImageDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyElementsAreDisplayedOnPage" time="0.0" classname="k12.ViewImageDocumentTest">
+    <skipped/>
+  </testcase>
+</testsuite>

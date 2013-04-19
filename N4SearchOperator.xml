@@ -1,0 +1,27 @@
+<suite name="N4SearchOperator">
+	<parameter name="searchTerm" value="dog N4 cat" />
+	<parameter name="reference" value="K12-Reference" />
+	<parameter name="news" value="news" />
+	<parameter name="statistics" value="statistics" />
+	<parameter name="maagzines" value="maagzines" />
+	<parameter name="primarysources" value="primarysources" />
+	<parameter name="academicJournals" value="academicJournals" />
+	<parameter name="websites" value="websites" />
+	
+	<test name="N4SearchOperatorTest" enabled="true">
+		<classes>
+			<class name="k12.N4SearchOperatorTest">
+				<methods>
+					<include name="searchWithN4OperatorInReference" />
+					<include name="searchWithN4OperatorInNews" />
+					<include name="searchWithN4OperatorInStatistics" />
+					<include name="searchWithN4OperatorInMagazines" />
+					<include name="searchWithN4OperatorInPrimarysources" />
+					<include name="searchWithN4OperatorInAcademicJournals" />
+					<include name="searchWithN4OperatorInWebsites" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

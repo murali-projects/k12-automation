@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChangeEmailOriginatingAddress" failures="1" tests="5" time="9.031" errors="0">
+  <properties/>
+  <testcase name="verifyEmailOption" time="1.687" classname="k12.ChangeEmailOriginatingAddressTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //a[@id=&amp;apos;email_link&amp;apos;] not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //a[@id='email_link'] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.clickWithoutWait(Link.java:16)
+	at webPageContainers4Testing.Email.verifyEmailOption(Email.java:20)
+	at k12.ChangeEmailOriginatingAddressTest.verifyEmailOption(ChangeEmailOriginatingAddressTest.java:23)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifySenderFieldIsEditable" time="0.0" classname="k12.ChangeEmailOriginatingAddressTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyEmailIdInSenderField" time="0.0" classname="k12.ChangeEmailOriginatingAddressTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyEmailOptionForOtherDisplayGroup" time="0.0" classname="k12.ChangeEmailOriginatingAddressTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyEmailIdInSenderFieldForOtherDisplayGroup" time="0.0" classname="k12.ChangeEmailOriginatingAddressTest">
+    <skipped/>
+  </testcase>
+</testsuite>

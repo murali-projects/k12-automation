@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewStatisticsDocument" failures="1" tests="13" time="9.499" errors="0">
+  <properties/>
+  <testcase name="verifyDisplayGroupName" time="0.046" classname="k12.ViewStatisticsDocumentTest"/>
+  <testcase name="verifyViewAllIsDisplayed" time="0.047" classname="k12.ViewStatisticsDocumentTest"/>
+  <testcase name="verifyStatisticsCount" time="0.078" classname="k12.ViewStatisticsDocumentTest"/>
+  <testcase name="verifyHyperLinksOfDocuments" time="1.032" classname="k12.ViewStatisticsDocumentTest"/>
+  <testcase name="verifyDetailedViewIsDisplayed" time="0.937" classname="k12.ViewStatisticsDocumentTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ViewStatisticsDocumentTest.verifyDetailedViewIsDisplayed(ViewStatisticsDocumentTest.java:42)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyDocumentTitleInDetailedView" time="0.0" classname="k12.ViewStatisticsDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifySearchFieldsPresent" time="0.0" classname="k12.ViewStatisticsDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNoSpeakerIconIsPresent" time="0.0" classname="k12.ViewStatisticsDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyGaleDocumentAndCopyrightDisplayed" time="0.0" classname="k12.ViewStatisticsDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyImageIsDisplayedInDetailedView" time="0.0" classname="k12.ViewStatisticsDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPreviousNextThumbnailsPresent" time="0.0" classname="k12.ViewStatisticsDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyImageByNavigatingFromViewAllPage" time="0.0" classname="k12.ViewStatisticsDocumentTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyContentForStatisticImage" time="0.0" classname="k12.ViewStatisticsDocumentTest">
+    <skipped/>
+  </testcase>
+</testsuite>

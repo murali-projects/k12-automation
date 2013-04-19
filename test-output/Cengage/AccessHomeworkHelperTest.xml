@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AccessHomeworkHelperTest" failures="0" tests="6" time="8.78" errors="0">
+  <properties/>
+  <testcase name="@BeforeTest setUp" time="0.0" classname="k12.AccessHomeworkHelperTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //input[@name=&amp;apos;search_input&amp;apos;] not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //input[@name='search_input'] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:291)
+	at webPageElements4Testing.TextBox.type(TextBox.java:11)
+	at k12.BaseWebPageTest.doBasicSearchUsingSearchTerm(BaseWebPageTest.java:53)
+	at k12.AccessHomeworkHelperTest.setUp(AccessHomeworkHelperTest.java:18)
+... Removed 19 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyResourcesLinkAccesible" time="0.0" classname="k12.AccessHomeworkHelperTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyClickingOnHomeworkHelper" time="0.0" classname="k12.AccessHomeworkHelperTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyClickingOnGaleSchools" time="0.016" classname="k12.AccessHomeworkHelperTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNewTabClosable" time="0.016" classname="k12.AccessHomeworkHelperTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNavigationThroughBreadcurmb" time="0.0" classname="k12.AccessHomeworkHelperTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyBreadcrumb" time="0.0" classname="k12.AccessHomeworkHelperTest">
+    <skipped/>
+  </testcase>
+</testsuite>

@@ -1,0 +1,495 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [Cengage]" junit="false" parallel="false" annotations="JDK" data-provider-thread-count="10">
+  <parameter name="searchTerm" value="war"/>
+  <parameter name="userGroupName" value="dmusz"/>
+  <parameter name="searchTerm2" value="war"/>
+  <parameter name="password" value="dmusz"/>
+  <test name="ShareBookmarkWithSocialNetworkingSiteTest(failed)" junit="false" parallel="false" annotations="JDK">
+    <parameter name="searchTerm" value="war"/>
+    <classes>
+      <class name="k12.TextDocumentTranslateText">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.HitcountAndSortingDocumentsRelatedSubjectsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.PortalPageSuggestionsOnSearchResultsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.TranslateDesclaimerTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+          <include name="start"/>
+        </methods>
+      </class>
+      <class name="k12.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.SearchWithinResultsTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.JumpToPortalPageFromBasicSearchTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.DisablePdfDownloadforImagesTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ViewTopicportalPageWithAllPortalsTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ShareBookmarkWithSocialNetworkingSiteTest">
+        <methods>
+          <include name="verifyContentIsSharedInNetwork"/>
+          <include name="startBrowserSession"/>
+          <include name="verifyShareToolAvailableInDetailPage"/>
+          <include name="verifyEmptyFieldForNextSearch"/>
+          <include name="verifyUserAbleToSearch"/>
+          <include name="setUp"/>
+          <include name="verifyNoSearchTermFound"/>
+          <include name="verifyMouseOverShareOption"/>
+          <include name="verifyMoreAndCloseOptionsInPopup"/>
+        </methods>
+      </class>
+      <class name="k12.IntegrateRelatedTopicsPortletTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.IntegrateWebsitesFavIconsOnViewAllPageTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.LinkToRelatedSubjectTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ViewTopicPortalPageOverviewPortletTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="TranslateDesclaimerTest(failed)" junit="false" parallel="false" annotations="JDK">
+    <parameter name="searchTerm" value="war"/>
+    <classes>
+      <class name="k12.TextDocumentTranslateText">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.HitcountAndSortingDocumentsRelatedSubjectsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.TranslateDesclaimerTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyDisclaimerIsLink"/>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+          <include name="verifyDisclaimerOnTopOfWindow"/>
+          <include name="verifyNewWindowOpening"/>
+          <include name="verifyDisclaiamerLanguageIsEnglish"/>
+          <include name="start"/>
+          <include name="verifyTranslateOptionAvailable"/>
+        </methods>
+      </class>
+      <class name="k12.PortalPageSuggestionsOnSearchResultsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.SearchWithinResultsTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.JumpToPortalPageFromBasicSearchTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.DisablePdfDownloadforImagesTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ViewTopicportalPageWithAllPortalsTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.IntegrateRelatedTopicsPortletTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ShareBookmarkWithSocialNetworkingSiteTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.IntegrateWebsitesFavIconsOnViewAllPageTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.LinkToRelatedSubjectTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ViewTopicPortalPageOverviewPortletTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="SearchWithinResultsTest(failed)" junit="false" parallel="false" annotations="JDK">
+    <parameter name="searchTerm" value="war"/>
+    <classes>
+      <class name="k12.TextDocumentTranslateText">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.HitcountAndSortingDocumentsRelatedSubjectsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.PortalPageSuggestionsOnSearchResultsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.TranslateDesclaimerTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+          <include name="start"/>
+        </methods>
+      </class>
+      <class name="k12.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.SearchWithinResultsTest">
+        <methods>
+          <include name="verifyFullTextOnSearchTermsDisplayed"/>
+          <include name="verifyUserInViewAllAfterResultsSearch"/>
+          <include name="startBrowserSession"/>
+          <include name="verifySearchLimitedAcrossOtherTabs"/>
+          <include name="verifySearchBoxInSidebarInViewAllPage"/>
+          <include name="verifyHitcountAfterLimitingResults"/>
+          <include name="verifyLimiterModifiedByWithinSearch"/>
+          <include name="verifySearchOptionForOtherTabs"/>
+          <include name="setUp"/>
+          <include name="canUserEnterDataInSearchBox"/>
+        </methods>
+      </class>
+      <class name="k12.JumpToPortalPageFromBasicSearchTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.DisablePdfDownloadforImagesTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ViewTopicportalPageWithAllPortalsTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.IntegrateRelatedTopicsPortletTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ShareBookmarkWithSocialNetworkingSiteTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.IntegrateWebsitesFavIconsOnViewAllPageTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.LinkToRelatedSubjectTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ViewTopicPortalPageOverviewPortletTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="TextDocumentTranslateText(failed)" junit="false" parallel="false" annotations="JDK">
+    <parameter name="searchTerm" value="Emphasis on Diversity"/>
+    <classes>
+      <class name="k12.TextDocumentTranslateText">
+        <methods>
+          <include name="verifyGaleDocumentNoIsPresent"/>
+          <include name="verifyTitleOfTranslatedDocument"/>
+          <include name="startBrowserSession"/>
+          <include name="verifyDisclaimerIsPresent"/>
+          <include name="verifyCitationIsPresent"/>
+          <include name="verifyNoreadSpeakerLinksPresent"/>
+          <include name="setUp"/>
+          <include name="verifyWordsToKnowAvailable"/>
+        </methods>
+      </class>
+      <class name="k12.HitcountAndSortingDocumentsRelatedSubjectsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.PortalPageSuggestionsOnSearchResultsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.TranslateDesclaimerTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+          <include name="start"/>
+        </methods>
+      </class>
+      <class name="k12.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.SearchWithinResultsTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.JumpToPortalPageFromBasicSearchTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.DisablePdfDownloadforImagesTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ViewTopicportalPageWithAllPortalsTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.IntegrateRelatedTopicsPortletTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ShareBookmarkWithSocialNetworkingSiteTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.IntegrateWebsitesFavIconsOnViewAllPageTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.LinkToRelatedSubjectTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ViewTopicPortalPageOverviewPortletTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="ViewTopicportalPageWithAllPortalsTest(failed)" junit="false" parallel="false" annotations="JDK">
+    <parameter name="searchTerm" value="adoption"/>
+    <classes>
+      <class name="k12.TextDocumentTranslateText">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.HitcountAndSortingDocumentsRelatedSubjectsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.PortalPageSuggestionsOnSearchResultsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.TranslateDesclaimerTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+          <include name="start"/>
+        </methods>
+      </class>
+      <class name="k12.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+      <class name="k12.SearchWithinResultsTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.JumpToPortalPageFromBasicSearchTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.DisablePdfDownloadforImagesTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ViewTopicportalPageWithAllPortalsTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="verifyUserisInportalPageAfterclickingTopic"/>
+          <include name="verifyBasicSearchOptionFromPortalPage"/>
+          <include name="verifyPageforKeywordNotHavingPortalPage"/>
+          <include name="verifyDifferentMethodsForNavigationToPortalPage"/>
+          <include name="verifyPortletsInPortalPage"/>
+          <include name="setUp"/>
+          <include name="verifyPortletsFromOceanServices"/>
+          <include name="verifyBreadcrumb"/>
+        </methods>
+      </class>
+      <class name="k12.IntegrateRelatedTopicsPortletTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ShareBookmarkWithSocialNetworkingSiteTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.IntegrateWebsitesFavIconsOnViewAllPageTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.LinkToRelatedSubjectTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="k12.ViewTopicPortalPageOverviewPortletTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="startBrowserSession"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

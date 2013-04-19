@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllTabsForReferenceDisplayGroup" failures="1" tests="14" time="34.091" errors="0">
+  <properties/>
+  <testcase name="viewDisplayGroupsForSeachTerm" time="12.796" classname="k12.ViewAllTabsDisplayGroupTest"/>
+  <testcase name="validateDisplayGroupContent" time="17.202" classname="k12.ViewAllTabsDisplayGroupTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ViewAllTabsDisplayGroupTest.validateDisplayGroupContent(ViewAllTabsDisplayGroupTest.java:42)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="validateDisplayGroupCount" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateDisplayGroupNext" time="0.016" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateDisplayGroupPrevious" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateTabsAfterNext" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateTabsAfterPrevious" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifySearchInViewAll" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyTabsFromDetailedPage" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyTabsForDetailedPage" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="ensureSingleTabIsSelectedOnce" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="headingMatch" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyRecordsCountWithViewAll" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifySearchResult" time="0.0" classname="k12.ViewAllTabsDisplayGroupTest">
+    <skipped/>
+  </testcase>
+</testsuite>

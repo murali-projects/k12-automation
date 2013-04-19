@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SortByDropDownInViewAllPage">
+
+	<test name="SortByDropDownInViewAllPage" enabled="true">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="displayGroup" value="reference" />
+		<parameter name="sortElement" value="Relevance" />
+		<parameter name="option" value="Name,Publication Title" />
+		<parameter name="publicationDateSortElement" value="Publication Date" />
+		<parameter name="relevanceSortElement" value="Relevance" />
+		<parameter name="requiredContent"
+			value="Descending Relevance,Descending Publication Date,Ascending Document Title,Ascending Content Level" />
+		<classes>
+			<class name="k12.SortByDropDownInViewAllPageTest">
+				<methods>
+					<include name="basicNavigation" />
+					<include name="defaultSortForReferenceDisplayGroup" />
+					<include name="sortDisplayGroupByDescendingPublicationDate" />
+					<include name="sortDisplayGroupByDescendingRelevance" />
+					<include name="sortDisplayGroupByAscendingDocumentTitle" />
+					<include name="validateDefaultSortAfterViewAll" />
+					<include name="ensureSortAfterClickingViewAll" />
+					<include name="verifyCountAfterSorting" />
+					<include name="ensureSortDownContent" />
+					<include name="ensureSortDownCountAfterNext" />
+					<include name="ensureSortDownCountAfterPrevious" />
+					<include name="selectMultipleItemsFromDropDown" />
+					<include name="verifyDocInfoTypeAfterSort" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
+

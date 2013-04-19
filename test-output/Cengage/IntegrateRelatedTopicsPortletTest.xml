@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntegrateRelatedTopicsPortletTest" failures="0" tests="7" time="89.999" errors="0">
+  <properties/>
+  <testcase name="verifyTopicsAssociatedIsDisplayed" time="7.96" classname="k12.IntegrateRelatedTopicsPortletTest"/>
+  <testcase name="verifyOtherPortletPresent" time="9.225" classname="k12.IntegrateRelatedTopicsPortletTest"/>
+  <testcase name="verifyViewAllPresentForOtherBuckets" time="8.054" classname="k12.IntegrateRelatedTopicsPortletTest"/>
+  <testcase name="verifyClickingTopicsInPortlet" time="12.424" classname="k12.IntegrateRelatedTopicsPortletTest"/>
+  <testcase name="verifyDetailedOverviewIsPresent" time="12.378" classname="k12.IntegrateRelatedTopicsPortletTest"/>
+  <testcase name="verifyOtherBucketsalongWithDetailedOverview" time="10.785" classname="k12.IntegrateRelatedTopicsPortletTest"/>
+  <testcase name="verifyTopicsPortletNotPresentInOtherPages" time="16.109" classname="k12.IntegrateRelatedTopicsPortletTest"/>
+</testsuite>

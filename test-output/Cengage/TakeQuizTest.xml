@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TakeQuizTest" failures="1" tests="4" time="99.935" errors="0">
+  <properties/>
+  <testcase name="verifyTakeQuizLinkIsPresent" time="7.516" classname="k12.TakeQuizTest"/>
+  <testcase name="verifyNewWindowIsDisplayed" time="72.233" classname="k12.TakeQuizTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="Timed out after 30000ms">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: Timed out after 30000ms
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.waitForPopUp(DefaultSelenium.java:359)
+	at webPageContainers4Testing.TakeQuiz.verifyNewWindowIsDisplayed(TakeQuiz.java:30)
+	at k12.TakeQuizTest.verifyNewWindowIsDisplayed(TakeQuizTest.java:28)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyOptionsPresentForSelectedDocument" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocumentTilteIsPresent" time="0.0" classname="k12.TakeQuizTest">
+    <skipped/>
+  </testcase>
+</testsuite>

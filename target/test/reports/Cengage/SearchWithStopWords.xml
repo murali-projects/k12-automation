@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SearchWithStopWords" failures="1" tests="1" time="2.964" errors="0">
+  <properties/>
+  <testcase name="doCheckWithSingleStopWord" time="1.981" classname="k12.StopWordsTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.StopWordsTest.doCheckWithSingleStopWord(StopWordsTest.java:20)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

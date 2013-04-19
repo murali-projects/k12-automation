@@ -1,0 +1,709 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">IntegrateRelatedTopicsPortletTest</td><td class="numi">7</td><td class="numi">7</td><td class="numi">0</td><td class="numi">0</td><td class="numi">90.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">ViewTopicPortalPageOverviewPortletTest</td><td class="numi">9</td><td class="numi">9</td><td class="numi">0</td><td class="numi">0</td><td class="numi">162.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">ShareBookmarkWithSocialNetworkingSiteTest</td><td class="numi">2</td><td class="numi">2</td><td class="numi_attn">4</td><td class="numi_attn">1</td><td class="numi">110.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">PortalPageSuggestionsOnSearchResultsPageTest</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">41.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">TranslateDesclaimerTest</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">0</td><td class="numi">36.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">JumpToPortalPageFromBasicSearchTest</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">31.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">SearchWithinResultsTest</td><td class="numi">2</td><td class="numi">2</td><td class="numi_attn">5</td><td class="numi_attn">1</td><td class="numi">69.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">TextDocumentTranslateText</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi_attn">1</td><td class="numi">1,424.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">LoginTest</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">16.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">HitcountAndSortingDocumentsRelatedSubjectsTest</td><td class="numi">13</td><td class="numi">13</td><td class="numi">0</td><td class="numi">0</td><td class="numi">326.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">IntegrateWebsitesFavIconsOnViewAllPageTest</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">109.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">ViewTopicportalPageWithAllPortalsTest</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">74.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">LinkToRelatedSubjects</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">77.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">DisablePdfDownloadforImagesTest</td><td class="numi">7</td><td class="numi">7</td><td class="numi">0</td><td class="numi">0</td><td class="numi">259.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">64</td><td class="numi">64</td><td class="numi_attn">19</td><td class="numi_attn">4</td><td class="numi">2,830.1 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">IntegrateRelatedTopicsPortletTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="7">k12.IntegrateRelatedTopicsPortletTest<br>"IntegrateRelatedTopicsPortletTest"<td><a href="#m1"><b>verifyClickingTopicsInPortlet</b>  </a></td><td class="numi">1</td><td class="numi">12424</td></tr><tr class="passedodd"><td><a href="#m2"><b>verifyDetailedOverviewIsPresent</b>  </a></td><td class="numi">1</td><td class="numi">12378</td></tr><tr class="passedodd"><td><a href="#m3"><b>verifyOtherBucketsalongWithDetailedOverview</b>  </a></td><td class="numi">1</td><td class="numi">10785</td></tr><tr class="passedodd"><td><a href="#m4"><b>verifyOtherPortletPresent</b>  </a></td><td class="numi">1</td><td class="numi">9225</td></tr><tr class="passedodd"><td><a href="#m5"><b>verifyTopicsAssociatedIsDisplayed</b>  </a></td><td class="numi">1</td><td class="numi">7960</td></tr><tr class="passedodd"><td><a href="#m6"><b>verifyTopicsPortletNotPresentInOtherPages</b>  </a></td><td class="numi">1</td><td class="numi">16109</td></tr><tr class="passedodd"><td><a href="#m7"><b>verifyViewAllPresentForOtherBuckets</b>  </a></td><td class="numi">1</td><td class="numi">8054</td></tr>
+<tr><th colspan="4">ViewTopicPortalPageOverviewPortletTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="9">k12.ViewTopicPortalPageOverviewPortletTest<br>"ViewTopicPortalPageOverviewPortletTest"<td><a href="#m8"><b>verifyBreadCrumb</b>  </a></td><td class="numi">1</td><td class="numi">32902</td></tr><tr class="passedodd"><td><a href="#m9"><b>verifyElipsisPresent</b>  </a></td><td class="numi">1</td><td class="numi">10457</td></tr><tr class="passedodd"><td><a href="#m10"><b>verifyNavigationByclickingViewMore</b>  </a></td><td class="numi">1</td><td class="numi">19526</td></tr><tr class="passedodd"><td><a href="#m11"><b>verifyNavigationByclickingoOnTopics</b>  </a></td><td class="numi">1</td><td class="numi">11909</td></tr><tr class="passedodd"><td><a href="#m12"><b>verifyOverviewDisplayed</b>  </a></td><td class="numi">1</td><td class="numi">10614</td></tr><tr class="passedodd"><td><a href="#m13"><b>verifyOverviewTextWithDetailedPageText</b>  </a></td><td class="numi">1</td><td class="numi">19495</td></tr><tr class="passedodd"><td><a href="#m14"><b>verifyOverviewTextWithDocumentText</b>  </a></td><td class="numi">1</td><td class="numi">18667</td></tr><tr class="passedodd"><td><a href="#m15"><b>verifyToolsAvailableInDetailPage</b>  </a></td><td class="numi">1</td><td class="numi">14734</td></tr><tr class="passedodd"><td><a href="#m16"><b>verifyViewMoreOptionAvailable</b>  </a></td><td class="numi">1</td><td class="numi">10504</td></tr>
+<tr><th colspan="4">ShareBookmarkWithSocialNetworkingSiteTest &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">k12.ShareBookmarkWithSocialNetworkingSiteTest<br>"ShareBookmarkWithSocialNetworkingSiteTest"<td><a href="#m17"><b>verifyContentIsSharedInNetwork</b>  </a></td><td class="numi">1</td><td class="numi">68858</td></tr>
+<tr><th colspan="4">ShareBookmarkWithSocialNetworkingSiteTest &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="4">k12.ShareBookmarkWithSocialNetworkingSiteTest<br>"ShareBookmarkWithSocialNetworkingSiteTest"<td><a href="#m18"><b>verifyEmptyFieldForNextSearch</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m19"><b>verifyMoreAndCloseOptionsInPopup</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m20"><b>verifyNoSearchTermFound</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m21"><b>verifyUserAbleToSearch</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">ShareBookmarkWithSocialNetworkingSiteTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">k12.ShareBookmarkWithSocialNetworkingSiteTest<br>"ShareBookmarkWithSocialNetworkingSiteTest"<td><a href="#m22"><b>verifyMouseOverShareOption</b>  </a></td><td class="numi">1</td><td class="numi">15189</td></tr><tr class="passedodd"><td><a href="#m23"><b>verifyShareToolAvailableInDetailPage</b>  </a></td><td class="numi">1</td><td class="numi">12738</td></tr>
+<tr><th colspan="4">PortalPageSuggestionsOnSearchResultsPageTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">k12.PortalPageSuggestionsOnSearchResultsPageTest<br>"PortalPageSuggestionsOnSearchResultsPageTest"<td><a href="#m24"><b>verifySearchResultsStatementIsDisplayed</b>  </a></td><td class="numi">1</td><td class="numi">6618</td></tr><tr class="passedodd"><td><a href="#m25"><b>verifyTopicPortalalongWithOtherBuckets</b>  </a></td><td class="numi">1</td><td class="numi">7882</td></tr><tr class="passedodd"><td><a href="#m26"><b>verifyTopicsAreHyperlinked</b>  </a></td><td class="numi">1</td><td class="numi">6680</td></tr><tr class="passedodd"><td><a href="#m27"><b>verifyTopicsPortletAvailable</b>  </a></td><td class="numi">1</td><td class="numi">6899</td></tr><tr class="passedodd"><td><a href="#m28"><b>verifyTopicsPortletForInvalidKeyword</b>  </a></td><td class="numi">1</td><td class="numi">7913</td></tr>
+<tr><th colspan="4">TranslateDesclaimerTest &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="2">k12.TranslateDesclaimerTest<br>"TranslateDesclaimerTest"<td><a href="#m29"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m30"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">TranslateDesclaimerTest &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="5">k12.TranslateDesclaimerTest<br>"TranslateDesclaimerTest"<td><a href="#m31"><b>verifyDisclaiamerLanguageIsEnglish</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m32"><b>verifyDisclaimerIsLink</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m33"><b>verifyDisclaimerOnTopOfWindow</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m34"><b>verifyNewWindowOpening</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m35"><b>verifyTranslateOptionAvailable</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">JumpToPortalPageFromBasicSearchTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">k12.JumpToPortalPageFromBasicSearchTest<br>"JumpToPortalPageFromBasicSearchTest"<td><a href="#m36"><b>verifyNavigationByEnteringNonTopicSearchTerm</b>  </a></td><td class="numi">1</td><td class="numi">7071</td></tr><tr class="passedodd"><td><a href="#m37"><b>verifyNavigationByEnteringTopic</b>  </a></td><td class="numi">1</td><td class="numi">5198</td></tr><tr class="passedodd"><td><a href="#m38"><b>verifyTopicRelatedPage</b>  </a></td><td class="numi">1</td><td class="numi">5759</td></tr>
+<tr><th colspan="4">SearchWithinResultsTest &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">k12.SearchWithinResultsTest<br>"SearchWithinResultsTest"<td><a href="#m39"><b>verifyFullTextOnSearchTermsDisplayed</b>  </a></td><td class="numi">1</td><td class="numi">26721</td></tr>
+<tr><th colspan="4">SearchWithinResultsTest &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="5">k12.SearchWithinResultsTest<br>"SearchWithinResultsTest"<td><a href="#m40"><b>verifyHitcountAfterLimitingResults</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m41"><b>verifyLimiterModifiedByWithinSearch</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m42"><b>verifySearchLimitedAcrossOtherTabs</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m43"><b>verifySearchOptionForOtherTabs</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m44"><b>verifyUserInViewAllAfterResultsSearch</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">SearchWithinResultsTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">k12.SearchWithinResultsTest<br>"SearchWithinResultsTest"<td><a href="#m45"><b>canUserEnterDataInSearchBox</b>  </a></td><td class="numi">1</td><td class="numi">15515</td></tr><tr class="passedodd"><td><a href="#m46"><b>verifySearchBoxInSidebarInViewAllPage</b>  </a></td><td class="numi">1</td><td class="numi">15343</td></tr>
+<tr><th colspan="4">TextDocumentTranslateText &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">k12.TextDocumentTranslateText<br>"TextDocumentTranslateText"<td><a href="#m47"><b>verifyTitleOfTranslatedDocument</b>  </a></td><td class="numi">1</td><td class="numi">1412043</td></tr>
+<tr><th colspan="4">TextDocumentTranslateText &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="5">k12.TextDocumentTranslateText<br>"TextDocumentTranslateText"<td><a href="#m48"><b>verifyCitationIsPresent</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m49"><b>verifyDisclaimerIsPresent</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m50"><b>verifyGaleDocumentNoIsPresent</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m51"><b>verifyNoreadSpeakerLinksPresent</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m52"><b>verifyWordsToKnowAvailable</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">LoginTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">k12.LoginTest<br>"LoginTest"<td><a href="#m53"><b>basicSearchBoxIsDisplayedInHomePage</b>  </a></td><td class="numi">1</td><td class="numi">281</td></tr>
+<tr><th colspan="4">HitcountAndSortingDocumentsRelatedSubjectsTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="13">k12.HitcountAndSortingDocumentsRelatedSubjectsTest<br>"HitcountAndSortingDocumentsRelatedSubjectsTest"<td><a href="#m54"><b>verifyAccesibilityOfMoreLink</b>  </a></td><td class="numi">1</td><td class="numi">20853</td></tr><tr class="passedodd"><td><a href="#m55"><b>verifyDescendingAfterLessLink</b>  </a></td><td class="numi">1</td><td class="numi">41910</td></tr><tr class="passedodd"><td><a href="#m56"><b>verifyFunctionalityOfLessLink</b>  </a></td><td class="numi">1</td><td class="numi">23335</td></tr><tr class="passedodd"><td><a href="#m57"><b>verifyHitcountByaddingAllDispalyGroups</b>  </a></td><td class="numi">1</td><td class="numi">27034</td></tr><tr class="passedodd"><td><a href="#m58"><b>verifyHitcountForAllDisplayGroups</b>  </a></td><td class="numi">1</td><td class="numi">19217</td></tr><tr class="passedodd"><td><a href="#m59"><b>verifyMoreLinkForMoreThanFiveResults</b>  </a></td><td class="numi">1</td><td class="numi">21308</td></tr><tr class="passedodd"><td><a href="#m60"><b>verifyNavigationthroughRelatedSubjectTerm</b>  </a></td><td class="numi">1</td><td class="numi">27799</td></tr><tr class="passedodd"><td><a href="#m61"><b>verifyNoMoreLinkForLessThanFiveResults</b>  </a></td><td class="numi">1</td><td class="numi">19495</td></tr><tr class="passedodd"><td><a href="#m62"><b>verifyOnlyFiveLinksDisplayedInRelatedResults</b>  </a></td><td class="numi">1</td><td class="numi">24899</td></tr><tr class="passedodd"><td><a href="#m63"><b>verifyQuickSearchSidebarisPresent</b>  </a></td><td class="numi">1</td><td class="numi">19794</td></tr><tr class="passedodd"><td><a href="#m64"><b>verifySortingOfRelatedSubjectTerms</b>  </a></td><td class="numi">1</td><td class="numi">20261</td></tr><tr class="passedodd"><td><a href="#m65"><b>verifySortingOrderAfterClickingMore</b>  </a></td><td class="numi">1</td><td class="numi">21790</td></tr><tr class="passedodd"><td><a href="#m66"><b>verifyViewingOtherSubjectsByNavigation</b>  </a></td><td class="numi">1</td><td class="numi">26113</td></tr>
+<tr><th colspan="4">IntegrateWebsitesFavIconsOnViewAllPageTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">k12.IntegrateWebsitesFavIconsOnViewAllPageTest<br>"IntegrateWebsitesFavIconsOnViewAllPageTest"<td><a href="#m67"><b>verifyDisplayOfGenericIcon</b>  </a></td><td class="numi">1</td><td class="numi">16544</td></tr><tr class="passedodd"><td><a href="#m68"><b>verifyFavIconsForAllDisplayGroupsinViewAllpage</b>  </a></td><td class="numi">1</td><td class="numi">35759</td></tr><tr class="passedodd"><td><a href="#m69"><b>verifyFaviconsOnLeftsideOfRecord</b>  </a></td><td class="numi">1</td><td class="numi">17513</td></tr><tr class="passedodd"><td><a href="#m70"><b>verifyfaviconsNotPresentInSearchResultsPage</b>  </a></td><td class="numi">1</td><td class="numi">8241</td></tr><tr class="passedodd"><td><a href="#m71"><b>verifyfaviconsOnViewAllPage</b>  </a></td><td class="numi">1</td><td class="numi">16623</td></tr>
+<tr><th colspan="4">ViewTopicportalPageWithAllPortalsTest &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">k12.ViewTopicportalPageWithAllPortalsTest<br>"ViewTopicportalPageWithAllPortalsTest"<td><a href="#m72"><b>verifyBreadcrumb</b>  </a></td><td class="numi">1</td><td class="numi">6742</td></tr>
+<tr><th colspan="4">ViewTopicportalPageWithAllPortalsTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="6">k12.ViewTopicportalPageWithAllPortalsTest<br>"ViewTopicportalPageWithAllPortalsTest"<td><a href="#m73"><b>verifyBasicSearchOptionFromPortalPage</b>  </a></td><td class="numi">1</td><td class="numi">6212</td></tr><tr class="passedodd"><td><a href="#m74"><b>verifyDifferentMethodsForNavigationToPortalPage</b>  </a></td><td class="numi">1</td><td class="numi">17621</td></tr><tr class="passedodd"><td><a href="#m75"><b>verifyPageforKeywordNotHavingPortalPage</b>  </a></td><td class="numi">1</td><td class="numi">6868</td></tr><tr class="passedodd"><td><a href="#m76"><b>verifyPortletsFromOceanServices</b>  </a></td><td class="numi">1</td><td class="numi">6477</td></tr><tr class="passedodd"><td><a href="#m77"><b>verifyPortletsInPortalPage</b>  </a></td><td class="numi">1</td><td class="numi">11425</td></tr><tr class="passedodd"><td><a href="#m78"><b>verifyUserisInportalPageAfterclickingTopic</b>  </a></td><td class="numi">1</td><td class="numi">7211</td></tr>
+<tr><th colspan="4">LinkToRelatedSubjects &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="4">k12.LinkToRelatedSubjectTest<br>"LinkToRelatedSubjects"<td><a href="#m79"><b>verifyIntegrateRelatedTopicsPresent</b>  </a></td><td class="numi">1</td><td class="numi">17047</td></tr><tr class="passedodd"><td><a href="#m80"><b>verifyPageNavigationByClickingSubjects</b>  </a></td><td class="numi">1</td><td class="numi">19013</td></tr><tr class="passedodd"><td><a href="#m81"><b>verifyRelatedTopicsFromViewAll</b>  </a></td><td class="numi">1</td><td class="numi">22089</td></tr><tr class="passedodd"><td><a href="#m82"><b>verifyTermsDisplayedInRelatedTopics</b>  </a></td><td class="numi">1</td><td class="numi">12317</td></tr>
+<tr><th colspan="4">DisablePdfDownloadforImagesTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="7">k12.DisablePdfDownloadforImagesTest<br>"DisablePdfDownloadforImagesTest"<td><a href="#m83"><b>verify3optionsavailableForDownload</b>  </a></td><td class="numi">1</td><td class="numi">61808</td></tr><tr class="passedodd"><td><a href="#m84"><b>verifyDownloadOptionAvailableForImageStatisticAndWebsites</b>  </a></td><td class="numi">1</td><td class="numi">32855</td></tr><tr class="passedodd"><td><a href="#m85"><b>verifyPdfFunctionsForAllotherBuckets</b>  </a></td><td class="numi">1</td><td class="numi">36304</td></tr><tr class="passedodd"><td><a href="#m86"><b>verifyPdfNotSelectableForImageStatisticsAndWebsite</b>  </a></td><td class="numi">1</td><td class="numi">25769</td></tr><tr class="passedodd"><td><a href="#m87"><b>verifyPdfOptionFromKeyboard</b>  </a></td><td class="numi">1</td><td class="numi">22055</td></tr><tr class="passedodd"><td><a href="#m88"><b>verifyPdfRadioButtonNotAvailable</b>  </a></td><td class="numi">1</td><td class="numi">29718</td></tr><tr class="passedodd"><td><a href="#m89"><b>verifyRadioButtonForallOtherDisplayGroups</b>  </a></td><td class="numi">1</td><td class="numi">37818</td></tr>
+</table>
+<h1>IntegrateRelatedTopicsPortletTest</h1>
+<a id="m1"></a><h2>k12.IntegrateRelatedTopicsPortletTest:verifyClickingTopicsInPortlet</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>k12.IntegrateRelatedTopicsPortletTest:verifyDetailedOverviewIsPresent</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>k12.IntegrateRelatedTopicsPortletTest:verifyOtherBucketsalongWithDetailedOverview</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>k12.IntegrateRelatedTopicsPortletTest:verifyOtherPortletPresent</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>k12.IntegrateRelatedTopicsPortletTest:verifyTopicsAssociatedIsDisplayed</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>k12.IntegrateRelatedTopicsPortletTest:verifyTopicsPortletNotPresentInOtherPages</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>k12.IntegrateRelatedTopicsPortletTest:verifyViewAllPresentForOtherBuckets</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>ViewTopicPortalPageOverviewPortletTest</h1>
+<a id="m8"></a><h2>k12.ViewTopicPortalPageOverviewPortletTest:verifyBreadCrumb</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>k12.ViewTopicPortalPageOverviewPortletTest:verifyElipsisPresent</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>k12.ViewTopicPortalPageOverviewPortletTest:verifyNavigationByclickingViewMore</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>k12.ViewTopicPortalPageOverviewPortletTest:verifyNavigationByclickingoOnTopics</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>k12.ViewTopicPortalPageOverviewPortletTest:verifyOverviewDisplayed</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>k12.ViewTopicPortalPageOverviewPortletTest:verifyOverviewTextWithDetailedPageText</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>k12.ViewTopicPortalPageOverviewPortletTest:verifyOverviewTextWithDocumentText</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>k12.ViewTopicPortalPageOverviewPortletTest:verifyToolsAvailableInDetailPage</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>k12.ViewTopicPortalPageOverviewPortletTest:verifyViewMoreOptionAvailable</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>ShareBookmarkWithSocialNetworkingSiteTest</h1>
+<a id="m17"></a><h2>k12.ShareBookmarkWithSocialNetworkingSiteTest:verifyContentIsSharedInNetwork</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Timed out after 30000ms</p>
+com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+<br/>at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+<br/>at com.thoughtworks.selenium.DefaultSelenium.waitForPopUp(DefaultSelenium.java:359)
+<br/>at webPageElements4Testing.Url.waitForPopup(Url.java:26)
+<br/>at webPageContainers4Testing.ShareBookmarkWithSocialNetworkingSite.verifyContentIsSharedInNetwork(ShareBookmarkWithSocialNetworkingSite.java:43)
+<br/>at k12.ShareBookmarkWithSocialNetworkingSiteTest.verifyContentIsSharedInNetwork(ShareBookmarkWithSocialNetworkingSiteTest.java:45)
+<br/>23 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>k12.ShareBookmarkWithSocialNetworkingSiteTest:verifyEmptyFieldForNextSearch</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m19"></a><h2>k12.ShareBookmarkWithSocialNetworkingSiteTest:verifyMoreAndCloseOptionsInPopup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m20"></a><h2>k12.ShareBookmarkWithSocialNetworkingSiteTest:verifyNoSearchTermFound</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m21"></a><h2>k12.ShareBookmarkWithSocialNetworkingSiteTest:verifyUserAbleToSearch</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m22"></a><h2>k12.ShareBookmarkWithSocialNetworkingSiteTest:verifyMouseOverShareOption</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m23"></a><h2>k12.ShareBookmarkWithSocialNetworkingSiteTest:verifyShareToolAvailableInDetailPage</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>PortalPageSuggestionsOnSearchResultsPageTest</h1>
+<a id="m24"></a><h2>k12.PortalPageSuggestionsOnSearchResultsPageTest:verifySearchResultsStatementIsDisplayed</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m25"></a><h2>k12.PortalPageSuggestionsOnSearchResultsPageTest:verifyTopicPortalalongWithOtherBuckets</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m26"></a><h2>k12.PortalPageSuggestionsOnSearchResultsPageTest:verifyTopicsAreHyperlinked</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m27"></a><h2>k12.PortalPageSuggestionsOnSearchResultsPageTest:verifyTopicsPortletAvailable</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m28"></a><h2>k12.PortalPageSuggestionsOnSearchResultsPageTest:verifyTopicsPortletForInvalidKeyword</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>TranslateDesclaimerTest</h1>
+<a id="m29"></a><h2>k12.TranslateDesclaimerTest:setUp</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>ERROR: Element //input[@name='search_input'] not found</p>
+com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+<br/>at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+<br/>at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:291)
+<br/>at webPageElements4Testing.TextBox.type(TextBox.java:11)
+<br/>at k12.BaseWebPageTest.doBasicSearchUsingSearchTerm(BaseWebPageTest.java:53)
+<br/>at k12.TranslateDesclaimerTest.setUp(TranslateDesclaimerTest.java:19)
+<br/>20 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m30"></a><h2>k12.TranslateDesclaimerTest:tearDown</h2>
+<div style="padding-left:3em">
+<p>ERROR: Command execution failure. Please search the forum at http://clearspace.openqa.org for error details from the log window.  The error message is: Unspecified error.</p>
+com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+<br/>at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+<br/>at com.thoughtworks.selenium.DefaultSelenium.deleteAllVisibleCookies(DefaultSelenium.java:655)
+<br/>at util.SeleniumSingletonFactory.stopEverything(SeleniumSingletonFactory.java:35)
+<br/>at k12.BaseWebPageTest.tearDown(BaseWebPageTest.java:82)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<br/>at java.lang.reflect.Method.invoke(Method.java:597)
+<br/>at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:644)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:443)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:160)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:90)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:313)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:201)
+<br/>at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:915)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:879)
+<br/>at org.testng.TestNG.run(TestNG.java:787)
+<br/>at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:75)
+<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:127)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m31"></a><h2>k12.TranslateDesclaimerTest:verifyDisclaiamerLanguageIsEnglish</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m32"></a><h2>k12.TranslateDesclaimerTest:verifyDisclaimerIsLink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m33"></a><h2>k12.TranslateDesclaimerTest:verifyDisclaimerOnTopOfWindow</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m34"></a><h2>k12.TranslateDesclaimerTest:verifyNewWindowOpening</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m35"></a><h2>k12.TranslateDesclaimerTest:verifyTranslateOptionAvailable</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>JumpToPortalPageFromBasicSearchTest</h1>
+<a id="m36"></a><h2>k12.JumpToPortalPageFromBasicSearchTest:verifyNavigationByEnteringNonTopicSearchTerm</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m37"></a><h2>k12.JumpToPortalPageFromBasicSearchTest:verifyNavigationByEnteringTopic</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">contraception</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m38"></a><h2>k12.JumpToPortalPageFromBasicSearchTest:verifyTopicRelatedPage</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">contraception</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>SearchWithinResultsTest</h1>
+<a id="m39"></a><h2>k12.SearchWithinResultsTest:verifyFullTextOnSearchTermsDisplayed</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>ERROR: Element //div[@class='result_count']/span[@class='total_results'] not found</p>
+com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+<br/>at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+<br/>at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+<br/>at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+<br/>at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+<br/>at webPageContainers4Testing.SearchWithinResults.verifyFullTextOnSearchTermsDisplayed(SearchWithinResults.java:34)
+<br/>at k12.SearchWithinResultsTest.verifyFullTextOnSearchTermsDisplayed(SearchWithinResultsTest.java:37)
+<br/>23 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m40"></a><h2>k12.SearchWithinResultsTest:verifyHitcountAfterLimitingResults</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m41"></a><h2>k12.SearchWithinResultsTest:verifyLimiterModifiedByWithinSearch</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m42"></a><h2>k12.SearchWithinResultsTest:verifySearchLimitedAcrossOtherTabs</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m43"></a><h2>k12.SearchWithinResultsTest:verifySearchOptionForOtherTabs</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m44"></a><h2>k12.SearchWithinResultsTest:verifyUserInViewAllAfterResultsSearch</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m45"></a><h2>k12.SearchWithinResultsTest:canUserEnterDataInSearchBox</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m46"></a><h2>k12.SearchWithinResultsTest:verifySearchBoxInSidebarInViewAllPage</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>TextDocumentTranslateText</h1>
+<a id="m47"></a><h2>k12.TextDocumentTranslateText:verifyTitleOfTranslatedDocument</h2>
+<div style="padding-left:3em">
+<p>ERROR: Command execution failure. Please search the forum at http://clearspace.openqa.org for error details from the log window.  The error message is: </p>
+com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+<br/>at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+<br/>at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+<br/>at webPageElements4Testing.PageButton.click(PageButton.java:18)
+<br/>at webPageContainers4Testing.TextDocumentTranslate.verifyTitleOfTranslatedDocument(TextDocumentTranslate.java:21)
+<br/>at k12.TextDocumentTranslateText.verifyTitleOfTranslatedDocument(TextDocumentTranslateText.java:25)
+<br/>23 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m48"></a><h2>k12.TextDocumentTranslateText:verifyCitationIsPresent</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m49"></a><h2>k12.TextDocumentTranslateText:verifyDisclaimerIsPresent</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m50"></a><h2>k12.TextDocumentTranslateText:verifyGaleDocumentNoIsPresent</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m51"></a><h2>k12.TextDocumentTranslateText:verifyNoreadSpeakerLinksPresent</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m52"></a><h2>k12.TextDocumentTranslateText:verifyWordsToKnowAvailable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>LoginTest</h1>
+<a id="m53"></a><h2>k12.LoginTest:basicSearchBoxIsDisplayedInHomePage</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">dmusz</td>
+<td style="padding-left:.5em;padding-right:2em">dmusz</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>HitcountAndSortingDocumentsRelatedSubjectsTest</h1>
+<a id="m54"></a><h2>k12.HitcountAndSortingDocumentsRelatedSubjectsTest:verifyAccesibilityOfMoreLink</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">clever</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m55"></a><h2>k12.HitcountAndSortingDocumentsRelatedSubjectsTest:verifyDescendingAfterLessLink</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">clever</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m56"></a><h2>k12.HitcountAndSortingDocumentsRelatedSubjectsTest:verifyFunctionalityOfLessLink</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">clever</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m57"></a><h2>k12.HitcountAndSortingDocumentsRelatedSubjectsTest:verifyHitcountByaddingAllDispalyGroups</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">clever</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m58"></a><h2>k12.HitcountAndSortingDocumentsRelatedSubjectsTest:verifyHitcountForAllDisplayGroups</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">clever</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m59"></a><h2>k12.HitcountAndSortingDocumentsRelatedSubjectsTest:verifyMoreLinkForMoreThanFiveResults</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">clever</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m60"></a><h2>k12.HitcountAndSortingDocumentsRelatedSubjectsTest:verifyNavigationthroughRelatedSubjectTerm</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">clever</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m61"></a><h2>k12.HitcountAndSortingDocumentsRelatedSubjectsTest:verifyNoMoreLinkForLessThanFiveResults</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">clever</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m62"></a><h2>k12.HitcountAndSortingDocumentsRelatedSubjectsTest:verifyOnlyFiveLinksDisplayedInRelatedResults</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">clever</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m63"></a><h2>k12.HitcountAndSortingDocumentsRelatedSubjectsTest:verifyQuickSearchSidebarisPresent</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">clever</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m64"></a><h2>k12.HitcountAndSortingDocumentsRelatedSubjectsTest:verifySortingOfRelatedSubjectTerms</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">clever</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m65"></a><h2>k12.HitcountAndSortingDocumentsRelatedSubjectsTest:verifySortingOrderAfterClickingMore</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">clever</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m66"></a><h2>k12.HitcountAndSortingDocumentsRelatedSubjectsTest:verifyViewingOtherSubjectsByNavigation</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">clever</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>IntegrateWebsitesFavIconsOnViewAllPageTest</h1>
+<a id="m67"></a><h2>k12.IntegrateWebsitesFavIconsOnViewAllPageTest:verifyDisplayOfGenericIcon</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m68"></a><h2>k12.IntegrateWebsitesFavIconsOnViewAllPageTest:verifyFavIconsForAllDisplayGroupsinViewAllpage</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m69"></a><h2>k12.IntegrateWebsitesFavIconsOnViewAllPageTest:verifyFaviconsOnLeftsideOfRecord</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m70"></a><h2>k12.IntegrateWebsitesFavIconsOnViewAllPageTest:verifyfaviconsNotPresentInSearchResultsPage</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m71"></a><h2>k12.IntegrateWebsitesFavIconsOnViewAllPageTest:verifyfaviconsOnViewAllPage</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>ViewTopicportalPageWithAllPortalsTest</h1>
+<a id="m72"></a><h2>k12.ViewTopicportalPageWithAllPortalsTest:verifyBreadcrumb</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>ERROR: Element //div[@id='breadcrumb_container']/ul/li/a not found</p>
+com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+<br/>at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+<br/>at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+<br/>at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+<br/>at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+<br/>at webPageContainers4Testing.ViewTopicportalPageWithAllPortals.verifyBreadcrumb(ViewTopicportalPageWithAllPortals.java:70)
+<br/>at k12.ViewTopicportalPageWithAllPortalsTest.verifyBreadcrumb(ViewTopicportalPageWithAllPortalsTest.java:63)
+<br/>23 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m73"></a><h2>k12.ViewTopicportalPageWithAllPortalsTest:verifyBasicSearchOptionFromPortalPage</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m74"></a><h2>k12.ViewTopicportalPageWithAllPortalsTest:verifyDifferentMethodsForNavigationToPortalPage</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m75"></a><h2>k12.ViewTopicportalPageWithAllPortalsTest:verifyPageforKeywordNotHavingPortalPage</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m76"></a><h2>k12.ViewTopicportalPageWithAllPortalsTest:verifyPortletsFromOceanServices</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m77"></a><h2>k12.ViewTopicportalPageWithAllPortalsTest:verifyPortletsInPortalPage</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m78"></a><h2>k12.ViewTopicportalPageWithAllPortalsTest:verifyUserisInportalPageAfterclickingTopic</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">adoption</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>LinkToRelatedSubjects</h1>
+<a id="m79"></a><h2>k12.LinkToRelatedSubjectTest:verifyIntegrateRelatedTopicsPresent</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m80"></a><h2>k12.LinkToRelatedSubjectTest:verifyPageNavigationByClickingSubjects</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m81"></a><h2>k12.LinkToRelatedSubjectTest:verifyRelatedTopicsFromViewAll</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m82"></a><h2>k12.LinkToRelatedSubjectTest:verifyTermsDisplayedInRelatedTopics</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>DisablePdfDownloadforImagesTest</h1>
+<a id="m83"></a><h2>k12.DisablePdfDownloadforImagesTest:verify3optionsavailableForDownload</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m84"></a><h2>k12.DisablePdfDownloadforImagesTest:verifyDownloadOptionAvailableForImageStatisticAndWebsites</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m85"></a><h2>k12.DisablePdfDownloadforImagesTest:verifyPdfFunctionsForAllotherBuckets</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m86"></a><h2>k12.DisablePdfDownloadforImagesTest:verifyPdfNotSelectableForImageStatisticsAndWebsite</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m87"></a><h2>k12.DisablePdfDownloadforImagesTest:verifyPdfOptionFromKeyboard</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m88"></a><h2>k12.DisablePdfDownloadforImagesTest:verifyPdfRadioButtonNotAvailable</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m89"></a><h2>k12.DisablePdfDownloadforImagesTest:verifyRadioButtonForallOtherDisplayGroups</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">war</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

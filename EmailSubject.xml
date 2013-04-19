@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="EmailSubject">
+	<test name="EmailSubject" enabled="true">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.EmailSubjectTest">
+				<methods>
+					<include name="verifyEmailOption" />
+					<include name="verifyDocumentTitleInSubjectField" />
+					<include name="verifyEmailOptionForOtherDisplayGroup" />
+					<include name="verifyDocumentTitleForOtherDisplayGroup" />
+					<include name="verifySubjectFieldIsEditable" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
+

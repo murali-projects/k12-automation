@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="k12.ShareBookmarkWithSocialNetworkingSiteTest" failures="1" tests="7" time="81.371" errors="0">
+  <properties/>
+  <testcase name="verifyShareToolAvailableInDetailPage" time="7.43" classname="k12.ShareBookmarkWithSocialNetworkingSiteTest"/>
+  <testcase name="verifyMouseOverShareOption" time="4.277" classname="k12.ShareBookmarkWithSocialNetworkingSiteTest"/>
+  <testcase name="verifyContentIsSharedInNetwork" time="55.663" classname="k12.ShareBookmarkWithSocialNetworkingSiteTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //span[1]//input[@class=&amp;apos;UIButton_Text&amp;apos;] not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //span[1]//input[@class='UIButton_Text'] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.clickWithoutWait(Link.java:16)
+	at webPageContainers4Testing.ShareBookmarkWithSocialNetworkingSite.verifyContentIsSharedInNetwork(ShareBookmarkWithSocialNetworkingSite.java:50)
+	at k12.ShareBookmarkWithSocialNetworkingSiteTest.verifyContentIsSharedInNetwork(ShareBookmarkWithSocialNetworkingSiteTest.java:45)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyMoreAndCloseOptionsInPopup" time="0.0" classname="k12.ShareBookmarkWithSocialNetworkingSiteTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyUserAbleToSearch" time="0.0" classname="k12.ShareBookmarkWithSocialNetworkingSiteTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNoSearchTermFound" time="0.0" classname="k12.ShareBookmarkWithSocialNetworkingSiteTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyEmptyFieldForNextSearch" time="0.0" classname="k12.ShareBookmarkWithSocialNetworkingSiteTest">
+    <skipped/>
+  </testcase>
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAudioDocuments" failures="1" tests="3" time="10.358" errors="0">
+  <properties/>
+  <testcase name="checkAudioArticlesDisplayGroupIsPresent" time="0.063" classname="k12.ViewAudioDocumentsTest"/>
+  <testcase name="checkAudioContentLinksArePresent" time="0.093" classname="k12.ViewAudioDocumentsTest"/>
+  <testcase name="verifyDetailedViewIsDisplayed" time="2.594" classname="k12.ViewAudioDocumentsTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ViewAudioDocumentsTest.verifyDetailedViewIsDisplayed(ViewAudioDocumentsTest.java:40)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

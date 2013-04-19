@@ -1,0 +1,15 @@
+<suite name="ViewHomePage">
+	<test name="ViewHomePageTest" enabled="true">
+		<classes>
+			<class name="k12.ViewHomePageTest">
+				<methods>
+					<include name="verifyBasicSearchBoxIsPresent" />
+					<include name="verifyTopMenuBarIsPresent" />
+					<include name="verifyBottomMenuBarIsPresent" />
+					<include name="verifyPreMentionedPortletsArePresent" />
+					<include name="verifyNewsPortletIsPresent" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

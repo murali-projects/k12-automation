@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllViewPointsOnSearchResultsPageTest" failures="0" tests="10" time="52.573" errors="0">
+  <properties/>
+  <testcase name="basicSearch" time="3.953" classname="k12.ViewAllViewPointsOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForViewPointsIsDispalyed" time="0.078" classname="k12.ViewAllViewPointsOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForViewPointsIsWorking" time="8.421" classname="k12.ViewAllViewPointsOnSearchResultsPageTest"/>
+  <testcase name="viewAllNavigationForViewPoints" time="0.062" classname="k12.ViewAllViewPointsOnSearchResultsPageTest"/>
+  <testcase name="verifyDocumentDisplayPageResultsForViewPoints" time="0.078" classname="k12.ViewAllViewPointsOnSearchResultsPageTest"/>
+  <testcase name="verifyNextLinkForViewPoints" time="0.094" classname="k12.ViewAllViewPointsOnSearchResultsPageTest"/>
+  <testcase name="verifyNextLinkIsworkingForViewPoints" time="4.203" classname="k12.ViewAllViewPointsOnSearchResultsPageTest"/>
+  <testcase name="verifyPreviousLinkForViewPoints" time="0.047" classname="k12.ViewAllViewPointsOnSearchResultsPageTest"/>
+  <testcase name="verifyPreviousLinkIsworkingForViewPoints" time="5.499" classname="k12.ViewAllViewPointsOnSearchResultsPageTest"/>
+  <testcase name="validateDocumentTitlesWithDB" time="27.294" classname="k12.ViewAllViewPointsOnSearchResultsPageTest"/>
+</testsuite>

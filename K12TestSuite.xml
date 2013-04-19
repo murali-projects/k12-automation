@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="K12-TestSuite">
+	<test verbose="2" name="K12 HookupTest" annotations="JDK">
+		<classes>
+			<class name="k12.HookupTest" />
+		</classes>
+	</test>
+	<test verbose="2" name="K12 BasicSearchTest" annotations="JDK">
+		<classes>
+			<class name="k12.BasicSearchTest" />
+		</classes>
+	</test>
+	<test verbose="2" name="K12 SearchResultsPageTest" annotations="JDK">
+		<classes>
+			<class name="k12.SearchResultsPageTest" />
+		</classes>
+	</test>
+	<test verbose="2" name="K12 ViewingHomePageTest" annotations="JDK">
+		<classes>
+			<class name="k12.ViewingHomePageTest" />
+		</classes>
+	</test>
+	<test verbose="2" name="K12 ViewingReferenceDisplayGroupTest" annotations="JDK">
+		<classes>
+			<class name="k12.ViewingReferenceDisplayGroupTest" />
+		</classes>
+	</test>
+</suite>

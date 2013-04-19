@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Access Bottom MenuBar" failures="1" tests="12" time="9.344" errors="0">
+  <properties/>
+  <testcase name="verifyAboutThinkLinkIsDisplayed" time="0.046" classname="k12.AccessBottomMenuBarTest"/>
+  <testcase name="verifyAboutGaleLinkIsDisplayed" time="0.031" classname="k12.AccessBottomMenuBarTest"/>
+  <testcase name="verifyContactUsLinkIsDisplayed" time="0.047" classname="k12.AccessBottomMenuBarTest"/>
+  <testcase name="verifyCopyrightLinkIsDisplayed" time="0.047" classname="k12.AccessBottomMenuBarTest"/>
+  <testcase name="verifyTermsofUseLinkIsDisplayed" time="0.047" classname="k12.AccessBottomMenuBarTest"/>
+  <testcase name="verifyPrivacyPolicyLinkIsDisplayed" time="0.047" classname="k12.AccessBottomMenuBarTest"/>
+  <testcase name="verifyEndSessionLinkIsDisplayed" time="0.062" classname="k12.AccessBottomMenuBarTest"/>
+  <testcase name="isNewWindowOpenedOnClickingAboutGale" time="3.376" classname="k12.AccessBottomMenuBarTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.AccessBottomMenuBarTest.isNewWindowOpenedOnClickingAboutGale(AccessBottomMenuBarTest.java:79)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="isNewWindowOpenedOnClickingContactUs" time="0.0" classname="k12.AccessBottomMenuBarTest">
+    <skipped/>
+  </testcase>
+  <testcase name="isNewWindowOpenedOnClickingCopyright" time="0.0" classname="k12.AccessBottomMenuBarTest">
+    <skipped/>
+  </testcase>
+  <testcase name="isNewWindowOpenedOnClickingTermsOfUse" time="0.0" classname="k12.AccessBottomMenuBarTest">
+    <skipped/>
+  </testcase>
+  <testcase name="isNewWindowOpenedOnClickingPrivacyPolicy" time="0.0" classname="k12.AccessBottomMenuBarTest">
+    <skipped/>
+  </testcase>
+</testsuite>

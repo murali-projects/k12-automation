@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [k12-selenium]" junit="false" parallel="false" annotations="JDK" data-provider-thread-count="10">
+  <parameter name="searchTerm" value="clever"/>
+  <test name="k12.HitcountAndSortingDocumentsRelatedSubjectsTest(failed)" junit="false" parallel="false" annotations="JDK">
+    <parameter name="searchTerm" value="clever"/>
+    <classes>
+      <class name="k12.HitcountAndSortingDocumentsRelatedSubjectsTest">
+        <methods>
+          <include name="startBrowserSession"/>
+          <include name="verifyViewingOtherSubjectsByNavigation"/>
+          <include name="verifyHitcountForAllDisplayGroups"/>
+          <include name="verifyDescendingAfterLessLink"/>
+          <include name="start"/>
+          <include name="verifyOnlyFiveLinksDisplayedInRelatedResults"/>
+          <include name="verifyNavigationthroughRelatedSubjectTerm"/>
+          <include name="verifyFunctionalityOfLessLink"/>
+          <include name="verifyHitcountByaddingAllDispalyGroups"/>
+          <include name="verifySortingOrderAfterClickingMore"/>
+          <include name="verifySortingOfRelatedSubjectTerms"/>
+          <include name="verifyAccesibilityOfMoreLink"/>
+          <include name="verifyNoMoreLinkForLessThanFiveResults"/>
+          <include name="verifyMoreLinkForMoreThanFiveResults"/>
+          <include name="verifyQuickSearchSidebarisPresent"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

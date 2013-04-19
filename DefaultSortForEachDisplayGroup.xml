@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DefaultSortForEachDisplayGroup">
+
+	<test name="DefaultSortForEachDisplayGroup" enabled="true">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="referenceDisplayGroup" value="reference" />
+		<parameter name="magazinesDisplayGroup" value="magazines" />
+		<parameter name="newsDisplayGroup" value="news" />
+		<parameter name="primarySourcesDisplayGroup" value="primarySource" />
+		<parameter name="viewPointsDisplayGroup" value="viewpoints" />
+		<parameter name="statisticsDisplayGroup" value="statistics" />
+		<parameter name="audioDisplayGroup" value="audio" />
+		<parameter name="videoDisplayGroup" value="video" />
+		<parameter name="webLinksDisplayGroup" value="webLinks" />
+		<parameter name="academicjournalsDisplayGroup" value="academicjournals" />
+		<classes>
+			<class name="k12.DefaultSortForEachDisplayGroupTest">
+				<methods>
+					<include name="basicSearch" />
+					<include name="defaultSortForReferenceDisplayGroup" />
+					<include name="defaultSortForMagazinesDisplayGroup" />
+					<include name="defaultSortForNewsDisplayGroup" />
+					<include name="defaultSortForPrimarySourceDisplayGroup" />
+					<include name="defaultSortForViewPointsDisplayGroup" />
+					<include name="defaultSortForStatisticsDisplayGroup" />
+					<include name="defaultSortForAudioDisplayGroup" />
+					<include name="defaultSortForVideoDisplayGroup" />
+					<include name="defaultSortForWebLinksDisplayGroup" />
+					<include name="defaultSortForAcademicJournalsDisplayGroup" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
+

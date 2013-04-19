@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllReferenceOnSearchResultsPageTest" failures="0" tests="9" time="22.059" errors="0">
+  <properties/>
+  <testcase name="basicSearch" time="3.703" classname="k12.ViewAllReferenceOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForReferenceArticleIsDispalyed" time="0.063" classname="k12.ViewAllReferenceOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForReferenceArticleIsWorking" time="5.187" classname="k12.ViewAllReferenceOnSearchResultsPageTest"/>
+  <testcase name="viewAllNavigationForReferenceArticle" time="0.031" classname="k12.ViewAllReferenceOnSearchResultsPageTest"/>
+  <testcase name="verifyDocumentDisplayPageResultsForReferenceArticle" time="0.063" classname="k12.ViewAllReferenceOnSearchResultsPageTest"/>
+  <testcase name="verifyNextLinkForReferenceArticle" time="0.062" classname="k12.ViewAllReferenceOnSearchResultsPageTest"/>
+  <testcase name="verifyNextLinkIsworkingForReferenceArticle" time="4.515" classname="k12.ViewAllReferenceOnSearchResultsPageTest"/>
+  <testcase name="verifyPreviousLinkForReferenceArticle" time="0.063" classname="k12.ViewAllReferenceOnSearchResultsPageTest"/>
+  <testcase name="verifyPreviousLinkIsworkingForReferenceArticle" time="4.468" classname="k12.ViewAllReferenceOnSearchResultsPageTest"/>
+</testsuite>

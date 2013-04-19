@@ -1,0 +1,32 @@
+<suite name="SearchUsingSearchAssist">
+	<parameter name="searchTerm" value="war" />
+	<parameter name="searchWordLessThanThreeChar" value="wa" />
+	<parameter name="searchWordMoreThanThreeChar" value="wars" />
+	<parameter name="searchWithStopWord" value="war the battle" />
+	<parameter name="newSearchWord" value="man" />
+	<parameter name="displayGroupList"
+		value="reference,news,magazines,journals,primarysources,viewpoints,audio,video,images" />
+	<parameter name="displayGroup" value="reference" />
+	<test name="SearchUsingSearchAssistTest" enabled="true">
+		<classes>
+			<class name="k12.SearchUsingSearchAssistTest">
+				<methods>
+					<include name="verifyIsSearchFieldEmpty" />
+					<include name="verifySuggestionsList" />
+					<include name="verifyListLessThanThreeChar" />
+					<include name="verifyListMoreThanThreeChar" />
+					<include name="verifyFourCharsForSuggestionList" />
+					<include name="verifyAllBucketsForSearch" />
+					<include name="selectedSuggestionInSeachField" />
+					<include name="verifySuggestionAvailForStopWord" />
+					<include name="verifySearchSuggestionInViewAllPage" />
+					<include name="verifySearchSuggestionFromViewAllPage" />
+					<include name="verifyDocumentInDetailedPage" />
+					<include name="verifySuggestionForNewSearchWord" />
+					<include name="verifyPortletTitlesInSuggestionList" />
+					<include name="verifyIsSelectedPortalPageIsDisplayed" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

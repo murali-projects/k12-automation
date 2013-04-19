@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ShareBookmarkWithSocialNetworkingSiteTest" failures="0" tests="7" time="146.138" errors="0">
+  <properties/>
+  <testcase name="verifyShareToolAvailableInDetailPage" time="7.811" classname="k12.ShareBookmarkWithSocialNetworkingSiteTest"/>
+  <testcase name="verifyMouseOverShareOption" time="8.779" classname="k12.ShareBookmarkWithSocialNetworkingSiteTest"/>
+  <testcase name="verifyContentIsSharedInNetwork" time="59.141" classname="k12.ShareBookmarkWithSocialNetworkingSiteTest"/>
+  <testcase name="verifyMoreAndCloseOptionsInPopup" time="17.951" classname="k12.ShareBookmarkWithSocialNetworkingSiteTest"/>
+  <testcase name="verifyUserAbleToSearch" time="9.647" classname="k12.ShareBookmarkWithSocialNetworkingSiteTest"/>
+  <testcase name="verifyNoSearchTermFound" time="21.745" classname="k12.ShareBookmarkWithSocialNetworkingSiteTest"/>
+  <testcase name="verifyEmptyFieldForNextSearch" time="11.723" classname="k12.ShareBookmarkWithSocialNetworkingSiteTest"/>
+</testsuite>

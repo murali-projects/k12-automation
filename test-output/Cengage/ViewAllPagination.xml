@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllPagination" failures="1" tests="9" time="40.48" errors="0">
+  <properties/>
+  <testcase name="basicNavigation" time="8.78" classname="k12.ViewAllPaginationTest"/>
+  <testcase name="verifyFirstFivePagesDisplayed" time="0.266" classname="k12.ViewAllPaginationTest"/>
+  <testcase name="verifyDisplayedPageNumbersAreLink" time="0.203" classname="k12.ViewAllPaginationTest"/>
+  <testcase name="verifyCorrectPageNavigation" time="6.562" classname="k12.ViewAllPaginationTest"/>
+  <testcase name="verifyCurrentPageVerification" time="4.015" classname="k12.ViewAllPaginationTest"/>
+  <testcase name="verifyNextPreviousLinksVerification" time="0.25" classname="k12.ViewAllPaginationTest"/>
+  <testcase name="verifyPreviousIsNotPresentInFirstPage" time="7.265" classname="k12.ViewAllPaginationTest"/>
+  <testcase name="validateRandomlyNavigatedContentFromDB" time="8.437" classname="k12.ViewAllPaginationTest">
+    <failure type="java.lang.IndexOutOfBoundsException" message="Index: 22, Size: 20">
+      <![CDATA[java.lang.IndexOutOfBoundsException: Index: 22, Size: 20
+	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+	at java.util.ArrayList.get(ArrayList.java:322)
+	at webPageContainers4Testing.ViewAllPagination.compareValuesFromDB(ViewAllPagination.java:160)
+	at webPageContainers4Testing.ViewAllPagination.validateRandomlyNavigatedContentFromDB(ViewAllPagination.java:145)
+	at k12.ViewAllPaginationTest.validateRandomlyNavigatedContentFromDB(ViewAllPaginationTest.java:63)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyNextIsNotPresentInLastPage" time="0.0" classname="k12.ViewAllPaginationTest">
+    <skipped/>
+  </testcase>
+</testsuite>

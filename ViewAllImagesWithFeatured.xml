@@ -1,0 +1,23 @@
+<suite name="ViewAllImagesWithFeatured">
+	<parameter name="searchTerm" value="adoption" />
+	<parameter name="relevanceOption" value="Relevance" />
+	<parameter name="documentTitleOption" value="Document Title" />
+	<test name="ViewAllImagesWithFeaturedTest" enabled="true">
+		<classes>
+			<class name="k12.ViewAllImagesWithFeaturedTest">
+				<methods>
+					<include name="basicSearchAndPortalNav" />
+					<include name="verifyDefaultSortForImages" />
+					<include name="verifyChangeInSortForImages" />
+					<include name="verifyRelevanceSortForImages" />
+					<include name="verifyWhenTabsAreChanged" />
+					<include name="verifyPaginationOfHandPickedItems" />
+					<include name="verifyDetailedPageOfHandPickedItem" />
+					<include name="verifyPaginationWithRelavence" />
+					<include name="verifyPaginationWithRelavenceFromOtherSort" />
+					<include name="verifyHandPickedItemsOnSearchPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

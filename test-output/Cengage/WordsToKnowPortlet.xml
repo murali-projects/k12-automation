@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WordsToKnowPortlet" failures="0" tests="8" time="118.882" errors="0">
+  <properties/>
+  <testcase name="verifyDisplayGroup" time="6.246" classname="k12.WordsToKnowPortletTest"/>
+  <testcase name="verifyDetailedDocument" time="14.085" classname="k12.WordsToKnowPortletTest"/>
+  <testcase name="verifyWordsPortlet" time="0.032" classname="k12.WordsToKnowPortletTest"/>
+  <testcase name="verifyWordsPortletHighlighted" time="1.14" classname="k12.WordsToKnowPortletTest"/>
+  <testcase name="verifyDefinitionOfWord" time="0.656" classname="k12.WordsToKnowPortletTest"/>
+  <testcase name="verifyWordsList" time="1.78" classname="k12.WordsToKnowPortletTest"/>
+  <testcase name="verifyWordsToKnowHeading" time="0.031" classname="k12.WordsToKnowPortletTest"/>
+  <testcase name="verifyMeaningandPartsOfSpeechAvailable" time="1.827" classname="k12.WordsToKnowPortletTest"/>
+</testsuite>

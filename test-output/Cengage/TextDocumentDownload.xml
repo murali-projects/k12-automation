@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TextDocumentDownload" failures="1" tests="5" time="122.188" errors="0">
+  <properties/>
+  <testcase name="verifyDownloadOptionAvailable" time="10.232" classname="k12.TextDocumentDownloadTest"/>
+  <testcase name="checkDownloadedHtmlDocument" time="96.852" classname="k12.TextDocumentDownloadTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.TextDocumentDownloadTest.checkDownloadedHtmlDocument(TextDocumentDownloadTest.java:29)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="checkHtmlDocumentOfCriticalThinkingDocuments" time="0.0" classname="k12.TextDocumentDownloadTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyHtmlDocumentForAllDisplayGroups" time="0.0" classname="k12.TextDocumentDownloadTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyRelatedTopicsAndToolsNotAvailableInHtmlDocument" time="0.0" classname="k12.TextDocumentDownloadTest">
+    <skipped/>
+  </testcase>
+</testsuite>

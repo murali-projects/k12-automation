@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ViewAllPagination">
+	<test name="ViewAllPagination" enabled="true">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="displayGroup" value="reference" />
+		<classes>
+			<class name="k12.ViewAllPaginationTest">
+				<methods>
+					<include name="basicNavigation" />
+					<include name="verifyFirstFivePagesDisplayed" />
+					<include name="verifyDisplayedPageNumbersAreLink" />
+					<include name="verifyCorrectPageNavigation" />
+					<include name="verifyCurrentPageVerification" />
+					<include name="verifyNextPreviousLinksVerification" />
+					<include name="verifyPreviousIsNotPresentInFirstPage" />
+					<include name="validateRandomlyNavigatedContentFromDB" />
+					<include name="verifyNextIsNotPresentInLastPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
+

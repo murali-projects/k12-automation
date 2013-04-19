@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DocInfoType" failures="1" tests="20" time="9.719" errors="0">
+  <properties/>
+  <testcase name="verifyDocInfoTypeIsDisplayedInReference" time="8.266" classname="k12.DocInfoTypeTest"/>
+  <testcase name="validateDocInfoTypeWIthOCeanInReference" time="0.687" classname="k12.DocInfoTypeTest">
+    <failure type="java.lang.IndexOutOfBoundsException" message="Index: 0, Size: 0">
+      <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+	at java.util.ArrayList.get(ArrayList.java:322)
+	at webPageContainers4Testing.DocInfoType.compareDocInfoTypes(DocInfoType.java:65)
+	at webPageContainers4Testing.DocInfoType.validateDocInfoTypeWithOcean(DocInfoType.java:58)
+	at k12.DocInfoTypeTest.validateDocInfoTypeWIthOCeanInReference(DocInfoTypeTest.java:26)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyMultipleDocInfoTypeIsSeparatedByCommaInReference" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyArticeIsPresentForDontHaveDocInfoType" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocInfoTypeIsDisplayInAllLinksInReference" time="0.016" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocInfoTypeIsDisplayedInWebsites" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateDocInfoTypeWIthOCeanInWebsites" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyMultipleDocInfoTypeIsSeparatedByCommaWebsites" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyArticeIsPresentForDontHaveWebsites" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocInfoTypeIsDisplayInAllLinksWebsites" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocInfoTypeIsDisplayedInPrimarySources" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateDocInfoTypeWIthOCeanInPrimarySources" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyMultipleDocInfoTypeIsSeparatedByCommaInPrimarySources" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyArticeIsPresentForDontHaveDocInfoTypeInPrimarySources" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocInfoTypeIsDisplayInAllLinksInPrimarySources" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocInfoTypeIsDisplayedInStatistics" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateDocInfoTypeWIthOCeanInStatistics" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyMultipleDocInfoTypeIsSeparatedByCommaInStatistics" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyArticeIsPresentForDontHaveDocInfoTypeInStatistics" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocInfoTypeIsDisplayInAllLinksInStatistics" time="0.0" classname="k12.DocInfoTypeTest">
+    <skipped/>
+  </testcase>
+</testsuite>

@@ -1,0 +1,17 @@
+<suite name="LibraryLinks">
+	<parameter name="searchTerm" value="war" />
+	<parameter name="displayedGroup" value="reference" />
+	<parameter name="displayGroup" value="audio,video,reference,primarysources,news,websites,magazines,images,viewpoints,statistics,journals" />
+	<test name="LibraryLinksTest" enabled="true">
+		<classes>
+			<class name="k12.LibraryLinksTest">
+				<methods>
+					<include name="verifyLibraryLinksAvailability" />
+					<include name="verifyLinksUnderLibrarySection" />
+					<include name="verifyLibraryLinksAvailabilityForAllGroups" />
+					<include name="verifyLinksInPortalPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

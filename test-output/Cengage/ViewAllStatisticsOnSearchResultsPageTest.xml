@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllStatisticsOnSearchResultsPageTest" failures="0" tests="10" time="24.247" errors="0">
+  <properties/>
+  <testcase name="basicSearch" time="3.953" classname="k12.ViewAllStatisticsOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForStatisticsIsDispalyed" time="0.078" classname="k12.ViewAllStatisticsOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForStatisticsIsWorking" time="3.328" classname="k12.ViewAllStatisticsOnSearchResultsPageTest"/>
+  <testcase name="viewAllNavigationForStatistics" time="0.047" classname="k12.ViewAllStatisticsOnSearchResultsPageTest"/>
+  <testcase name="verifyDocumentDisplayPageResultsForStatistics" time="0.078" classname="k12.ViewAllStatisticsOnSearchResultsPageTest"/>
+  <testcase name="verifyNextLinkForStatistics" time="0.078" classname="k12.ViewAllStatisticsOnSearchResultsPageTest"/>
+  <testcase name="verifyNextLinkIsworkingForStatistics" time="0.031" classname="k12.ViewAllStatisticsOnSearchResultsPageTest"/>
+  <testcase name="verifyPreviousLinkForStatistics" time="0.032" classname="k12.ViewAllStatisticsOnSearchResultsPageTest"/>
+  <testcase name="verifyPreviousLinkIsworkingForStatistics" time="0.047" classname="k12.ViewAllStatisticsOnSearchResultsPageTest"/>
+  <testcase name="validateDocumentTitlesWithDB" time="13.029" classname="k12.ViewAllStatisticsOnSearchResultsPageTest"/>
+</testsuite>

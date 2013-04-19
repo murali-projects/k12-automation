@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Handle Ocean Exceptions" failures="0" tests="7" time="35.762" errors="0">
+  <properties/>
+  <testcase name="verifyErrorPageNotDisplayed" time="4.265" classname="k12.HandleOceanExceptionsTest"/>
+  <testcase name="verifyMessagesDisplayedWithInvalidSearchTerm" time="3.687" classname="k12.HandleOceanExceptionsTest"/>
+  <testcase name="verifyMessagesDisplayedWithIncorrectSpeltSearchTerm" time="4.437" classname="k12.HandleOceanExceptionsTest"/>
+  <testcase name="verifyResultsAreDisplayed" time="4.343" classname="k12.HandleOceanExceptionsTest"/>
+  <testcase name="verifyOnlyErrorMessagesAreDisplayed" time="3.266" classname="k12.HandleOceanExceptionsTest"/>
+  <testcase name="checkWithValidSearchTerm" time="5.765" classname="k12.HandleOceanExceptionsTest"/>
+  <testcase name="checkWithInvalidSearchTerm" time="5.655" classname="k12.HandleOceanExceptionsTest"/>
+</testsuite>

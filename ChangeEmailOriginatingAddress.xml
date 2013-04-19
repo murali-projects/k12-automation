@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ChangeEmailOriginatingAddress">
+	<test name="ChangeEmailOriginatingAddress" enabled="true">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="emailId" value="abc@bbc.com" />
+		<parameter name="defaultMailId" value="galeadmin@cengage.com" />
+		<classes>
+			<class name="k12.ChangeEmailOriginatingAddressTest">
+				<methods>
+					<include name="verifyEmailOption" />
+					<include name="verifyDefaultEmailIdInSenderField" />
+					<include name="verifySenderFieldIsEditable" />
+					<include name="verifyEmailIdInSenderField" />
+					<include name="verifyEmailOptionForOtherDisplayGroup" />
+					<include name="verifyEmailIdInSenderFieldForOtherDisplayGroup" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
+

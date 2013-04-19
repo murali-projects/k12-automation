@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllPrimarySourceOnSearchResultsPageTest" failures="0" tests="10" time="29.184" errors="0">
+  <properties/>
+  <testcase name="basicSearch" time="5.202" classname="k12.ViewAllPrimarySourceOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForPrimarySourceIsDispalyed" time="0.078" classname="k12.ViewAllPrimarySourceOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForPrimarySourceIsWorking" time="5.859" classname="k12.ViewAllPrimarySourceOnSearchResultsPageTest"/>
+  <testcase name="viewAllNavigationForPrimarySource" time="0.062" classname="k12.ViewAllPrimarySourceOnSearchResultsPageTest"/>
+  <testcase name="verifyDocumentDisplayPageResultsForPrimarySource" time="0.063" classname="k12.ViewAllPrimarySourceOnSearchResultsPageTest"/>
+  <testcase name="verifyNextLinkForPrimarySource" time="0.046" classname="k12.ViewAllPrimarySourceOnSearchResultsPageTest"/>
+  <testcase name="verifyNextLinkIsworkingForPrimarySource" time="0.047" classname="k12.ViewAllPrimarySourceOnSearchResultsPageTest"/>
+  <testcase name="verifyPreviousLinkForPrimarySource" time="0.032" classname="k12.ViewAllPrimarySourceOnSearchResultsPageTest"/>
+  <testcase name="verifyPreviousLinkIsworkingForPrimarySource" time="0.046" classname="k12.ViewAllPrimarySourceOnSearchResultsPageTest"/>
+  <testcase name="validateDocumentTitlesWithDB" time="13.233" classname="k12.ViewAllPrimarySourceOnSearchResultsPageTest"/>
+</testsuite>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllImagesOnSearchResultsPage" failures="1" tests="12" time="7.062" errors="0">
+  <properties/>
+  <testcase name="verifyContentResultsInImages" time="0.141" classname="k12.ViewAllImagesOnSearchResultsPageTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ViewAllImagesOnSearchResultsPageTest.verifyContentResultsInImages(ViewAllImagesOnSearchResultsPageTest.java:23)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyViewAllIsDisplayed" time="0.0" classname="k12.ViewAllImagesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyImagesCountIsDisplayed" time="0.0" classname="k12.ViewAllImagesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyViewAllIsNotDisplayed" time="0.0" classname="k12.ViewAllImagesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyImagesHeading" time="0.0" classname="k12.ViewAllImagesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateImagesWithOcean" time="0.0" classname="k12.ViewAllImagesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyMarkMeForImages" time="0.0" classname="k12.ViewAllImagesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyMouseOverOfImage" time="0.0" classname="k12.ViewAllImagesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDetailImageNavigation" time="0.0" classname="k12.ViewAllImagesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNextLinkIsWorking" time="0.0" classname="k12.ViewAllImagesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPreviousLinkIsWorking" time="0.0" classname="k12.ViewAllImagesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyImageDisplayGroupIsNotDisplayed" time="0.0" classname="k12.ViewAllImagesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+</testsuite>

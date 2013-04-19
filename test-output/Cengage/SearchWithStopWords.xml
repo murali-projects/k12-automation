@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SearchWithStopWords" failures="1" tests="7" time="12.373" errors="0">
+  <properties/>
+  <testcase name="doCheckWithSingleStopWord" time="2.422" classname="k12.StopWordsTest"/>
+  <testcase name="doCheckWithOneStopWordInSentenceWithoutQuotes" time="7.202" classname="k12.StopWordsTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@class=&amp;apos;transcript&amp;apos;] not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@class='transcript'] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+	at webPageContainers4Testing.StopAndNaughtyWords.getResults(StopAndNaughtyWords.java:57)
+	at webPageContainers4Testing.StopAndNaughtyWords.searchWithStopWordsInSentenceWithoutQuotes(StopAndNaughtyWords.java:64)
+	at k12.StopWordsTest.doCheckWithOneStopWordInSentenceWithoutQuotes(StopWordsTest.java:26)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="doCheckWithTwoStopWordsInSentenceWithoutQuotes" time="0.0" classname="k12.StopWordsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="doCheckWithMultipleStopWordsInSentenceWithoutQuotes" time="0.0" classname="k12.StopWordsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="doCheckWithStopWordInSentenceWithQuotes" time="0.0" classname="k12.StopWordsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="doCheckWithTwoStopWordsInSentenceWithQuotes" time="0.0" classname="k12.StopWordsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="doCheckWithMultipleStopWordsInSentenceWithQuotes" time="0.0" classname="k12.StopWordsTest">
+    <skipped/>
+  </testcase>
+</testsuite>

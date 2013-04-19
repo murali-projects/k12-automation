@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Link To Third Party Audio" failures="1" tests="3" time="9.296" errors="0">
+  <properties/>
+  <testcase name="verifySpeakerIconIsPresent" time="0.594" classname="k12.LinkToThirdPartyAudioTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.LinkToThirdPartyAudioTest.verifySpeakerIconIsPresent(LinkToThirdPartyAudioTest.java:22)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyAfterClickingSpeakerIcon" time="0.0" classname="k12.LinkToThirdPartyAudioTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAudioTitle" time="0.0" classname="k12.LinkToThirdPartyAudioTest">
+    <skipped/>
+  </testcase>
+</testsuite>

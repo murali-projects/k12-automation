@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HitcountAndSortingDocumentsRelatedSubjectsTest" failures="0" tests="13" time="326.593" errors="0">
+  <properties/>
+  <testcase name="verifyQuickSearchSidebarisPresent" time="19.794" classname="k12.HitcountAndSortingDocumentsRelatedSubjectsTest"/>
+  <testcase name="verifyHitcountForAllDisplayGroups" time="19.217" classname="k12.HitcountAndSortingDocumentsRelatedSubjectsTest"/>
+  <testcase name="verifyOnlyFiveLinksDisplayedInRelatedResults" time="24.899" classname="k12.HitcountAndSortingDocumentsRelatedSubjectsTest"/>
+  <testcase name="verifyMoreLinkForMoreThanFiveResults" time="21.308" classname="k12.HitcountAndSortingDocumentsRelatedSubjectsTest"/>
+  <testcase name="verifyAccesibilityOfMoreLink" time="20.853" classname="k12.HitcountAndSortingDocumentsRelatedSubjectsTest"/>
+  <testcase name="verifyDescendingAfterLessLink" time="41.91" classname="k12.HitcountAndSortingDocumentsRelatedSubjectsTest"/>
+  <testcase name="verifySortingOrderAfterClickingMore" time="21.79" classname="k12.HitcountAndSortingDocumentsRelatedSubjectsTest"/>
+  <testcase name="verifyFunctionalityOfLessLink" time="23.335" classname="k12.HitcountAndSortingDocumentsRelatedSubjectsTest"/>
+  <testcase name="verifySortingOfRelatedSubjectTerms" time="20.261" classname="k12.HitcountAndSortingDocumentsRelatedSubjectsTest"/>
+  <testcase name="verifyNavigationthroughRelatedSubjectTerm" time="27.799" classname="k12.HitcountAndSortingDocumentsRelatedSubjectsTest"/>
+  <testcase name="verifyHitcountByaddingAllDispalyGroups" time="27.034" classname="k12.HitcountAndSortingDocumentsRelatedSubjectsTest"/>
+  <testcase name="verifyViewingOtherSubjectsByNavigation" time="26.113" classname="k12.HitcountAndSortingDocumentsRelatedSubjectsTest"/>
+  <testcase name="verifyNoMoreLinkForLessThanFiveResults" time="19.495" classname="k12.HitcountAndSortingDocumentsRelatedSubjectsTest"/>
+</testsuite>

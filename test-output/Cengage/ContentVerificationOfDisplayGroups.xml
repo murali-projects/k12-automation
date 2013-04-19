@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContentVerificationOfDisplayGroups" failures="5" tests="49" time="14.529" errors="0">
+  <properties/>
+  <testcase name="validateAcademicJournalsCount" time="0.078" classname="k12.ContentVerificationOfDisplayGroupsTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ContentVerificationOfDisplayGroupsTest.validateAcademicJournalsCount(ContentVerificationOfDisplayGroupsTest.java:194)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="validateMagazinesCount" time="0.078" classname="k12.ContentVerificationOfDisplayGroupsTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ContentVerificationOfDisplayGroupsTest.validateMagazinesCount(ContentVerificationOfDisplayGroupsTest.java:149)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="validateNewsCount" time="0.063" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="validatePrimarySourcesCount" time="0.063" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="validatePrimarySourcesPublicationNames" time="0.109" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="validateReferenceCount" time="0.063" classname="k12.ContentVerificationOfDisplayGroupsTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ContentVerificationOfDisplayGroupsTest.validateReferenceCount(ContentVerificationOfDisplayGroupsTest.java:59)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="validateReferencePublicationNames" time="0.125" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="validateStatisticsCount" time="0.062" classname="k12.ContentVerificationOfDisplayGroupsTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ContentVerificationOfDisplayGroupsTest.validateStatisticsCount(ContentVerificationOfDisplayGroupsTest.java:284)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="validateViewPointsCount" time="0.094" classname="k12.ContentVerificationOfDisplayGroupsTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ContentVerificationOfDisplayGroupsTest.validateViewPointsCount(ContentVerificationOfDisplayGroupsTest.java:329)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyAcademicJournalsDisplayGroupIsPresent" time="0.031" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyAcademicJournalsPublicationDatesAreDisplayed" time="0.188" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyAcademicJournalsPublicationNamesAreDisplayed" time="0.171" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyAcademicJournalsThreeLinksAreDisplayed" time="0.11" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyAcademicJournalsTotalCountIsDisplayed" time="0.078" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyAcademicJournalsViewAllLinkDisplayed" time="0.046" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyMagazinesDisplayGroupIsPresent" time="0.047" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyMagazinesPublicationDatesAreDisplayed" time="0.157" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyMagazinesPublicationNamesAreDisplayed" time="0.14" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyMagazinesThreeLinksAreDisplayed" time="0.109" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyMagazinesTotalCountIsDisplayed" time="0.079" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyMagazinesViewAllLinkDisplayed" time="0.031" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyNewsDisplayGroupIsPresent" time="0.032" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyNewsPublicationDatesAreDisplayed" time="0.265" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyNewsPublicationNamesAreDisplayed" time="0.141" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyNewsThreeLinksAreDisplayed" time="0.125" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyNewsTotalCountIsDisplayed" time="0.062" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyNewsViewAllLinkDisplayed" time="0.047" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyPrimarySourcesDisplayGroupIsPresent" time="0.203" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyPrimarySourcesPublicationDatesAreDisplayed" time="0.125" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyPrimarySourcesPublicationNamesAreDisplayed" time="0.125" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyPrimarySourcesThreeLinksAreDisplayed" time="0.125" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyPrimarySourcesTotalCountIsDisplayed" time="0.046" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyPrimarySourcesViewAllLinkDisplayed" time="0.172" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyReferenceDisplayGroupIsPresent" time="0.047" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyReferencePublicationDatesAreDisplayed" time="0.14" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyReferencePublicationNamesAreDisplayed" time="0.141" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyReferenceThreeLinksAreDisplayed" time="0.109" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyReferenceTotalCountIsDisplayed" time="0.063" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyReferenceViewAllLinkDisplayed" time="0.032" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyStatisticsDisplayGroupIsPresent" time="0.047" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyStatisticsThreeLinksAreDisplayed" time="0.249" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyStatisticsTotalCountIsDisplayed" time="0.063" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyStatisticsViewAllLinkDisplayed" time="0.047" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyViewPointsDisplayGroupIsPresent" time="0.047" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyViewPointsPublicationDatesAreDisplayed" time="0.14" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyViewPointsPublicationNamesAreDisplayed" time="0.125" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyViewPointsThreeLinksAreDisplayed" time="0.157" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyViewPointsTotalCountIsDisplayed" time="0.078" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+  <testcase name="verifyViewPointsViewAllLinkDisplayed" time="0.031" classname="k12.ContentVerificationOfDisplayGroupsTest"/>
+</testsuite>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntegratePubLogosOnViewAllPageTest" failures="11" tests="13" time="80.421" errors="0">
+  <properties/>
+  <testcase name="noBrokenImageInstedOfBookCover" time="8.0" classname="k12.IntegratePubLogosOnViewAllPageTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.IntegratePubLogosOnViewAllPageTest.noBrokenImageInstedOfBookCover(IntegratePubLogosOnViewAllPageTest.java:47)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="noBrokenImageInstedOfPubLogo" time="6.266" classname="k12.IntegratePubLogosOnViewAllPageTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.IntegratePubLogosOnViewAllPageTest.noBrokenImageInstedOfPubLogo(IntegratePubLogosOnViewAllPageTest.java:54)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="nonAvailabilityOfBookCoversandLogosForOtherDisplayGroups" time="5.094" classname="k12.IntegratePubLogosOnViewAllPageTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.IntegratePubLogosOnViewAllPageTest.nonAvailabilityOfBookCoversandLogosForOtherDisplayGroups(IntegratePubLogosOnViewAllPageTest.java:40)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyBookCoversIsAvailableInSearchResults" time="4.547" classname="k12.IntegratePubLogosOnViewAllPageTest"/>
+  <testcase name="verifyBookcoverInDetailedView" time="4.093" classname="k12.IntegratePubLogosOnViewAllPageTest">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyBookcoverInDetailedView(IntegratePubLogosOnViewAllPage.java:111)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyBookcoverInDetailedView(IntegratePubLogosOnViewAllPageTest.java:94)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyImagesAfterPagination" time="7.172" classname="k12.IntegratePubLogosOnViewAllPageTest">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyImagesAfterPagination(IntegratePubLogosOnViewAllPage.java:103)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyImagesAfterPagination(IntegratePubLogosOnViewAllPageTest.java:81)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyImagesinViewAllPage" time="6.985" classname="k12.IntegratePubLogosOnViewAllPageTest">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getBoolean(HttpCommandProcessor.java:335)
+	at com.thoughtworks.selenium.DefaultSelenium.isElementPresent(DefaultSelenium.java:495)
+	at webPageElements4Testing.PageElementWithIdAttribute.isPresent(PageElementWithIdAttribute.java:13)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyImagesinViewAllPage(IntegratePubLogosOnViewAllPage.java:96)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyImagesinViewAllPage(IntegratePubLogosOnViewAllPageTest.java:88)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyMouseOverBookCover" time="4.203" classname="k12.IntegratePubLogosOnViewAllPageTest">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.mouseOver(DefaultSelenium.java:243)
+	at webPageElements4Testing.Url.mouseOver(Url.java:36)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyMouseOverBookCover(IntegratePubLogosOnViewAllPage.java:71)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyMouseOverBookCover(IntegratePubLogosOnViewAllPageTest.java:61)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyMouseOverPubLogoNoEnlargeImage" time="6.625" classname="k12.IntegratePubLogosOnViewAllPageTest">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.mouseOver(DefaultSelenium.java:243)
+	at webPageElements4Testing.Url.mouseOver(Url.java:36)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyMouseOverPubLogoNoEnlargeImage(IntegratePubLogosOnViewAllPage.java:79)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyMouseOverPubLogoNoEnlargeImage(IntegratePubLogosOnViewAllPageTest.java:68)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyMouseOverPubLogoToolTipAvailable" time="7.562" classname="k12.IntegratePubLogosOnViewAllPageTest">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.mouseOver(DefaultSelenium.java:243)
+	at webPageElements4Testing.Url.mouseOver(Url.java:36)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyMouseOverPubLogoToolTipAvailable(IntegratePubLogosOnViewAllPage.java:87)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyMouseOverPubLogoToolTipAvailable(IntegratePubLogosOnViewAllPageTest.java:74)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyMouseoverBookcoverInDetailedView" time="4.36" classname="k12.IntegratePubLogosOnViewAllPageTest">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyMouseoverBookcoverInDetailedView(IntegratePubLogosOnViewAllPage.java:119)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyMouseoverBookcoverInDetailedView(IntegratePubLogosOnViewAllPageTest.java:100)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyPubLogoAvailableInSearchResults" time="4.562" classname="k12.IntegratePubLogosOnViewAllPageTest"/>
+  <testcase name="verifyPubLogoInDetailedView" time="5.859" classname="k12.IntegratePubLogosOnViewAllPageTest">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:188)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.urlEncode(DefaultRemoteCommand.java:86)
+	at com.thoughtworks.selenium.DefaultRemoteCommand.getCommandURLString(DefaultRemoteCommand.java:59)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:86)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.IntegratePubLogosOnViewAllPage.verifyPubLogoInDetailedView(IntegratePubLogosOnViewAllPage.java:128)
+	at k12.IntegratePubLogosOnViewAllPageTest.verifyPubLogoInDetailedView(IntegratePubLogosOnViewAllPageTest.java:107)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

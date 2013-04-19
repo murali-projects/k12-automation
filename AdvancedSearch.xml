@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Advanced Search">
+	<test name="Advanced Search" enabled="true">
+		<parameter name="basic" value="Basic" />
+		<parameter name="intermediate" value="Intermediate" />
+		<parameter name="docType" value="Essay" />
+		<parameter name="news" value="news" />
+		<parameter name="reference" value="reference" />
+		<parameter name="fromDate" value="09-January-2000" />
+		<parameter name="toDate" value="09-January-2000" />
+		<parameter name="lexileScore" value="200L to 400L" />
+		<classes>
+			<class name="k12.AdvancedSearchTest">
+				<methods>
+					<include name="verifyAdvancedSearchPageIsDisplayed" />
+					<include name="verifyCheckboxesAvailableToLimitResults" />
+					<include name="verifyCheckboxesPresentForAllContentTypes" />
+					<include name="isUserAbleToSelectDocumentType" />
+					<include name="isUserAbleToSelectContentLevel" />
+					<include name="isUserAbleToSelectMultipleContentLevels" />
+					<include name="verifyContentTypeCheckboxesAreUnchecked" />
+					<!--<include name="verifyNewRowIsAdded" />
+					<include name="isUserAbleToSelectMinMaxLexileScores" />
+					<include name="verifyResultsAfterSearchingByDoctype" />
+					<include name="verifyResultsAfterSearchingByContentType" />
+					<include name="verifyResultsAfterSearchingByMultipleContentTypes" />
+					<include name="verifyPublicationDatesDropdownBoxesPresent" />
+					<include name="verifyPublicationDatesRadioButtonsPresent" />
+					<include name="verifyResultsAfterSelectingAfterRadioButton" />
+					<include name="verifyResultsAfterSelectingBeforeRadioButton" />
+					<include name="verifyResultsAfterSelectingOnRadioButton" />
+					<include name="verifyAfterClickingAllDatesRadioButton" />
+					<include name="verifyAfterClickingBetweenRadioButtons" />
+					<include name="verifyAfterClickingOtherRadioButtons" />
+					<include name="verifyResultsAfterSelectingBetweenRadioButton" />
+					<include name="verifyResultsAfterSearchingByLexileScore" />
+				--></methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

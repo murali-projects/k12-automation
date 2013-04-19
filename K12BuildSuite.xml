@@ -1,0 +1,2931 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Cengage">
+
+	<test name="OceanDBConnTest" enabled="false">
+		<classes>
+			<class name="k12.OceanDBConnTest" />
+		</classes>
+	</test>
+
+	<test name="LoginTest" enabled="true">
+		<parameter name="userGroupName" value="dmusz" />
+		<parameter name="password" value="dmusz" />
+		<classes>
+			<class name="k12.LoginTest" />
+		</classes>
+	</test>
+
+	<test name="BasicSearch" enabled="false">
+		<classes>
+			<class name="k12.BasicSearchTest">
+				<methods>
+					<include name="basicSearchBoxIsDisplayedInHomePage" />
+					<include name="basicSearchButtonIsDisplayedInHomePage" />
+					<include name="searchValidationMessageIsDisplayed" />
+					<include name="basicSearchBoxIsDisplayedInBasicSearchResultsPage" />
+					<include name="basicSearchButtonIsDisplayedInBasicSearchResultsPage" />
+					<include name="basicSearchBoxIsDisplayedWithSearchTerm" />
+					<include name="resultsPageTitleDisplayed" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="SearchWithStopWords" enabled="false">
+		<classes>
+			<class name="k12.StopWordsTest">
+				<methods>
+					<include name="doCheckWithSingleStopWord" />
+					<include name="doCheckWithOneStopWordInSentenceWithoutQuotes" />
+					<include name="doCheckWithTwoStopWordsInSentenceWithoutQuotes" />
+					<include name="doCheckWithMultipleStopWordsInSentenceWithoutQuotes" />
+					<include name="doCheckWithStopWordInSentenceWithQuotes" />
+					<include name="doCheckWithTwoStopWordsInSentenceWithQuotes" />
+					<include name="doCheckWithMultipleStopWordsInSentenceWithQuotes" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="SearchWithNaughtyWords" enabled="false">
+		<classes>
+			<class name="k12.NaughtyWordsTest">
+				<methods>
+					<include name="doCheckWithSingleNaughtyWord" />
+					<include name="doCheckWithSingleNaughtyWordInSentenceWithQuotes" />
+					<include name="doCheckWithTwoNaughtyWordsInSentenceWithoutQuotes" />
+					<include name="doCheckWithMultipleNaughtyWordsInSentenceWithoutQuotes" />
+					<include name="doCheckWithTwoNaughtyWordsInSentenceWithQuotes" />
+					<include name="doCheckWithMultipleNaughtyWordsInSentenceWithQuotes" />
+					<include
+						name="doCheckWithMultipleStopAndNaughtyWordsInSentenceWithQuotes" />
+					<include
+						name="doCheckWithMultipleStopAndNaughtyWordsInSentenceWithoutQuotes" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="DocInfoType" enabled="false">
+		<classes>
+			<class name="k12.DocInfoTypeTest">
+				<methods>
+					<include name="verifyDocInfoTypeIsDisplayedInReference" />
+					<include name="validateDocInfoTypeWIthOCeanInReference" />
+					<include name="verifyMultipleDocInfoTypeIsSeparatedByCommaInReference" />
+					<include name="verifyArticeIsPresentForDontHaveDocInfoType" />
+					<include name="verifyDocInfoTypeIsDisplayInAllLinksInReference" />
+					<include name="verifyDocInfoTypeIsDisplayedInWebsites" />
+					<include name="validateDocInfoTypeWIthOCeanInWebsites" />
+					<include name="verifyMultipleDocInfoTypeIsSeparatedByCommaWebsites" />
+					<include name="verifyArticeIsPresentForDontHaveWebsites" />
+					<include name="verifyDocInfoTypeIsDisplayInAllLinksWebsites" />
+					<include name="verifyDocInfoTypeIsDisplayedInPrimarySources" />
+					<include name="validateDocInfoTypeWIthOCeanInPrimarySources" />
+					<include
+						name="verifyMultipleDocInfoTypeIsSeparatedByCommaInPrimarySources" />
+					<include
+						name="verifyArticeIsPresentForDontHaveDocInfoTypeInPrimarySources" />
+					<include name="verifyDocInfoTypeIsDisplayInAllLinksInPrimarySources" />
+					<include name="verifyDocInfoTypeIsDisplayedInStatistics" />
+					<include name="validateDocInfoTypeWIthOCeanInStatistics" />
+					<include name="verifyMultipleDocInfoTypeIsSeparatedByCommaInStatistics" />
+					<include name="verifyArticeIsPresentForDontHaveDocInfoTypeInStatistics" />
+					<include name="verifyDocInfoTypeIsDisplayInAllLinksInStatistics" />
+					<!--
+						<include name="verifyDocInfoTypeIsDisplayedInStatistics" />
+						<include name="validateDocInfoTypeWIthOCeanInStatistics" />
+						<include
+						name="verifyMultipleDocInfoTypeIsSeparatedByCommaInStatistics" />
+						<include
+						name="verifyArticeIsPresentForDontHaveDocInfoTypeInStatistics" />
+						<include name="verifyDocInfoTypeIsDisplayInAllLinksInStatistics"
+						/> <include name="verifyDocInfoTypeIsDisplayedInViewPoints" />
+						<include name="validateDocInfoTypeWIthOCeanInViewPoints" />
+						<include
+						name="verifyMultipleDocInfoTypeIsSeparatedByCommaInViewPoints" />
+						<include
+						name="verifyArticeIsPresentForDontHaveDocInfoTypeInViewPoints" />
+						<include name="verifyDocInfoTypeIsDisplayInAllLinksInViewPoints"
+						/> <include name="verifyDocInfoTypeIsDisplayedInMagazines" />
+						<include name="validateDocInfoTypeWIthOCeanInMagazines" />
+						<include
+						name="verifyMultipleDocInfoTypeIsSeparatedByCommaInMagazines" />
+						<include
+						name="verifyArticeIsPresentForDontHaveDocInfoTypeInMagazines" />
+						<include name="verifyDocInfoTypeIsDisplayInAllLinksInMagazines" />
+						<include name="verifyDocInfoTypeIsDisplayedInNews" /> <include
+						name="validateDocInfoTypeWIthOCeanInNews" /> <include
+						name="verifyMultipleDocInfoTypeIsSeparatedByCommaInNews" />
+						<include name="verifyArticeIsPresentForDontHaveDocInfoTypeInNews"
+						/> <include name="verifyDocInfoTypeIsDisplayInAllLinksInNews" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test><!--
+
+	Not yet implemented
+	-->
+	<!--
+		test name="QuotesInSearchTest" enabled="false"> <classes> <class
+		name="k12.QuotesInSearchTest"> <methods> <include
+		name="checkStopWordsNotFilteredInSearchResults()" /> <include
+		name="checkNaughtyWordsNotIncludedInSearchResults()" /> <include
+		name="checkResultContainsQuotedText()" /> <include
+		name="checkResultContainsQuotedText()" /> <include
+		name="checkResutsHasOneOfTheQuotedText()" /> <include
+		name="checkStopAndNaughtWordsAreNotDisplayedForSearchTermHavingUnMathedQuotes()"
+		/> <include name="checkSearchResultPageContainsEchoOfSearchTerm()" />
+		<include
+		name="checkStopAndNaughtWordsAreNotDisplayedForSearchTermWithSingleQuotes()"
+		/> </methods> </class> </classes> </test>
+	-->
+	<test name="HitCount" enabled="false">
+		<classes>
+			<class name="k12.HitCountTest">
+				<methods>
+					<include name="verifyReferenceArticleCountisDisplayed" />
+					<include name="verifyReferenceArticleCountisDisplayedAfterClicking" />
+					<include name="validateReferenceArticleCount" />
+					<include name="verifyMagazineseCountisDisplayed" />
+					<include name="verifyMagazinesCountisDisplayedAfterClicking" />
+					<include name="validateMagazinesCount" />
+					<include name="verifyAudioCountisDisplayed" />
+					<include name="verifyAudioCountisDisplayedAfterClicking" />
+					<include name="validateAudioCount" />
+					<include name="verifyVideoCountisDisplayed" />
+					<include name="verifyVideoCountisDisplayedAfterClicking" />
+					<include name="validateVideoCount" />
+					<include name="verifyNewsCountisDisplayed" />
+					<include name="verifyNewsCountisDisplayedAfterClicking" />
+					<include name="validateNewsCount" />
+					<include name="verifyAcademicJournalsCountisDisplayed" />
+					<include name="verifyAcademicJournalsCountisDisplayedAfterClicking" />
+					<include name="validateAcademicJournalsCount" />
+					<include name="verifyPrimarySourcesCountisDisplayed" />
+					<include name="verifyPrimarySourcesCountisDisplayedAfterClicking" />
+					<include name="validatePrimarySourcesCount" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewPublicationDates" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="reference" value="reference" />
+		<parameter name="magazines" value="magazines" />
+		<parameter name="news" value="news" />
+		<parameter name="primarysources" value="primarysources" />
+		<parameter name="audio" value="audio" />
+		<parameter name="viewpoints" value="viewpoints" />
+		<classes>
+			<class name="k12.ViewPublicationDatesTest">
+				<methods>
+					<include name="verifyPublicationDatesAreDisplayedForReference" />
+					<include name="verifyPublicationDatesAreDisplayedForMagazines" />
+					<include name="verifyPublicationDatesAreDisplayedForNews" />
+					<include name="verifyPublicationDatesAreDisplayedForPrimarySources" />
+					<include name="verifyPublicationDatesAreDisplayedForAudio" />
+					<include name="verifyPublicationDatesAreDisplayedForViewPoints" />
+					<!--
+						DB validation not implemented in the application
+					-->
+					<!--
+						<include name="verifyPublicationDatesForReference" /> <include
+						name="verifyPublicationDatesForMagazines" /> <include
+						name="verifyPublicationDatesForNews" /> <include
+						name="verifyPublicationDatesForPrimarySources" /> <include
+						name="verifyPublicationDatesForAudio" /> <include
+						name="verifyPublicationDatesForViewPoints" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="PublicationTitles" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="reference" value="reference" />
+		<parameter name="magazines" value="magazines" />
+		<parameter name="news" value="news" />
+		<parameter name="primarysources" value="primarysources" />
+		<parameter name="academicJournals" value="academicJournals" />
+		<parameter name="statistics" value="statistics" />
+		<parameter name="viewpoints" value="viewpoints" />
+		<parameter name="websites" value="websites" />
+		<classes>
+			<class name="k12.IntegratePublicationTitlesTest">
+				<methods>
+					<include name="checkPubTitlesAreDisplayedInReference" />
+					<include name="verfiyPublicationTitlesInReference" />
+					<include name="checkPubTitlesAreDisplayedInMagazines" />
+					<include name="checkPubTitlesAreDisplayedInNews" />
+					<include name="checkPubTitlesAreDisplayedInPrimarySources" />
+					<include name="verfiyPublicationTitlesInPrimarySources" />
+					<include name="checkPubTitlesAreDisplayedInViewPoints" />
+					<include name="checkPubTitlesAreDisplayedInAcademicJournals" />
+					<!--
+						As per Chris, This will work differently for statistics documents
+						than other document types. It will be covered in a change story.
+					-->
+					<!--
+						<include name="checkPubTitlesAreDisplayedInStatistics" /> <include
+						name="checkPubTitlesAreDisplayedInWebsites" />
+					-->
+					<!--
+						Functionality Not Yet Implemented,once it is done we can uncomment
+						this method.
+					-->
+					<!--
+						<include name="verfiyPublicationTitlesInAcademicJournals" />
+						<include name="verfiyPublicationTitlesInStatistics" /> <include
+						name="verfiyPublicationTitlesInWebsites" /> <include
+						name="verfiyPublicationTitlesInNews" /> <include
+						name="verfiyPublicationTitlesInViewPoints" /> <include
+						name="verfiyPublicationTitlesInMagazines" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAudioDisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="displyGroupSearchTerm" value="aaaaaaaaaaa" />
+		<classes>
+			<class name="k12.ViewAudioDisplayGroupTest">
+				<methods>
+					<include name="checkAudioArticlesDisplayGroupIsPresent" />
+					<include name="checkAudioContentLinksArePresent" />
+					<include name="verifyAudioArticleNameIsLink" />
+					<!--
+						This Functionality is related to tabs,not yet implemented,once it
+						is we can uncomment this method.
+					-->
+					<!--
+						<include name="verifyAudioIconIsDisplayed" /> 
+					-->
+					<include name="verifyAudioArticlesCount" />
+					<include name="verifyPublicatinNamesArePresent" />
+					<include name="verifyPublicatinDatesArePresent" />
+					<include name="verifyAudioArticlesSortedByPublicationDates" />
+					<!--Note:Not yet implemented-->
+					<!--<include name="verifyAudioContentItemIsViewed" />
+					-->
+					<include name="verifyDetailedViewIsDisplayed" />
+					<include name="checkAudioArticlesDisplayGroupIsNotPresent" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAudioDocuments" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.ViewAudioDocumentsTest">
+				<methods>
+					<include name="checkAudioArticlesDisplayGroupIsPresent" />
+					<include name="checkAudioContentLinksArePresent" />
+					<!--
+						Functionality Not Yet Implemented,once it is done we can uncomment
+						this method.
+					-->
+					<!--<include name="verifyContentItemIsViewed" />
+					-->
+					<include name="verifyDetailedViewIsDisplayed" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ContentVerificationOfDisplayGroups" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="reference" value="reference" />
+		<parameter name="news" value="news" />
+		<parameter name="magazines" value="magazines" />
+		<parameter name="statistics" value="statistics" />
+		<parameter name="primarysources" value="primarysources" />
+		<parameter name="viewpoints" value="viewpoints" />
+		<parameter name="academicJournals" value="academicJournals" />
+		<parameter name="publicationDate" value="publicationDate" />
+		<parameter name="relevance" value="relevance" />
+		<classes>
+			<class name="k12.ContentVerificationOfDisplayGroupsTest">
+				<methods>
+					<include name="verifyReferenceDisplayGroupIsPresent" />
+					<include name="verifyReferenceViewAllLinkDisplayed" />
+					<include name="verifyReferenceTotalCountIsDisplayed" />
+					<include name="validateReferenceCount" />
+					<include name="verifyReferenceThreeLinksAreDisplayed" />
+					<include name="verifyReferencePublicationDatesAreDisplayed" />
+					<include name="verifyReferencePublicationNamesAreDisplayed" />
+					<include name="validateReferencePublicationNames" />
+					<include name="verifyMagazinesDisplayGroupIsPresent" />
+					<include name="verifyMagazinesViewAllLinkDisplayed" />
+					<include name="verifyMagazinesTotalCountIsDisplayed" />
+					<include name="validateMagazinesCount" />
+					<include name="verifyMagazinesThreeLinksAreDisplayed" />
+					<include name="verifyMagazinesPublicationDatesAreDisplayed" />
+					<include name="verifyMagazinesPublicationNamesAreDisplayed" />
+					<include name="verifyNewsDisplayGroupIsPresent" />
+					<include name="verifyNewsViewAllLinkDisplayed" />
+					<include name="verifyNewsTotalCountIsDisplayed" />
+					<include name="validateNewsCount" />
+					<include name="verifyNewsThreeLinksAreDisplayed" />
+					<include name="verifyNewsPublicationDatesAreDisplayed" />
+					<include name="verifyNewsPublicationNamesAreDisplayed" />
+					<include name="verifyAcademicJournalsDisplayGroupIsPresent" />
+					<include name="verifyAcademicJournalsViewAllLinkDisplayed" />
+					<include name="verifyAcademicJournalsTotalCountIsDisplayed" />
+					<include name="validateAcademicJournalsCount" />
+					<include name="verifyAcademicJournalsThreeLinksAreDisplayed" />
+					<include name="verifyAcademicJournalsPublicationDatesAreDisplayed" />
+					<include name="verifyAcademicJournalsPublicationNamesAreDisplayed" />
+					<include name="verifyPrimarySourcesDisplayGroupIsPresent" />
+					<include name="verifyPrimarySourcesViewAllLinkDisplayed" />
+					<include name="verifyPrimarySourcesTotalCountIsDisplayed" />
+					<include name="validatePrimarySourcesCount" />
+					<include name="verifyPrimarySourcesThreeLinksAreDisplayed" />
+					<include name="verifyPrimarySourcesPublicationDatesAreDisplayed" />
+					<include name="verifyPrimarySourcesPublicationNamesAreDisplayed" />
+					<include name="validatePrimarySourcesPublicationNames" />
+					<include name="verifyStatisticsDisplayGroupIsPresent" />
+					<include name="verifyStatisticsViewAllLinkDisplayed" />
+					<include name="verifyStatisticsTotalCountIsDisplayed" />
+					<include name="validateStatisticsCount" />
+					<include name="verifyStatisticsThreeLinksAreDisplayed" />
+					<!--
+						As per Chris, This will work differently for statistics documents
+						than other document types. It will be covered in a change story.
+					-->
+					<!--
+						<include name="verifyStatisticsPublicationDatesAreDisplayed" />
+						<include name="verifyStatisticsPublicationNamesAreDisplayed" />
+					-->
+					<include name="verifyViewPointsDisplayGroupIsPresent" />
+					<include name="verifyViewPointsViewAllLinkDisplayed" />
+					<include name="verifyViewPointsTotalCountIsDisplayed" />
+					<include name="validateViewPointsCount" />
+					<include name="verifyViewPointsThreeLinksAreDisplayed" />
+					<include name="verifyViewPointsPublicationDatesAreDisplayed" />
+					<include name="verifyViewPointsPublicationNamesAreDisplayed" />
+					<!--
+						<include name="validatePrimarySourcesPublicationDates" / <include
+						name="validateReferencePublicationDates" /> <include
+						name="validateMagazinesPublicationNames" /> <include
+						name="validateMagazinesPublicationDates" /> <include
+						name="validateNewsPublicationDates" /> <include
+						name="validateNewsPublicationNames" /> <include
+						name="validateAcademicJournalsPublicationDates" /> <include
+						name="validateAcademicJournalsPublicationNames" /> <include
+						name="validateViewPointsPublicationNames" /> <include
+						name="validateViewPointsPublicationDates" /> <include
+						name="validateStatisticsPublicationDates" /> <include
+						name="validateStatisticsPublicationNames" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllReferenceOnSearchResultsPageTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="referenceArticle" value="reference" />
+		<classes>
+			<class name="k12.ViewAllReferenceOnSearchResultsPageTest">
+				<methods>
+					<include name="basicSearch" />
+					<include name="viewAllLinkForReferenceArticleIsDispalyed" />
+					<include name="viewAllLinkForReferenceArticleIsWorking" />
+					<include name="viewAllNavigationForReferenceArticle" />
+					<include name="verifyDocumentDisplayPageResultsForReferenceArticle" />
+					<include name="verifyNextLinkForReferenceArticle" />
+					<include name="verifyNextLinkIsworkingForReferenceArticle" />
+					<include name="verifyPreviousLinkForReferenceArticle" />
+					<include name="verifyPreviousLinkIsworkingForReferenceArticle" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllMagazinesOnSearchResultsPageTest" enabled="false">
+		<parameter name="searchTerm" value="test" />
+		<parameter name="magazines" value="magazines" />
+		<classes>
+			<class name="k12.ViewAllMagazinesOnSearchResultsPageTest">
+				<methods>
+					<include name="basicSearch" />
+					<include name="viewAllLinkForMagazinesIsDispalyed" />
+					<include name="viewAllLinkForMagazinesIsWorking" />
+					<include name="viewAllNavigationForMagazines" />
+					<include name="verifyDocumentDisplayPageResultsForMagazines" />
+					<include name="verifyNextLinkForMagazines" />
+					<include name="verifyNextLinkIsworkingForMagazines" />
+					<include name="verifyPreviousLinkForMagazines" />
+					<include name="verifyPreviousLinkIsworkingForMagazines" />
+					<include name="validateDocumentTitlesWithDB" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Integrate News DisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="displayGroupName" value="News" />
+		<parameter name="sortBy" value="Relevance" />
+
+		<classes>
+			<class name="k12.IntegrateNewsDisplayGroupTest">
+				<methods>
+					<include name="verifyNewsDisplayGroupPresent" />
+					<include name="verifyNewsTextIsDisplayed" />
+					<include name="verifyNewsViewAllIsDisplayed" />
+					<include name="verifyNewsCountIsInlineWithViewAll" />
+					<include name="verifyViewAllIsLink" />
+					<include name="verifyViewAllIsWorking" />
+					<include name="verifyThreeContentLinksAreDisplayed" />
+					<include name="verifyNewsTitlesAreLinks" />
+					<include name="verifyPublicationDetailsAreDisplayed" />
+					<include name="verifyContentAfterClickingNewsLink" />
+					<include name="verifyNewsLinkOpensInNewWindow" />
+					<include name="verifyGroupNameIsInCaps" />
+					<include name="verifyIntroTextInlineWithDocTitle" />
+					<include name="verifyDocTypes" />
+					<!--
+						Database validations and others can be uncommented once
+						implementation is over in the Application
+					-->
+					<!--
+						<include name="validateNewsContentLinks" /> <include
+						name="verifyPublisherNames" /> <include
+						name="verifyNewsIconIsInLineWithNewsTitle" /> <include
+						name="verifyNewsArticlesAreSortedWithPubDate" /> <include
+						name="verifyLinkBackOptionAvailable" /> <include
+						name="verifyContentAfterClickingNewsIcon" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="IntegratePrimarySourcesDisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.IntegratePrimarySourcesDisplayGroupTest">
+				<methods>
+					<include name="verifySearchTermInMsg" />
+					<include name="verifyPrimarySourcesDisplayGroupIsDisplayed" />
+					<include name="verifyCountIsDisplayed" />
+					<include name="verifyViewAllLinkIsDisplayed" />
+					<include name="verifyViewAllLinkIsNotDisplayed" />
+					<include name="verifyViewAllLinkIsWorking" />
+					<include name="verifyLinkCountInFirstPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="IntegrateViewpointsDisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.IntegrateViewpointsDisplayGroupTest">
+				<methods>
+					<include name="verifyViewpointsDisplayGroupIsDisplayed" />
+					<include name="verifyCountIsDisplayed" />
+					<include name="verifyViewAllLinkIsDisplayed" />
+					<include name="verifyLinkCountInFirstPage" />
+					<include name="verifyViewAllLinkIsWorking" />
+					<!--<include name="verifyDocumentTitles" />
+				-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="StopAndNaughyWordsFormat" enabled="false">
+		<parameter name="searchTermForStopWords" value="Lord of the rings" />
+		<parameter name="searchTermForNaughtyWords" value="shit war" />
+		<classes>
+			<class name="k12.StopAndNaughyWordsFormatTest">
+				<methods>
+					<include name="validateSearchIdentifierForStopWordsinSearchString" />
+					<include name="validateSearchIndentifierForNaughtyWordsinSearchString" />
+					<include name="verifySearchIdentifierForNaughtyWordsJoinedWithSplChar" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllAudioOnSearchResultsPage" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.ViewAllAudioOnSearchResultsPageTest">
+				<methods>
+					<include name="basicSearch" />
+					<include name="checkAudioTextIsDisplayed" />
+					<include name="checkViewAllForAudio" />
+					<include name="verifyInLineAudioCount" />
+					<include name="verifyInLineAudioViewAll" />
+					<include name="verifyAudioLinksDisplayed" />
+					<include name="validateAudioLinksWithOcean" />
+					<include name="verifyViewAllIsLink" />
+					<include name="verifyViewAllLinkIsWorking" />
+					<!--
+						Functionality Not Yet implemented
+					-->
+					<!--
+						<include name="verifyInLineAudioIcon" />
+					-->
+					<!--<include name="verifyAudioContentNavigation" />-->
+					<include name="pageHidination" />
+					<include name="pageNumberNavigation" />
+					<!--
+						Functionality Not Yet implemented
+					-->
+					<!--
+						<include name="shortDescriptionOfEachLink" />
+					-->
+					<include name="lastPageVerification" />
+					<include name="firstPageVerification" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="AudioPodcastDocumentTest" enabled="false">
+		<classes>
+			<class name="k12.AudioPodcastDocumentTest">
+				<methods>
+					<include name="basicSearchTest" />
+					<include name="verifyPodcastDetailedPageIsDisplayed" />
+					<include name="verifyPodcastDetailedPageTitleIsDisplayed" />
+					<include name="verifyPodcastDetailedPageSearchBoxIsDisplayed" />
+					<include name="verifyPodcastDetailedPageSearchButtonIsDisplayed" />
+					<include name="verifyPodcastDetailedPageCopyrightIsDisplayed" />
+					<include name="verifyPodcastDetailedPageSourceCitationIsDisplayed" />
+					<include name="verifyPodcastDetailedPageGalaeDocumentIsDisplayed" />
+					<include name="verifyViewAllLinkIsWorking" />
+					<!--
+						Functionality Not Yet implemented
+					-->
+					<!--
+						<include name="verifyPodcastDetailedPageTranscriptIsDisplayed" />
+					-->
+					<!--<include name="verifyPodcastDetailedPageBreadCrumbIsWorking" />-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="MagazinesDisplayGroupTest" enabled="false">
+		<parameter name="displayGroupName" value="magazines" />
+		<parameter name="searchTerm" value="war" />
+		<parameter name="sortBy" value="PublicationDate" />
+		<classes>
+			<class name="k12.IntegrateMagazinesDisplayGroupTest">
+				<methods>
+					<include name="checkMagazinesDisplayedInDisplayGroup" />
+					<include name="verifyViewAllIsNotDisplayed" />
+					<include name="verifyViewAllIsDisplayed" />
+					<include name="verifyCountIsDisplayed" />
+					<!--
+						Note:-Publication date values are wrongly displyed,clarification
+						has been raised once it si confirmed we can uncomment this test.
+					-->
+					<!--
+						<include name="verifyContentLinksAreSortedByPublicationDate" />
+					-->
+					<include name="verifyPublicationDetailsPresent" />
+					<include name="verifyViewAllIsAccessible" />
+					<include name="verifyGroupNameIsDisplayedInCaps" />
+					<include name="verifyContentLinkIsWorking" />
+					<include name="verifyMagazinesCanBeMarked" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllNewsOnSearchResultsPageTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="news" value="news" />
+		<classes>
+			<class name="k12.ViewAllNewsOnSearchResultsPageTest">
+				<methods>
+					<include name="basicSearch" />
+					<include name="viewAllLinkForNewsIsDispalyed" />
+					<include name="viewAllLinkForNewsIsWorking" />
+					<include name="viewAllNavigationForNews" />
+					<include name="verifyDocumentDisplayPageResultsForNews" />
+					<include name="verifyNextLinkForNews" />
+					<include name="verifyNextLinkIsworkingForNews" />
+					<include name="verifyPreviousLinkForNews" />
+					<include name="verifyPreviousLinkIsworkingForNews" />
+					<include name="validateDocumentTitlesWithDB" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllViewPointsOnSearchResultsPageTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="viewpoints" value="viewpoints" />
+		<classes>
+			<class name="k12.ViewAllViewPointsOnSearchResultsPageTest">
+				<methods>
+					<include name="basicSearch" />
+					<include name="viewAllLinkForViewPointsIsDispalyed" />
+					<include name="viewAllLinkForViewPointsIsWorking" />
+					<include name="viewAllNavigationForViewPoints" />
+					<include name="verifyDocumentDisplayPageResultsForViewPoints" />
+					<include name="verifyNextLinkForViewPoints" />
+					<include name="verifyNextLinkIsworkingForViewPoints" />
+					<include name="verifyPreviousLinkForViewPoints" />
+					<include name="verifyPreviousLinkIsworkingForViewPoints" />
+					<include name="validateDocumentTitlesWithDB" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllAcademicJournalsOnSearchResultsPageTest"
+		enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="academicJournals" value="academicJournals" />
+		<classes>
+			<class name="k12.ViewAllAcademicJournalsOnSearchResultsPageTest">
+				<methods>
+					<include name="basicSearch" />
+					<include name="viewAllLinkForAcademicJournalsIsDispalyed" />
+					<include name="viewAllLinkForAcademicJournalsIsWorking" />
+					<include name="viewAllNavigationForAcademicJournals" />
+					<include name="verifyDocumentDisplayPageResultsForAcademicJournals" />
+					<include name="verifyNextLinkForAcademicJournals" />
+					<include name="verifyNextLinkIsworkingForAcademicJournals" />
+					<include name="verifyPreviousLinkForAcademicJournals" />
+					<include name="verifyPreviousLinkIsworkingForAcademicJournals" />
+					<include name="validateWithDatabase" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllPrimarySourceOnSearchResultsPageTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="primarysources" value="primarysources" />
+		<classes>
+			<class name="k12.ViewAllPrimarySourceOnSearchResultsPageTest">
+				<methods>
+					<include name="basicSearch" />
+					<include name="viewAllLinkForPrimarySourceIsDispalyed" />
+					<include name="viewAllLinkForPrimarySourceIsWorking" />
+					<include name="viewAllNavigationForPrimarySource" />
+					<include name="verifyDocumentDisplayPageResultsForPrimarySource" />
+					<include name="verifyNextLinkForPrimarySource" />
+					<include name="verifyNextLinkIsworkingForPrimarySource" />
+					<include name="verifyPreviousLinkForPrimarySource" />
+					<include name="verifyPreviousLinkIsworkingForPrimarySource" />
+					<include name="validateDocumentTitlesWithDB" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllStatisticsOnSearchResultsPageTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="statistics" value="statistics" />
+		<classes>
+			<class name="k12.ViewAllStatisticsOnSearchResultsPageTest">
+				<methods>
+					<include name="basicSearch" />
+					<include name="viewAllLinkForStatisticsIsDispalyed" />
+					<include name="viewAllLinkForStatisticsIsWorking" />
+					<include name="viewAllNavigationForStatistics" />
+					<include name="verifyDocumentDisplayPageResultsForStatistics" />
+					<include name="verifyNextLinkForStatistics" />
+					<include name="verifyNextLinkIsworkingForStatistics" />
+					<include name="verifyPreviousLinkForStatistics" />
+					<include name="verifyPreviousLinkIsworkingForStatistics" />
+					<include name="validateDocumentTitlesWithDB" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllWebsitesOnSearchResultsPageTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="websites" value="websites" />
+		<classes>
+			<class name="k12.ViewAllWebsitesOnSearchResultsPageTest">
+				<methods>
+					<include name="basicSearch" />
+					<include name="viewAllLinkForWebsitesIsDispalyed" />
+					<include name="viewAllLinkForWebsitesIsWorking" />
+					<include name="viewAllNavigationForWebsites" />
+					<include name="verifyDocumentDisplayPageResultsForWebsites" />
+					<include name="verifyNextLinkForWebsites" />
+					<include name="verifyNextLinkIsworkingForWebsites" />
+					<include name="verifyPreviousLinkForWebsites" />
+					<include name="verifyPreviousLinkIsworkingForWebsites" />
+					<include name="validateDocumentTitlesWithDB" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllPagination" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="displayGroup" value="reference" />
+		<classes>
+			<class name="k12.ViewAllPaginationTest">
+				<methods>
+					<include name="basicNavigation" />
+					<include name="verifyFirstFivePagesDisplayed" />
+					<include name="verifyDisplayedPageNumbersAreLink" />
+					<include name="verifyCorrectPageNavigation" />
+					<include name="verifyCurrentPageVerification" />
+					<include name="verifyNextPreviousLinksVerification" />
+					<include name="verifyPreviousIsNotPresentInFirstPage" />
+					<include name="validateRandomlyNavigatedContentFromDB" />
+					<include name="verifyNextIsNotPresentInLastPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="IntegrateImagesDisplayGroupTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.IntegrateImagesDisplayGroupTest">
+				<methods>
+					<include name="verifyContentResultsInImages" />
+					<include name="verifyImagesCount" />
+					<include name="verifyViewAllIsNotDisplayed" />
+					<include name="verifyViewwAllIsDisplayed" />
+					<include name="verifyBoldImagesText" />
+					<include name="verifyNoImagesDisplayed" />
+					<include name="verifyMarkMeForImages" />
+					<include name="verifyDetailImageNavigation" />
+					<!--
+						Functionality Not Yet Implemented
+					-->
+					<!--
+						<include name="verifyMouseOverOfImage" /> <include
+						name="verifyImageContent" /> <include
+						name="validateImagesWithOcean" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewImageDetails" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.ViewImageDetailsTest">
+				<methods>
+					<include name="verifyGalleryViewIsDisplayed" />
+					<include name="verifyDetailedViewOfImageIsDisplayed" />
+					<include name="checkPictureIsDisplayedOnLeftSide" />
+					<include name="checkSearchButtonIsPresent" />
+					<include name="ensureMarkOptionIsAvailable" />
+					<include name="verifyTooltipIsDisplayed" />
+					<include name="verifyAfterMarkingImage" />
+					<include name="verifyNextAndPreviousButtonsPresent" />
+					<include name="verifyNavigationOfPreviousNextButtons" />
+					<include name="verifyToolsArePresent" />
+					<include name="verifyElementsAreDisplayedOnPage" />
+					<!--
+						Can be uncommented after implementation is completed in the
+						application
+					-->
+					<!--
+						<include name="verifyGlossaryDefnIsAvailable" /> <include
+						name="verifyPublicationDateIsDisplayed" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test><!--
+	
+	Functionality not yet implemented
+	-->
+	<!--
+		<test name="SortByDropDownInViewAllPage" enabled="false"> <parameter
+		name="searchTerm" value="war" /> <parameter name="displayGroup"
+		value="reference" /> <parameter name="sortElement" value="Relevance"
+		/> <parameter name="option" value="Name,Publication Title" />
+		<parameter name="publicationDateSortElement" value="Publication Date"
+		/> <parameter name="relevanceSortElement" value="Relevance" />
+		<parameter name="requiredContent" value="Descending
+		Relevance,Descending Publication Date,Ascending Document
+		Title,Ascending Content Level" /> <classes> <class
+		name="k12.SortByDropDownInViewAllPageTest"> <methods> <include
+		name="basicNavigation" /> <include
+		name="defaultSortForReferenceDisplayGroup" /> <include
+		name="sortDisplayGroupByDescendingPublicationDate" /> <include
+		name="sortDisplayGroupByDescendingRelevance" /> <include
+		name="sortDisplayGroupByAscendingDocumentTitle" /> <include
+		name="validateDefaultSortAfterViewAll" /> <include
+		name="ensureSortAfterClickingViewAll" /> <include
+		name="verifyCountAfterSorting" /> <include
+		name="ensureSortDownContent" /> <include
+		name="ensureSortDownCountAfterNext" /> <include
+		name="ensureSortDownCountAfterPrevious" /> <include
+		name="selectMultipleItemsFromDropDown" /> <include
+		name="verifyDocInfoTypeAfterSort" /> </methods> </class> </classes>
+		</test>
+	-->
+	<!--
+		Not yet implemented in the application <test
+		name="N4ToAndBasicSearchFailover" enabled="false"> <parameter
+		name="searchTermHavingOr" value="dog or cat" /> <parameter
+		name="searchTermHavingWith" value="dog with cat" /> <parameter
+		name="searchTermHavingNor" value="dog nor cat" /> <parameter
+		name="searchTermHavingBut" value="dog but cat" /> <parameter
+		name="referenceDisplayGroup" value="reference" /> <classes> <class
+		name="k12.N4ToAndBasicSearchFailoverTest"> <methods> <include
+		name="searchUsingOrForReference" /> <include
+		name="searchUsingWithForReference" /> <include
+		name="searchUsingNorForReference" /> <include
+		name="searchUsingButForReference" /> </methods> </class> </classes>
+		</test>
+	-->
+	<test name="ViewVideoDetails" enabled="false">
+		<parameter name="searchTerm" value="video" />
+		<classes>
+			<class name="k12.ViewVideoDetailsTest">
+				<methods>
+					<include name="verifyDetailedViewOfVideoIsDisplayed" />
+					<include name="checkSearchButtonIsPresent" />
+					<include name="checkVideoIsDisplayedOnLeftSide" />
+					<include name="verifyNextAndPreviousButtonsPresent" />
+					<include name="verifyNavigationOfPreviousNextButtons" />
+					<include name="ensureMarkOptionIsAvailable" />
+					<include name="verifyAfterMarkingVideo" />
+					<include name="verifyToolsArePresent" />
+					<!--
+						Can be uncommented after implementation is completed in the
+						application
+					-->
+					<!--
+						<include name="verifyElementsAreDisplayedOnPage" /> <include
+						name="verifyTooltipIsDisplayed" /> <include
+						name="verifyPublicationDateIsDisplayed" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="IntegrateStatistics" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="displayGroup" value="statistics" />
+		<classes>
+			<class name="k12.IntegrateStatisticsDisplayGroupTest">
+				<methods>
+					<include name="checkContentResultsArePresent" />
+					<include name="validateDocumentTitlesWithDB" />
+					<include name="verifyThreeDocumentsArePresent" />
+					<include name="verifyDefaultSortIsByRelevance" />
+					<include name="verifyViewAllIsDisplayedWithResultsCount" />
+					<include name="verifyGroupNameIsDisplayedInViewAllPage" />
+					<include name="verifySearchMessageIsPresent" />
+					<include name="verifyContentLevelIsPresent" />
+					<include name="ensureDocumentsAreRelatedToStatistics" />
+					<include name="ensureDetailedViewIsDisplayed" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="IntegrateTextDoucmentTest" enabled="false">
+		<parameter name="searchTerm" value="test" />
+		<parameter name="referenceDisplayGroup" value="reference" />
+		<parameter name="magazinesDisplayGroup" value="magazines" />
+		<parameter name="viewpointsDisplayGroup" value="viewpoints" />
+		<parameter name="primarySourcesDisplayGroup" value="primary_sources" />
+		<parameter name="websitesDisplayGroup" value="websites" />
+		<classes>
+			<class name="k12.IntegrateTextDocumentTest">
+				<methods>
+					<include name="verifyDocumetIsDisplayedForReference" />
+					<include name="verifyGaleDocumentNumberForReference" />
+					<include name="verifyDocumetIsDisplayedForMagazines" />
+					<include name="verifyGaleDocumentNumberForMagazines" />
+					<include name="verifyDocumetIsDisplayedForViewPoints" />
+					<include name="verifyGaleDocumentNumberForViewPoints" />
+					<include name="verifyDocumetIsDisplayedForPrimarySources" />
+					<include name="verifyGaleDocumentNumberForPrimarySources" />
+					<include name="verifyDocumetIsDisplayedForWebsites" />
+					<include name="verifyGaleDocumentNumberForWebsites" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="IntegrateVideoDisplayGroupTest" enabled="false">
+		<classes>
+			<class name="k12.IntegrateVideoDisplayGroupTest">
+				<methods>
+					<include name="searchIntegrateVideoDisplayGroup" />
+					<include name="verifyVideoBucketisDisplayed" />
+					<include name="verifyViewAllLinkisDisplayed" />
+					<include name="verifyCountOfVideoIsPresent" />
+					<include name="validateVideoCountLinksWithOcean" />
+					<include name="validateVideoBucketCountWithOcean" />
+					<!--<include name="validateVideoContentLinksWithOcean"/>
+						-->
+					<include name="verifyVideoIconIsDisplayed" />
+					<include name="verifyViewAllIsWorking" />
+					<include name="verifyVideoIconIsDisplayedInDocument" />
+					<!--
+						NOT yet implemented <include name="verifyBackLinkIsDisplayed"/>
+						<include name="verifyBackLinkIsWorking"/> <include
+						name="verifyPublicationDateIsDisplayed"/> <include
+						name="validatePublicationdatesWithOcean"/>
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllImagesOnSearchResultsPage" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="searchTermForNoImages" value="ooo" />
+		<classes>
+			<class name="k12.ViewAllImagesOnSearchResultsPageTest">
+				<methods>
+					<include name="verifyContentResultsInImages" />
+					<include name="verifyViewAllIsDisplayed" />
+					<include name="verifyImagesCountIsDisplayed" />
+					<include name="verifyViewAllIsNotDisplayed" />
+					<include name="verifyImagesHeading" />
+					<include name="verifyMarkMeForImages" />
+					<include name="verifyDetailImageNavigation" />
+					<include name="verifyMouseOverOfImage" />
+					<include name="verifyNextLinkIsWorking" />
+					<include name="verifyPreviousLinkIsWorking" />
+					<include name="verifyImageDisplayGroupIsNotDisplayed" />
+					<include name="validateImagesWithOcean" />
+					<!--
+						Not yet implemented in the application <include
+						name="verifyDefaultSortIsByPublicationDate" /> <include
+						name="verifyImageContent" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewStatisticsDocument" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.ViewStatisticsDocumentTest">
+				<methods>
+					<include name="verifyDisplayGroupName" />
+					<include name="verifyViewAllIsDisplayed" />
+					<include name="verifyStatisticsCount" />
+					<include name="verifyDetailedViewIsDisplayed" />
+					<include name="verifyDocumentTitleInDetailedView" />
+					<include name="verifySearchFieldsPresent" />
+					<include name="verifyHyperLinksOfDocuments" />
+					<include name="verifyGaleDocumentAndCopyrightDisplayed" />
+					<include name="verifyNoSpeakerIconIsPresent" />
+					<include name="verifyImageIsDisplayedInDetailedView" />
+					<include name="verifyPreviousNextThumbnailsPresent" />
+					<include name="verifyImageByNavigatingFromViewAllPage" />
+					<include name="verifyContentForStatisticImage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Search using Operators" enabled="false">
+		<parameter name="caseInsensitiveSearchTerm" value="dogs" />
+		<parameter name="singleSearchTerm" value="wom?n" />
+		<parameter name="multipleSearchTerm" value="war*" />
+		<parameter name="searchTermWithExclamationMark" value="cancer!" />
+		<parameter name="phraseContainsSearchTerm" value="world war" />
+		<parameter name="phraseExactSearchTerm" value="cancer" />
+		<parameter name="booleanAndOperator" value="AND" />
+		<parameter name="booleanAndSearchTerm" value="world AND war" />
+		<parameter name="booleanOrOperator" value="OR" />
+		<parameter name="booleanOrSearchTerm" value="capital punishment OR death penalty" />
+		<parameter name="booleanNotOperator" value="NOT" />
+		<parameter name="booleanNotSearchTerm" value="hemingway NOT ernest" />
+		<parameter name="withinProximityOperator" value="W2" />
+		<parameter name="withinProximitySearchTerm" value="world W2 war" />
+		<parameter name="nearProximityOperator" value="N6" />
+		<parameter name="nearProximitySearchTerm" value="donny N6 osmond" />
+		<parameter name="greaterThanOperator" value=">" />
+		<parameter name="greaterThanSearchTerm" value="LX >600" />
+		<parameter name="greaterThanOrEqualToSearchTerm" value="LX >=600" />
+		<parameter name="lessThanOrEqualToSearchTerm" value="le jan" />
+		<parameter name="lessThanSearchTerm" value="lt 1999" />
+		<parameter name="dateSearchTerm" value="120100101-120100131" />
+		<parameter name="nestedSearchTerm" value="computer AND (apple OR macintosh OR jobs)" />
+		<classes>
+			<class name="k12.SearchUsingOperatorsTest">
+				<methods>
+					<include name="validateSingleWildCharacterSearchOperator" />
+					<include name="validateMultipleWildCharacterSearchOperator" />
+					<include name="validateExclamationWildCharacterSearchOperator" />
+					<include name="validateBooleanAndSearchOperator" />
+					<include name="validateBooleanOrSearchOperator" />
+					<include name="validateBooleanNotSearchOperator" />
+					<include name="validateNestedSearchOperator" />
+					<include name="validateWithinProximitySearchOperator" />
+					<include name="validateNearProximitySearchOperator" />
+					<include name="validateGreaterThanOperator" />
+					<include name="validateGreaterThanEqualToOperator" />
+					<include name="validateLessThanOperator" />
+					<include name="validateLessThanEqualToOperator" />
+					<include name="validateDateRangeOperator" />
+					<include name="validatePhraseContains" />
+					<include name="validatePhraseExact" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Biography Information In Document Display" enabled="false">
+		<parameter name="searchTerm" value="civil rights" />
+		<parameter name="displayGroup" value="reference" />
+		<parameter name="sortBy" value="relevance" />
+		<classes>
+			<class name="k12.BiographyInfoInDocumentDisplayTest">
+				<methods>
+					<include name="isNarrativeBiographyDocInfoTypePresent" />
+					<include name="verifyDocInfoTypeWithDB" />
+					<include name="isNarrativeBiographyDocInfoTypePresentInOtherPages" />
+					<!--
+						Still not implemented in the application
+					-->
+					<!--
+						<include name="verifyDetailedDocumentIsDisplayed" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!--
+		TOC is removed from application <test name="Dynamic Generation of TOC"
+		enabled="false"> <parameter name="searchTerm" value="civil rights" />
+		<parameter name="displayGroup" value="reference" /> <parameter
+		name="sortBy" value="relevance" /> <classes> <class
+		name="k12.DynamicGenerationOfTocTest"> <methods> <include
+		name="verifyTocIsDisplayed"/> <include name="verifyContentsInToc"/>
+		</methods> </class> </classes> </test>
+	-->
+	<test name="ChangeFontSize" enabled="false">
+		<classes>
+			<class name="k12.ChangeFontSizeTest">
+				<methods>
+					<include name="basicSearch" />
+					<include name="verifyChangeFontSizeIsDisplayed" />
+					<include name="verifyLargerSizeIsWorking" />
+					<include name="verifySmallerSizeIsWorking" />
+					<include name="verifyFontSizeOptionsInDetailedNavigation" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="DownloadStatisticalTabelInPdfTest" enabled="false">
+		<parameter name="searchTerm" value="test" />
+		<parameter name="displayGroup" value="statistics" />
+		<classes>
+			<class name="k12.DownloadStatisticalTabelInPdfTest">
+				<methods>
+					<include name="basicSearch" />
+					<include name="verifyDownloadOptionAvailable" />
+					<include name="verifyDownloadOptionInViewAllPage" />
+					<include name="verifyModalWindoIsDisplayed" />
+					<include name="verifyRadioButtonsPresent" />
+					<include name="verifyCancelAndDownloadButtons" />
+					<include name="verifyModalWindowIsClosed" />
+					<include name="verifyDownloadCancelled" />
+					<include name="verifyPdfDownloaded" />
+					<include name="VerifyDownloadedFileIsPdfOrNot" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="EmailDocumentAsPdfTest" enabled="false">
+		<parameter name="searchTerm" value="test" />
+		<parameter name="displayGroup" value="statistics" />
+		<classes>
+			<class name="k12.EmailDocumentAsPdfTest">
+				<methods>
+					<include name="basicSearch" />
+					<include name="verifyDetailsOfDocument" />
+					<include name="verifyEmailOption" />
+					<include name="verifyEmailOptionFromDisplayGroups" />
+					<include name="verifyModalWindowIsDisplayed" />
+					<include name="verifyModalWindowName" />
+					<include name="verifyButtons" />
+					<include name="verifyRadioButtonsIsPresent" />
+					<include name="verifyRadioButtonsAvailability" />
+					<include name="verifyFieldsProminance" />
+					<include name="verifyAllFieldsArePresent" />
+					<include name="verifyEmailNotDelivered" />
+					<include name="sendingMailWithInvalidMailAddress" />
+					<include name="verifyMaxCharacterLength" />
+					<include name="verifyEmailSentMessage" />
+					<include name="verifyEmailSentMessageForMoreSenders" />
+					<include name="verifyEmailWindowClosed" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="DownloadDocumentInHTMLFormat" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="displayGroup" value="primarysources" />
+		<parameter name="downloadFileName" value="DownloadDocument" />
+		<classes>
+			<class name="k12.DownloadDocumentInHTMLFormatTest">
+				<methods>
+					<include name="verifyDownloadOptionAvailable" />
+					<include name="verifyDownloadOptionAvailableFromViewAll" />
+					<include name="DownloadHtmlFile" />
+					<include name="VerifyDownloadedFileIsHtmlOrNot" />
+					<include name="verifyDownloadLink" />
+					<include name="chooseHtmlOption" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="EmailFullTextDocument" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="displayGroup" value="statistics" />
+		<parameter name="inValidMailAddress" value="123" />
+		<parameter name="content" value="abc" />
+		<parameter name="mailId" value="sreehari.ghali@applabs.com" />
+		<parameter name="mailIds"
+			value="sreehari.ghali@applabs.com,sheshajee.dasar@applabs.com" />
+		<classes>
+			<class name="k12.EmailFullTextDocumentTest">
+				<methods>
+					<include name="verifyDetailsOfDocument" />
+					<include name="verifyEmailOption" />
+					<include name="verifyEmailOptionFromDisplayGroups" />
+					<include name="verifyModalWindowIsDisplayed" />
+					<include name="verifyModalWindowName" />
+					<include name="verifyButtons" />
+					<include name="verifyRadioButtonsIsPresent" />
+					<include name="verifyRadioButtonsAvailability" />
+					<include name="verifyFieldsProminance" />
+					<include name="verifyAllFieldsArePresent" />
+					<include name="verifyEmailNotDelivered" />
+					<include name="sendingMailWithInvalidMailAddress" />
+					<include name="verifyMaxCharacterLength" />
+					<include name="verifyEmailSentMessage" />
+					<include name="verifyEmailSentMessageForMoreSenders" />
+					<include name="verifyEmailWindowClosed" />
+					<include name="closeSendEmailWindowUsingEsc" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ContentLevelOnSearchResultsPage" enabled="false">
+		<classes>
+			<class name="k12.ContentLevelOnSearchResultsPageTest">
+				<methods>
+					<include name="verifyContentLevelIsDisplayedForReference" />
+					<include name="verifyToolTipIsDisplayedForReference" />
+					<include name="validateToolTipWithOCeanForReference" />
+					<include name="verifyContentLevelIsDisplayedForAllContentsForReference" />
+					<include name="verifyContentLevelIsDisplayedForPrimarySources" />
+					<include name="verifyToolTipIsDisplayedForPrimarySources" />
+					<include name="validateToolTipWithOCeanForPrimarySources" />
+					<include
+						name="verifyContentLevelIsDisplayedForAllContentsForPrimarySources" />
+					<include name="verifyContentLevelIsDisplayedForStatistics" />
+					<include name="verifyToolTipIsDisplayedForStatistics" />
+					<include name="validateToolTipWithOCeanForStatistics" />
+					<include name="verifyContentLevelIsDisplayedForAllContentsForStatistics" />
+					<include name="verifyContentLevelIsDisplayedForNews" />
+					<include name="verifyToolTipIsDisplayedForNews" />
+					<include name="validateToolTipWithOCeanForNews" />
+					<include name="verifyContentLevelIsDisplayedForAllContentsForNews" />
+					<include name="verifyContentLevelIsDisplayedForMagazines" />
+					<include name="verifyToolTipIsDisplayedForMagazines" />
+					<include name="validateToolTipWithOCeanForMagazines" />
+					<include name="verifyContentLevelIsDisplayedForAllContentsForMagazines" />
+					<include name="verifyContentLevelIsDisplayedForViewPoints" />
+					<include name="verifyToolTipIsDisplayedForViewPoints" />
+					<include name="validateToolTipWithOCeanForViewPoints" />
+					<include name="verifyContentLevelIsDisplayedForAllContentsForViewPoints" />
+					<include name="verifyContentLevelIsDisplayedForAcademicJournals" />
+					<include name="verifyToolTipIsDisplayedForAcademicJournals" />
+					<include name="validateToolTipWithOCeanForAcademicJournals" />
+					<include
+						name="verifyContentLevelIsDisplayedForAllContentsForAcademicJournals" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllTabsForReferenceDisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="contentGroup" value="K12-Reference" />
+		<parameter name="groupName" value="Reference" />
+		<parameter name="displayName" value="reference" />
+		<parameter name="sortBy" value="relevance" />
+		<parameter name="dataBaseElement" value="documentTitle" />
+		<parameter name="needToSelectDisplayName" value="news" />
+		<classes>
+			<class name="k12.ViewAllTabsDisplayGroupTest">
+				<methods>
+					<include name="viewDisplayGroupsForSeachTerm" />
+					<include name="validateDisplayGroupContent" />
+					<include name="validateDisplayGroupCount" />
+					<include name="validateDisplayGroupNext" />
+					<include name="validateDisplayGroupPrevious" />
+					<include name="validateTabsAfterNext" />
+					<include name="validateTabsAfterPrevious" />
+					<include name="verifySearchInViewAll" />
+					<include name="verifyTabsFromDetailedPage" />
+					<include name="verifyTabsForDetailedPage" />
+					<include name="ensureSingleTabIsSelectedOnce" />
+					<include name="headingMatch" />
+					<include name="verifyRecordsCountWithViewAll" />
+					<include name="verifySearchResult" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllTabsForNewsDisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="contentGroup" value="news" />
+		<parameter name="displayName" value="news" />
+		<parameter name="groupName" value="News" />
+		<parameter name="sortBy" value="relevance" />
+		<parameter name="dataBaseElement" value="documentTitle" />
+		<parameter name="needToSelectDisplayName" value="reference" />
+		<classes>
+			<class name="k12.ViewAllTabsDisplayGroupTest">
+				<methods>
+					<include name="viewDisplayGroupsForSeachTerm" />
+					<include name="validateDisplayGroupContent" />
+					<include name="validateDisplayGroupCount" />
+					<include name="validateDisplayGroupNext" />
+					<include name="validateDisplayGroupPrevious" />
+					<include name="validateTabsAfterNext" />
+					<include name="validateTabsAfterPrevious" />
+					<include name="verifySearchInViewAll" />
+					<include name="verifyTabsFromDetailedPage" />
+					<include name="verifyTabsForDetailedPage" />
+					<include name="ensureSingleTabIsSelectedOnce" />
+					<include name="headingMatch" />
+					<include name="verifyRecordsCountWithViewAll" />
+					<include name="verifySearchResult" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllTabsForMagazinesDisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="contentGroup" value="magazines" />
+		<parameter name="displayName" value="magazines" />
+		<parameter name="groupName" value="Magazines" />
+		<parameter name="sortBy" value="relevance" />
+		<parameter name="dataBaseElement" value="documentTitle" />
+		<parameter name="needToSelectDisplayName" value="reference" />
+		<classes>
+			<class name="k12.ViewAllTabsDisplayGroupTest">
+				<methods>
+					<include name="viewDisplayGroupsForSeachTerm" />
+					<include name="validateDisplayGroupContent" />
+					<include name="validateDisplayGroupCount" />
+					<include name="validateDisplayGroupNext" />
+					<include name="validateDisplayGroupPrevious" />
+					<include name="validateTabsAfterNext" />
+					<include name="validateTabsAfterPrevious" />
+					<include name="verifySearchInViewAll" />
+					<include name="verifyTabsFromDetailedPage" />
+					<include name="verifyTabsForDetailedPage" />
+					<include name="ensureSingleTabIsSelectedOnce" />
+					<include name="headingMatch" />
+					<include name="verifyRecordsCountWithViewAll" />
+					<include name="verifySearchResult" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllTabsForPrimarySourcesDisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="contentGroup" value="K12-PrimarySources" />
+		<parameter name="displayName" value="primarysources" />
+		<parameter name="groupName" value="Primary Sources" />
+		<parameter name="sortBy" value="relevance" />
+		<parameter name="dataBaseElement" value="documentTitle" />
+		<parameter name="needToSelectDisplayName" value="reference" />
+		<classes>
+			<class name="k12.ViewAllTabsDisplayGroupTest">
+				<methods>
+					<include name="viewDisplayGroupsForSeachTerm" />
+					<include name="validateDisplayGroupContent" />
+					<include name="validateDisplayGroupCount" />
+					<include name="validateDisplayGroupNext" />
+					<include name="validateDisplayGroupPrevious" />
+					<include name="validateTabsAfterNext" />
+					<include name="validateTabsAfterPrevious" />
+					<include name="verifySearchInViewAll" />
+					<include name="verifyTabsFromDetailedPage" />
+					<include name="verifyTabsForDetailedPage" />
+					<include name="ensureSingleTabIsSelectedOnce" />
+					<include name="headingMatch" />
+					<include name="verifyRecordsCountWithViewAll" />
+					<include name="verifySearchResult" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllTabsForStatisticsDisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="contentGroup" value="statistics" />
+		<parameter name="displayName" value="statistics" />
+		<parameter name="groupName" value="Statistics" />
+		<parameter name="sortBy" value="relevance" />
+		<parameter name="dataBaseElement" value="documentTitle" />
+		<parameter name="needToSelectDisplayName" value="reference" />
+		<classes>
+			<class name="k12.ViewAllTabsDisplayGroupTest">
+				<methods>
+					<include name="viewDisplayGroupsForSeachTerm" />
+					<include name="validateDisplayGroupContent" />
+					<include name="validateDisplayGroupCount" />
+					<include name="validateDisplayGroupNext" />
+					<include name="validateDisplayGroupPrevious" />
+					<include name="validateTabsAfterNext" />
+					<include name="validateTabsAfterPrevious" />
+					<include name="verifySearchInViewAll" />
+					<include name="verifyTabsFromDetailedPage" />
+					<include name="verifyTabsForDetailedPage" />
+					<include name="ensureSingleTabIsSelectedOnce" />
+					<include name="headingMatch" />
+					<include name="verifyRecordsCountWithViewAll" />
+					<include name="verifySearchResult" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllTabsForImagesDisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="contentGroup" value="images" />
+		<parameter name="displayName" value="images" />
+		<parameter name="groupName" value="Images" />
+		<parameter name="sortBy" value="relevance" />
+		<parameter name="dataBaseElement" value="documentTitle" />
+		<parameter name="needToSelectDisplayName" value="reference" />
+		<classes>
+			<class name="k12.ViewAllTabsDisplayGroupTest">
+				<methods>
+					<include name="viewDisplayGroupsForSeachTerm" />
+					<include name="validateDisplayGroupContent" />
+					<include name="validateDisplayGroupCount" />
+					<include name="validateDisplayGroupNext" />
+					<include name="validateDisplayGroupPrevious" />
+					<include name="validateTabsAfterNext" />
+					<include name="validateTabsAfterPrevious" />
+					<include name="verifySearchInViewAll" />
+					<include name="verifyTabsFromDetailedPage" />
+					<include name="verifyTabsForDetailedPage" />
+					<include name="ensureSingleTabIsSelectedOnce" />
+					<include name="headingMatch" />
+					<include name="verifyRecordsCountWithViewAll" />
+					<include name="verifySearchResult" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllTabsForAudioDisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="contentGroup" value="audio" />
+		<parameter name="displayName" value="audio" />
+		<parameter name="groupName" value="Audio" />
+		<parameter name="sortBy" value="relevance" />
+		<parameter name="dataBaseElement" value="documentTitle" />
+		<parameter name="needToSelectDisplayName" value="reference" />
+		<classes>
+			<class name="k12.ViewAllTabsDisplayGroupTest">
+				<methods>
+					<include name="viewDisplayGroupsForSeachTerm" />
+					<include name="validateDisplayGroupContent" />
+					<include name="validateDisplayGroupCount" />
+					<include name="validateDisplayGroupNext" />
+					<include name="validateDisplayGroupPrevious" />
+					<include name="validateTabsAfterNext" />
+					<include name="validateTabsAfterPrevious" />
+					<include name="verifySearchInViewAll" />
+					<include name="verifyTabsFromDetailedPage" />
+					<include name="verifyTabsForDetailedPage" />
+					<include name="ensureSingleTabIsSelectedOnce" />
+					<include name="headingMatch" />
+					<include name="verifyRecordsCountWithViewAll" />
+					<include name="verifySearchResult" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllTabsForVideoDisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="contentGroup" value="video" />
+		<parameter name="displayName" value="video" />
+		<parameter name="groupName" value="Video" />
+		<parameter name="sortBy" value="relevance" />
+		<parameter name="dataBaseElement" value="documentTitle" />
+		<parameter name="needToSelectDisplayName" value="reference" />
+		<classes>
+			<class name="k12.ViewAllTabsDisplayGroupTest">
+				<methods>
+					<include name="viewDisplayGroupsForSeachTerm" />
+					<include name="validateDisplayGroupContent" />
+					<include name="validateDisplayGroupCount" />
+					<include name="validateDisplayGroupNext" />
+					<include name="validateDisplayGroupPrevious" />
+					<include name="validateTabsAfterNext" />
+					<include name="validateTabsAfterPrevious" />
+					<include name="verifySearchInViewAll" />
+					<include name="verifyTabsFromDetailedPage" />
+					<include name="verifyTabsForDetailedPage" />
+					<include name="ensureSingleTabIsSelectedOnce" />
+					<include name="headingMatch" />
+					<include name="verifyRecordsCountWithViewAll" />
+					<include name="verifySearchResult" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllTabsForWebsitesDisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="contentGroup" value="websites" />
+		<parameter name="displayName" value="websites" />
+		<parameter name="groupName" value="Websites" />
+		<parameter name="sortBy" value="relevance" />
+		<parameter name="dataBaseElement" value="documentTitle" />
+		<parameter name="needToSelectDisplayName" value="reference" />
+		<classes>
+			<class name="k12.ViewAllTabsDisplayGroupTest">
+				<methods>
+					<include name="viewDisplayGroupsForSeachTerm" />
+					<include name="validateDisplayGroupContent" />
+					<include name="validateDisplayGroupCount" />
+					<include name="validateDisplayGroupNext" />
+					<include name="validateDisplayGroupPrevious" />
+					<include name="validateTabsAfterNext" />
+					<include name="validateTabsAfterPrevious" />
+					<include name="verifySearchInViewAll" />
+					<include name="verifyTabsFromDetailedPage" />
+					<include name="verifyTabsForDetailedPage" />
+					<include name="ensureSingleTabIsSelectedOnce" />
+					<include name="headingMatch" />
+					<include name="verifyRecordsCountWithViewAll" />
+					<include name="verifySearchResult" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllTabsForViewPointsDisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="contentGroup" value="viewPoints" />
+		<parameter name="displayName" value="viewpoints" />
+		<parameter name="groupName" value="Viewpoints" />
+		<parameter name="sortBy" value="relevance" />
+		<parameter name="dataBaseElement" value="documentTitle" />
+		<parameter name="needToSelectDisplayName" value="reference" />
+		<classes>
+			<class name="k12.ViewAllTabsDisplayGroupTest">
+				<methods>
+					<include name="viewDisplayGroupsForSeachTerm" />
+					<include name="validateDisplayGroupContent" />
+					<include name="validateDisplayGroupCount" />
+					<include name="validateDisplayGroupNext" />
+					<include name="validateDisplayGroupPrevious" />
+					<include name="validateTabsAfterNext" />
+					<include name="validateTabsAfterPrevious" />
+					<include name="verifySearchInViewAll" />
+					<include name="verifyTabsFromDetailedPage" />
+					<include name="verifyTabsForDetailedPage" />
+					<include name="ensureSingleTabIsSelectedOnce" />
+					<include name="headingMatch" />
+					<include name="verifyRecordsCountWithViewAll" />
+					<include name="verifySearchResult" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllTabsForAcademicJournalsDisplayGroup" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="contentGroup" value="academicJournals" />
+		<parameter name="displayName" value="academicJournals" />
+		<parameter name="groupName" value="Academic Journals" />
+		<parameter name="sortBy" value="relevance" />
+		<parameter name="dataBaseElement" value="documentTitle" />
+		<parameter name="needToSelectDisplayName" value="reference" />
+		<classes>
+			<class name="k12.ViewAllTabsDisplayGroupTest">
+				<methods>
+					<include name="viewDisplayGroupsForSeachTerm" />
+					<include name="validateDisplayGroupContent" />
+					<include name="validateDisplayGroupCount" />
+					<include name="validateDisplayGroupNext" />
+					<include name="validateDisplayGroupPrevious" />
+					<include name="validateTabsAfterNext" />
+					<include name="validateTabsAfterPrevious" />
+					<include name="verifySearchInViewAll" />
+					<include name="verifyTabsFromDetailedPage" />
+					<include name="verifyTabsForDetailedPage" />
+					<include name="ensureSingleTabIsSelectedOnce" />
+					<include name="headingMatch" />
+					<include name="verifyRecordsCountWithViewAll" />
+					<include name="verifySearchResult" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewLexileScore" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="displayGroupReference" value="reference" />
+		<parameter name="displayGroupMagazines" value="magazines" />
+		<parameter name="displayGroupViewpoints" value="viewpoints" />
+		<parameter name="displayGroupPrimarysources" value="primarysources" />
+		<parameter name="displayGroupNews" value="news" />
+		<parameter name="displayGroupAcademic" value="academicjournals" />
+		<parameter name="displayGroupAudio" value="audio" />
+		<classes>
+			<class name="k12.ViewLexileScoreTest">
+				<methods>
+					<include name="verifyLexileScoreIsDisplayedForNews" />
+					<include name="verifyLexileScoreIsDisplayedForMagazines" />
+					<include name="verifyLexileScoreIsDisplayedForAcademicJournals" />
+					<include name="verifyLexileScoreNotDisplayedForReference" />
+					<include name="verifyLexileScoreNotDisplayedForViewPoints" />
+					<include name="verifyLexileScoreNotDisplayedForPrimarySources" />
+					<include name="verifyLexileScoreNotDisplayedForAudios" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="View Printer Document" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="reference" value="reference" />
+		<parameter name="magazines" value="magazines" />
+		<parameter name="news" value="news" />
+		<parameter name="primarysources" value="primarysources" />
+		<parameter name="viewpoints" value="viewpoints" />
+		<parameter name="images" value="images" />
+		<parameter name="video" value="video" />
+		<parameter name="statistics" value="statistics" />
+		<parameter name="websites" value="websites" />
+		<parameter name="audio" value="audio" />
+
+		<classes>
+			<class name="k12.ViewPrinterFriendlyDocumentTest">
+				<methods>
+					<include name="verifyPrintOptionAvailableForReference" />
+					<include name="verifyPrintOptionAvailableForMagazines" />
+					<include name="verifyPrintOptionAvailableForNews" />
+					<include name="verifyPrintOptionAvailableForPrimarysources" />
+					<include name="verifyPrintOptionAvailableForViewpoints" />
+					<include name="verifyPrintOptionAvailableForImages" />
+					<include name="verifyPrintOptionAvailableForStatistics" />
+					<include name="verifyPrintOptionAvailableForVideo" />
+					<include name="verifyPrintOptionAvailableForWebsites" />
+					<include name="verifyPrintOptionAvailableForAudio" />
+					<!--<include name="verifyTooltipExists" />			
+					-->
+					<include name="verifyPrintOptionAvailableFromViewAll" />
+					<include name="verifyDocumentOpensInNewWindow" />
+					<include name="verifyPrintOptionNotAvailableInNewWindow" />
+					<include name="verifyAfterClickingCancelOnPopup" />
+					<include name="verifyPrintOptionWorking" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="IntegrateAcademicJournalsTest" enabled="false">
+		<parameter name="displayGroupName" value="academicJournals" />
+		<parameter name="searchTerm" value="war" />
+		<parameter name="sortBy" value="PublicationDate" />
+		<parameter name="tabName" value="news" />
+		<classes>
+			<class name="k12.IntegrateAcademicJournalsTest">
+				<methods>
+					<include name="checkJounalsDisplayedInDisplayGroup" />
+					<include name="verifyViewAllIsNotDisplayed" />
+					<include name="verifyViewAllIsDisplayed" />
+					<include name="verifyCountIsDisplayed" />
+					<!--
+						Sort By Publication date is not yet implemented in the Ocean
+						Services.
+					-->
+					<!--<include name="verifyContentLinksAreSortedByPublicationDate" />-->
+					<include name="verifyViewAllIsAccessible" />
+					<include name="verifyGroupNameIsDisplayedInCaps" />
+					<include name="verifyPublicationDetailsPresent" />
+					<include name="verifyContentLinkIsWorking" />
+					<include name="verifyAcademicJournalCanBeMarked" />
+					<include name="verifyAfterClickingAcademicJournalsLink" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewImageDocumentTest" enabled="false">
+		<parameter name="displayGroupName" value="academicJournals" />
+		<parameter name="searchTerm" value="war" />
+		<parameter name="sortBy" value="PublicationDate" />
+		<parameter name="tabName" value="news" />
+		<classes>
+			<class name="k12.ViewImageDocumentTest">
+				<methods>
+					<include name="verifyDetailedViewOfImageIsDisplayed" />
+					<include name="verifyDetailedViewOfImageIsDisplayedFromViewAll" />
+					<include name="verifyImagesForNext" />
+					<include name="verifyImagesForPrevious" />
+					<!--<include name="verifyFullSizeImageIsDisplayed" />
+					-->
+					<include name="verifyToolsArePresent" />
+					<include name="verifyNextAndPreviousButtonsPresent" />
+					<include name="checkSearchButtonIsPresent" />
+					<include name="verifyElementsAreDisplayedOnPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="QuestionToThinkAbout" enabled="false">
+		<classes>
+			<class name="k12.QuestionToThinkAboutTest">
+				<methods>
+					<include name="verifyViewPointsDisplayGroup" />
+					<include name="verifyDetailedDocument" />
+					<include name="verifyQuestionTable" />
+					<include name="verifyQuestionsInNumbered" />
+					<include name="verifyNotDisplayed" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Handle Ocean Exceptions" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="invalidSearchTerm1" value="eruwfnsfhiushf" />
+		<parameter name="invalidSearchTerm2" value="@$#%%#" />
+		<parameter name="incorrectSpeltSearchTerm" value="creeate" />
+		<classes>
+			<class name="k12.HandleOceanExceptionsTest">
+				<methods>
+					<include name="verifyErrorPageNotDisplayed" />
+					<include name="verifyMessagesDisplayedWithInvalidSearchTerm" />
+					<include name="verifyMessagesDisplayedWithIncorrectSpeltSearchTerm" />
+					<include name="verifyResultsAreDisplayed" />
+					<include name="verifyOnlyErrorMessagesAreDisplayed" />
+					<include name="checkWithValidSearchTerm" />
+					<include name="checkWithInvalidSearchTerm" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Link To Third Party Audio" enabled="false">
+		<parameter name="searchTerm" value="audio" />
+
+		<classes>
+			<class name="k12.LinkToThirdPartyAudioTest">
+				<methods>
+					<include name="verifySpeakerIconIsPresent" />
+					<include name="verifyAfterClickingSpeakerIcon" />
+					<include name="verifyAudioTitle" />
+					<!--
+						<include name="verifyAfterclickingSpeakerIconInNewWindow" />
+						<include name="verifyNoErrorMessageIsDisplayed" /> <include
+						name="verifyPlayPauseOptionsAvailable" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewVideoThumbnails" enabled="false">
+		<parameter name="searchTerm" value="video" />
+		<classes>
+			<class name="k12.ViewVideoThumbnailsTest">
+				<methods>
+					<include name="verifyThumbnailsPresentFromViewAllPage" />
+					<include name="verifyThumbnailsPresentAfterNavigation" />
+					<include name="verifyThumbnailInDetailPageFromViewAll" />
+					<include name="verifyThumbnailInDetailPageFromSearchResults" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="TranslateTestDocuemnt" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.TranslateTextDocumentTest">
+				<methods>
+					<include name="verifyIsTranslateOptionAvailableFromViewAll" />
+					<include name="verifyIsTranslateOptionAvailableFromSearchResultsPage" />
+					<include name="verifyIsTranslateOptionAvailableFromDetailedPage" />
+					<include name="verifyIsTranslateNotAppliedWhenButtonNotPressed" />
+					<include name="verifyAvailableOptionsInDropDownBox" />
+					<include name="verifySelectionOfSpanishOption" />
+					<include name="verifyIsLanguageChanged" />
+					<include name="verifyIsLanguageChangingForAllLanguages" />
+					<include name="verifyIsMultipleSelectNotAllowed" />
+					<!--
+						<include name="verifyIsPrintOptionWorkingForTranslatedText" />
+						<include name="verifyIsPrintPopupWorkingForTranslatedText" />
+						<include name="verifyCancellationOfPrintpopupForTranslatedText" />
+						<include name="verifyIsDownloadOptionAvailableForTranslatedText"
+						/> <include
+						name="verifyIsCancelDownloadPopupWorkingForTranslatedText"/>
+					-->
+					<include name="verifyIsDesclaimerAvailableForTranslatedDocument" />
+					<include name="verifyIsCitationAvaialableForTranslatedDocument" />
+					<include name="verifyCanTranlatedDocumentBeClosed" />
+					<include
+						name="veirifyWhetherSelectedOptionAvailableinDropDownAfterActionPerformed" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="LinkToRelatedSubjects" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.LinkToRelatedSubjectTest">
+				<methods>
+					<include name="verifyTopicsAreDisplayedInPortlet" />
+					<include name="verifyAvailablilityOfOtherBucketsAlongWithRelatedTopics" />
+					<include name="verifyIsViewAllaccesible" />
+					<include name="verifyIsTopicsinthePortletAccesible" />
+					<include name="verifyTopicsareRelatedTosearchword" />
+					<include name="verifyNonAvailabilityofRelatedTopicsinOtherPages" />
+					<include name="verifyOtherportletsAvailablilityafterClickingtopic" />
+					<include name="verifyDisplaygroupsAvailableinPortalPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllVideosOnSearchResultsPage" enabled="false">
+		<parameter name="searchTerm" value="video" />
+		<parameter name="searchTermForNoVideos" value="ooo" />
+		<classes>
+			<class name="k12.ViewAllVideosOnSearchResultsPageTest">
+				<methods>
+					<include name="verifyContentResultsInVideos" />
+					<include name="verifyViewAllIsDisplayed" />
+					<include name="verifyVideosCountIsDisplayed" />
+					<include name="verifyViewAllIsNotDisplayed" />
+					<include name="verifyVideosHeading" />
+					<include name="verifyMarkMeForVideos" />
+					<include name="verifyDetailVideoNavigation" />
+					<include name="verifyMouseOverOfVideo" />
+					<include name="verifyVideoContent" />
+					<include name="verifyNextLinkIsWorking" />
+					<include name="verifyPreviousLinkIsWorking" />
+					<include name="verifyVideoDisplayGroupIsNotDisplayed" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="WordsToKnowPortlet" enabled="false">
+		<parameter name="searchTerm" value="Emphasis on Diversity" />
+		<classes>
+			<class name="k12.WordsToKnowPortletTest">
+				<methods>
+					<include name="verifyDisplayGroup" />
+					<include name="verifyDetailedDocument" />
+					<include name="verifyWordsPortlet" />
+					<include name="verifyWordsPortletHighlighted" />
+					<include name="verifyDefinitionOfWord" />
+					<include name="verifyWordsList" />
+					<include name="verifyWordsToKnowHeading" />
+					<include name="verifyMeaningandPartsOfSpeechAvailable" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="DisplayStreamingThirdPartyVideo" enabled="false">
+		<parameter name="searchTerm" value="video" />
+		<classes>
+			<class name="k12.DisplayStreamingThirdPartyVideoTest">
+				<methods>
+					<include name="checkDetailedPageIsDisplayed" />
+					<include name="verifyVideoIsDispayed" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Advanced Search" enabled="false">
+		<parameter name="basic" value="Basic" />
+		<parameter name="intermediate" value="Intermediate" />
+		<parameter name="docType" value="Essay" />
+		<parameter name="news" value="news" />
+		<parameter name="reference" value="reference" />
+		<parameter name="fromDate" value="09-January-2000" />
+		<parameter name="toDate" value="09-January-2000" />
+		<parameter name="lexileScore" value="200L to 400L" />
+		<classes>
+			<class name="k12.AdvancedSearchTest">
+				<methods>
+					<include name="verifyAdvancedSearchPageIsDisplayed" />
+					<include name="verifyNewRowIsAdded" />
+					<include name="verifyCheckboxesAvailableToLimitResults" />
+					<include name="isUserAbleToSelectDocumentType" />
+					<include name="isUserAbleToSelectContentLevel" />
+					<include name="isUserAbleToSelectMultipleContentLevels" />
+					<include name="verifyPublicationDatesDropdownBoxesPresent" />
+					<!-- Functionality Not Yet Implemented -->
+					<!--
+						<include name="verifyCheckboxesPresentForAllContentTypes" />
+						<include name="verifyContentTypeCheckboxesAreUnchecked" />
+						<include name="isUserAbleToSelectMinMaxLexileScores" /> <include
+						name="verifyResultsAfterSearchingByDoctype" /> <include
+						name="verifyResultsAfterSearchingByContentType" /> <include
+						name="verifyResultsAfterSearchingByMultipleContentTypes" />
+						<include name="verifyPublicationDatesRadioButtonsPresent" />
+						<include name="verifyResultsAfterSelectingAfterRadioButton" />
+						<include name="verifyResultsAfterSelectingBeforeRadioButton" />
+						<include name="verifyResultsAfterSelectingOnRadioButton" />
+						<include name="verifyAfterClickingAllDatesRadioButton" /> <include
+						name="verifyAfterClickingBetweenRadioButtons" /> <include
+						name="verifyAfterClickingOtherRadioButtons" /> <include
+						name="verifyResultsAfterSelectingBetweenRadioButton" /> <include
+						name="verifyResultsAfterSearchingByLexileScore" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewHomePageTest" enabled="false">
+		<classes>
+			<class name="k12.ViewHomePageTest">
+				<methods>
+					<include name="verifyBasicSearchBoxIsPresent" />
+					<include name="verifyTopMenuBarIsPresent" />
+					<include name="verifyBottomMenuBarIsPresent" />
+					<!--
+						Not Yet Implemented for this iteration
+					-->
+					<!--
+						<include name="verifyPreMentionedPortletsArePresent" /> <include
+						name="verifyNewsPortletIsPresent" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="EmailAttachments" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.EmailAttachmentsTest">
+				<methods>
+					<include name="verifyEmailOption" />
+					<include name="verifyPresenceOfRadioButtons" />
+					<include name="verifyDefaultOptionForRadioButton" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="EmailSubject" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.EmailSubjectTest">
+				<methods>
+					<include name="verifyEmailOption" />
+					<include name="verifyDocumentTitleInSubjectField" />
+					<include name="verifyEmailOptionForOtherDisplayGroup" />
+					<include name="verifyDocumentTitleForOtherDisplayGroup" />
+					<include name="verifySubjectFieldIsEditable" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ChangeEmailOriginatingAddress" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="emailId" value="abc@bbc.com" />
+		<parameter name="defaultMailId" value="galeadmin@cengage.com" />
+		<classes>
+			<class name="k12.ChangeEmailOriginatingAddressTest">
+				<methods>
+					<include name="verifyEmailOption" />
+					<include name="verifySenderFieldIsEditable" />
+					<include name="verifyEmailIdInSenderField" />
+					<include name="verifyEmailOptionForOtherDisplayGroup" />
+					<include name="verifyEmailIdInSenderFieldForOtherDisplayGroup" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="FindOutMorePortletTest" enabled="false">
+		<parameter name="searchTerm" value="Emphasis on Diversity" />
+		<classes>
+			<class name="k12.FindOutMorePortletTest">
+				<methods>
+					<include name="verifyViewPointRecords" />
+					<include name="verifyDetailedViewPage" />
+					<include name="verifyFindOutMorePortletIsDisplayed" />
+					<include name="verifyAssignmentTextIsDisplayed" />
+					<!--
+						Not yet implemented fot this iteration
+					-->
+					<!--
+						<include name="verifySubjectSearchIsDisplayed" /> <include
+						name="verifySamePortletIsNotDisplayed" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ShareBookmarkWithSocialNetworkingSiteTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.ShareBookmarkWithSocialNetworkingSiteTest">
+				<methods>
+					<include name="verifyShareToolAvailableInDetailPage" />
+					<include name="verifyMouseOverShareOption" />
+					<include name="verifyContentIsSharedInNetwork" />
+					<include name="verifyMoreAndCloseOptionsInPopup" />
+					<include name="verifyUserAbleToSearch" />
+					<include name="verifyEmptyFieldForNextSearch" />
+					<include name="verifyNoSearchTermFound" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewVideosDocumentTest" enabled="false">
+		<parameter name="searchTerm" value="video" />
+		<classes>
+			<class name="k12.ViewVideosDocumentTest">
+				<methods>
+					<include name="clickDocumentVideoDisplayGroup" />
+					<include name="verifyDocumentTitleInDetailedPage" />
+					<!--  <include name="verifyVideoPlayedWithoutErrors" />-->
+					<include name="verifyVideoCaptionAvailable" />
+					<include name="verifyVideoFromViewAll" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="HitcountAndSortingDocumentsRelatedSubjectsTest"
+		enabled="false">
+		<parameter name="searchTerm" value="clever" />
+		<classes>
+			<class name="k12.HitcountAndSortingDocumentsRelatedSubjectsTest">
+				<methods>
+					<include name="verifyQuickSearchSidebarisPresent" />
+					<include name="verifyHitcountForAllDisplayGroups" />
+					<include name="verifyOnlyFiveLinksDisplayedInRelatedResults" />
+					<include name="verifyMoreLinkForMoreThanFiveResults" />
+					<include name="verifyAccesibilityOfMoreLink" />
+					<include name="verifyDescendingAfterLessLink" />
+					<include name="verifySortingOrderAfterClickingMore" />
+					<include name="verifyFunctionalityOfLessLink" />
+					<include name="verifySortingOfRelatedSubjectTerms" />
+					<include name="verifyNavigationthroughRelatedSubjectTerm" />
+					<include name="verifyHitcountByaddingAllDispalyGroups" />
+					<include name="verifyViewingOtherSubjectsByNavigation" />
+					<include name="verifyNoMoreLinkForLessThanFiveResults" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="TakeQuizTest" enabled="false">
+		<parameter name="searchTerm" value="Emphasis on Diversity" />
+		<classes>
+			<class name="k12.TakeQuizTest">
+				<methods>
+					<include name="verifyTakeQuizLinkIsPresent" />
+					<include name="verifyNewWindowIsDisplayed" />
+					<include name="verifyOptionsPresentForSelectedDocument" />
+					<include name="verifyDocumentTilteIsPresent" />
+					<!--
+						Issues have been updated for below test cases.
+					-->
+					<!--
+						<include name="verifyPrintOptions" /> <include
+						name="verifyEmailOptions" /> <include
+						name="verifyRequiredFieldsForEmailQuiz" /> <include
+						name="verifyMessageDisplayed" /> <include
+						name="verifyPopupIsDisplayed" /> <include
+						name="sendingMailWithTwoOrMoreSenders" /> <include
+						name="verifyNewWindowOpenedForStartButton" /> <include
+						name="verifyStatusBar" /> <include
+						name="verifySubmissionOfAnswers" /> <include
+						name="verifyTheDocumentTitleInAllOptions" /> <include
+						name="verifyCosingPopUp" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewFirstNCharacters" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.ViewFirstNCharactersTest">
+				<methods>
+					<include name="verifyDescriptionIsPresent" />
+					<include name="verifyDescriptionInDetailedPage" />
+					<include name="verifyDesriptionFromViewAllPage" />
+					<include name="verifyDescIsSameInBucketAndViewAllPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewExpertsPicksPortlet" enabled="false">
+		<parameter name="searchTerm" value="contraception" />
+		<classes>
+			<class name="k12.ViewExpertsPicksPortletTest">
+				<methods>
+					<include name="verifyTopicsAreNotMoreThan10" />
+					<include name="verifyViewAllNotDisplayed" />
+					<include name="verifyHitCountNotDisplayed" />
+					<include name="verifyTopicsAreAccessible" />
+					<include name="verifyTopicOverviewIsDisplayed" />
+					<!--
+						Not implemented
+					-->
+					<!--
+						<include name="verifyViewFullOverviewLinkIsDisplayed" /> <include
+						name="verifyViewFullOverviewLinkIsAccessible" /> <include
+						name="verifyOtherTopicLinksNotPresent" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!--
+	Not yet implemented in the application
+	-->
+	<!--
+		<test name="Links within document body" enabled="false"> <parameter
+		name="searchTerm" value="car" /> <classes> <class
+		name="k12.LinksWithinDocumentBodyTest"> <methods> <include
+		name="verifyContentHasHyperlinks" /> <include
+		name="verifyHyperlinksAreAccessible" /> <include
+		name="verifyUserIsInSameWindow" /> <include
+		name="verifyLinkColorChanged" /> <include
+		name="verifyOtherHyperlinksAreAccessible" /> </methods> </class>
+		</classes> </test>
+	-->
+
+	<test name="IntegrateRelatedTopicsPortletTest" enabled="false">
+		<parameter name="searchTerm" value="adoption" />
+		<classes>
+			<class name="k12.IntegrateRelatedTopicsPortletTest">
+				<methods>
+
+					<include name="verifyTopicsAssociatedIsDisplayed" />
+					<include name="verifyOtherPortletPresent" />
+					<include name="verifyViewAllPresentForOtherBuckets" />
+					<include name="verifyClickingTopicsInPortlet" />
+					<include name="verifyTopicsPortletNotPresentInOtherPages" />
+					<include name="verifyDetailedOverviewIsPresent" />
+					<include name="verifyOtherBucketsalongWithDetailedOverview" />
+
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="JumpToPortalPageFromBasicSearchTest" enabled="false">
+		<parameter name="searchTerm" value="contraception" />
+		<parameter name="searchTerm2" value="adoption" />
+		<classes>
+			<class name="k12.JumpToPortalPageFromBasicSearchTest">
+				<methods>
+					<include name="verifyNavigationByEnteringTopic" />
+					<include name="verifyNavigationByEnteringNonTopicSearchTerm" />
+					<include name="verifyTopicRelatedPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="IntegrateWebsitesFavIconsOnViewAllPageTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.IntegrateWebsitesFavIconsOnViewAllPageTest">
+				<methods>
+					<include name="verifyfaviconsOnViewAllPage" />
+					<include name="verifyfaviconsNotPresentInSearchResultsPage" />
+					<include name="verifyFavIconsForAllDisplayGroupsinViewAllpage" />
+					<include name="verifyFaviconsOnLeftsideOfRecord" />
+					<include name="verifyDisplayOfGenericIcon" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="HistoryBreadcrumbTrailTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="displayGroup" value="reference" />
+		<classes>
+			<class name="k12.HistoryBreadcrumbTrailTest">
+				<methods>
+					<include name="verifyBreadcrumbIsDisplayed" />
+					<include name="verifyUserNavigateToHomePage" />
+					<include name="verifyThreeLinksDisplayed" />
+					<include name="verifyUserAcessToLinks" />
+					<include name="verifyContentInPage" />
+					<include name="verifySearchBoxIsField" />
+					<include name="verifyDynamicChangeOfBreadcrumb" />
+					<include name="verifyAccessToFiveLinks" />
+					<include name="verifyLinksForBreadcrumb" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="PortalPageSuggestionsOnSearchResultsPageTest" enabled="false">
+		<parameter name="searchTerm" value="adoption" />
+		<parameter name="searchTerm2" value="war" />
+		<classes>
+			<class name="k12.PortalPageSuggestionsOnSearchResultsPageTest">
+				<methods>
+					<include name="verifyTopicsPortletAvailable" />
+					<include name="verifyTopicsPortletForInvalidKeyword" />
+					<include name="verifyTopicPortalalongWithOtherBuckets" />
+					<include name="verifyTopicsAreHyperlinked" />
+					<include name="verifySearchResultsStatementIsDisplayed" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewTopicPortalPageOverviewPortletTest" enabled="false">
+		<parameter name="searchTerm" value="adoption" />
+		<classes>
+			<class name="k12.ViewTopicPortalPageOverviewPortletTest">
+				<methods>
+					<include name="verifyNavigationByclickingoOnTopics" />
+					<include name="verifyOverviewTextWithDocumentText" />
+					<include name="verifyOverviewDisplayed" />
+					<include name="verifyElipsisPresent" />
+					<include name="verifyViewMoreOptionAvailable" />
+					<include name="verifyNavigationByclickingViewMore" />
+					<include name="verifyOverviewTextWithDetailedPageText" />
+					<include name="verifyBreadCrumb" />
+					<include name="verifyToolsAvailableInDetailPage" />
+					<!--<include name="verifyComparisionOfOverviewWithTwoTopics" />
+				-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Submit Advanced Search Display" enabled="false">
+		<parameter name="searchTerm" value="dianosuar" />
+		<classes>
+			<class name="k12.SubmitAdvancedSearchDisplayTest">
+				<methods>
+					<include name="verifyAdvancedSearchOptionIsAccessible" />
+					<include name="verifyNoErrorMsgIsisplayed" />
+					<include name="verifyAdvanceSearchIsAccessibleAfterBasicSearch" />
+					<include name="verifyLimitToCheckboxesAreUnchecked" />
+					<!--<include name="verifyDisplayGroupCheckboxesPresent" />
+					-->
+					<include name="verifyDocTypeOptions" />
+					<include name="verifyContentLevelCheckboxesPresent" />
+					<include name="verifyTwoSearchButtonsPresent" />
+					<include name="verifyLexileScoreInstructions" />
+					<include name="dateDropdownBoxesPresent" />
+					<include name="isSearchByIndexWorking" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- Functionality Not Yet Implemented-->
+	<!--
+		<test name="SearchUsingSearchAssistTest" enabled="false"> <parameter
+		name="searchTerm" value="war" /> <parameter
+		name="searchWordLessThanThreeChar" value="wa" /> <parameter
+		name="searchWordMoreThanThreeChar" value="wars" /> <parameter
+		name="searchWithStopWord" value="war the battle" /> <parameter
+		name="newSearchWord" value="man" /> <parameter name="displayGroupList"
+		value="reference,news,magazines,journals,primarysources,viewpoints,audio,video,images"
+		/> <parameter name="displayGroup" value="reference" /> <classes>
+		<class name="k12.SearchUsingSearchAssistTest"> <methods> <include
+		name="verifyIsSearchFieldEmpty" /> <include
+		name="verifySuggestionsList" /> <include
+		name="verifyListLessThanThreeChar" /> <include
+		name="verifyListMoreThanThreeChar" /> <include
+		name="verifyFourCharsForSuggestionList" /> <include
+		name="verifyAllBucketsForSearch" /> <include
+		name="selectedSuggestionInSeachField" /> <include
+		name="verifySuggestionAvailForStopWord" /> <include
+		name="verifySearchSuggestionInViewAllPage" /> <include
+		name="verifySearchSuggestionFromViewAllPage" /> <include
+		name="verifyDocumentInDetailedPage" /> <include
+		name="verifySuggestionForNewSearchWord" /> <include
+		name="verifyPortletTitlesInSuggestionList" /> <include
+		name="verifyIsSelectedPortalPageIsDisplayed" /> </methods> </class>
+		</classes> </test>
+	-->
+	<!--
+		Not yet implemented in application <test name="Maximum document title
+		30 characters" enabled="false"> <parameter name="searchTerm"
+		value="war" /> <parameter name="displayGroupName" value="reference" />
+		<classes> <class name="k12.DocumentTitleMaximumLengthTest"> <methods>
+		<include name="verifyElipsesDisplayedInSearchResultsPage" /> <include
+		name="verifyDetailedPageDocTitleFromSearchResultsPage" /> <include
+		name="verifyDocumentTitlesLengthInViewAllPage" /> <include
+		name="verifyElipsesDisplayedInViewAllPage" /> <include
+		name="verifyDetailedPageDocTitleFromViewAllPage" /> <include
+		name="verifyNoElipsesAreDisplayedInDetailedPage" /> <include
+		name="verifyDocTitleLengthForAllBuckets" /> <include
+		name="verifyDocumentTitlesLessThanMaxlengthAreAccessible" />
+		</methods> </class> </classes> </test>
+	-->
+
+	<test name="Access Bottom MenuBar" enabled="false">
+		<parameter name="aboutThinkLink" value="aboutThink" />
+		<parameter name="aboutGaleLink" value="aboutGale" />
+		<parameter name="contactUsLink" value="contactUs" />
+		<parameter name="copyrightLink" value="copyright" />
+		<parameter name="termsOfUseLink" value="termsOfUse" />
+		<parameter name="privacyPolicyLink" value="privacyPolicy" />
+		<parameter name="endSessionLink" value="endSession" />
+		<classes>
+			<class name="k12.AccessBottomMenuBarTest">
+				<methods>
+					<include name="verifyAboutThinkLinkIsDisplayed" />
+					<include name="verifyAboutGaleLinkIsDisplayed" />
+					<include name="verifyContactUsLinkIsDisplayed" />
+					<include name="verifyCopyrightLinkIsDisplayed" />
+					<include name="verifyTermsofUseLinkIsDisplayed" />
+					<include name="verifyPrivacyPolicyLinkIsDisplayed" />
+					<include name="verifyEndSessionLinkIsDisplayed" />
+					<include name="isNewWindowOpenedOnClickingAboutGale" />
+					<include name="isNewWindowOpenedOnClickingContactUs" />
+					<include name="isNewWindowOpenedOnClickingCopyright" />
+					<include name="isNewWindowOpenedOnClickingTermsOfUse" />
+					<include name="isNewWindowOpenedOnClickingPrivacyPolicy" />
+					<!--Not yet implemented-->
+					<!--
+						<include name="isNewWindowOpenedOnClickingAboutThink" /> <include
+						name="verifyEndSessionLinkIsWorking" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!--
+		Not yet implemented in the application <test name="View Markup in
+		Document Body" enabled="false"> <parameter name="searchTerm"
+		value="war" /> <classes> <class
+		name="k12.ViewMarkupInDocumentBodyTest"> <methods> <include
+		name="verifyMarkupsPresentInDocument" /> <include
+		name="verifyBoldLettersPresent" /> <include
+		name="verifyItalicsPresent" /> <include name="verifyHyperlinksPresent"
+		/> </methods> </class> </classes> </test>
+	-->
+
+	<test name="DisablePdfDownloadforImagesTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.DisablePdfDownloadforImagesTest">
+				<methods>
+					<include
+						name="verifyDownloadOptionAvailableForImageStatisticAndWebsites" />
+					<include name="verify3optionsavailableForDownload" />
+					<include name="verifyPdfRadioButtonNotAvailable" />
+					<include name="verifyPdfOptionFromKeyboard" />
+					<include name="verifyRadioButtonForallOtherDisplayGroups" />
+					<include name="verifyPdfFunctionsForAllotherBuckets" />
+					<include name="verifyPdfNotSelectableForImageStatisticsAndWebsite" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!--
+		<test name="MaximiseAudioTabWhenLinkingOutTest" enabled="false">
+		<parameter name="searchTerm" value="war" /> <classes> <class
+		name="k12.MaximiseAudioTabWhenLinkingOutTest"> <methods> <include
+		name="verifyWindowMaximisedForAudio" /> <include
+		name="verifyWindoMaximisedAfterminimised" /> <include
+		name="verifyWindowMaximisedForSecondTime" /> </methods> </class>
+		</classes> </test>
+	-->
+
+	<test name="SubmitAdvancedSearchQuery" enabled="false">
+		<parameter name="orOperator" value="Or" />
+		<parameter name="andOperator" value="And" />
+		<parameter name="notOperator" value="Not" />
+		<parameter name="keywordIndex" value="KE" />
+		<parameter name="subjectIndex" value="SU" />
+		<parameter name="documentTitleIndex" value="TI" />
+		<parameter name="publicationTitleIndex" value="PB" />
+		<parameter name="war" value="war" />
+		<parameter name="forest" value="forest" />
+		<parameter name="worldWar" value="world war" />
+		<parameter name="LosAngelesTimes" value="Los Angeles Times" />
+		<parameter name="N4SearchTerm" value="war N4 india" />
+		<parameter name="news" value="news" />
+		<parameter name="audio" value="audio" />
+		<parameter name="images" value="images" />
+		<parameter name="docType" value="Article" />
+		<parameter name="fromDate" value="January-10-1990" />
+		<parameter name="toDate" value="January-10-2010" />
+		<parameter name="searchQuery"
+			value="KE war Or SU soldiers And TX weapons Not TI peace" />
+		<parameter name="limitQuery" value="TY Article and ACID (14223820)" />
+		<parameter name="fullTextDocuments" value="fullTextDocuments" />
+		<parameter name="peerReviewedPublications" value="peerReviewedPublications" />
+		<parameter name="Article" value="Article" />
+		<parameter name="Abstract" value="Abstract" />
+		<parameter name="Basic" value="Basic" />
+		<parameter name="Intermediate" value="Intermediate" />
+		<parameter name="Advanced" value="Advanced" />
+
+		<classes>
+			<class name="k12.SubmitAdvancedSearchQueryTest">
+				<methods>
+					<include name="verifyDefaultIndexIsKeyword" />
+					<include name="verifyUserCanSearchMultipleTermsUsingConnectors" />
+					<include name="verifyResultsWithCombinationOfAnd" />
+					<include name="verifyResultsWithCombinationOfOr" />
+					<include name="verifyResultsWithCombinationOfNot" />
+					<include name="verifyResultsWithDifferentCombinationsOfIndexes" />
+					<include name="verifyIndexesInDropdown" />
+					<include name="verifyNewRowIsAdded" />
+					<include name="verifyTwoSearchButtonsPresent" />
+					<include name="verifyProximityOperatorSearch" />
+					<include name="verifyBreadCrumb" />
+					<include name="checkMsgIsDisplayedForMaxRows" />
+					<include name="verifySearchResultsPageDisplayed" />
+
+					<!--
+						<include name="verifyResultsWithMultipleCombinations" /> <include
+						name="verifyDocTypesInResults" /> <include
+						name="checkOnlyOneDisplayGroupDisplayed" /> <include
+						name="verifyResultsForContentGroup" /> <include
+						name="verifyResultsForMultipleContentGroups" /> <include
+						name="verifyDatesInResults" /> <include
+						name="checkResultsDisplayedForSameToAndFromDate" /> <include
+						name="verifyWarningMsgDisplayedForLexileScore" /> <include
+						name="verifyWarningMsgDisplayedForNonIntegerLexileScore" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="UpdateTranslationTooltoUseSeparateDialogBoxTest"
+		enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="language" value="French" />
+		<parameter name="displayGroup" value="news" />
+		<classes>
+			<class name="k12.UpdateTranslationTooltoUseSeparateDialogBoxTest">
+				<methods>
+					<include name="verifyTranslateOption" />
+					<include name="verifyTranslateDialogBox" />
+					<include name="verifyOptionsInTranslateDialogBox" />
+					<include name="verifySelectionOfTranslate" />
+					<include name="verifyCancelOfTranslate" />
+					<include name="verifySelectionOfTranslateAfterCancelling" />
+					<include name="verifyDialogBoxIsClosed" />
+					<include name="verifyTranslateFromViewAll" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Bookmark Document" enabled="false">
+		<classes>
+			<class name="k12.BookmarkDocumentTest">
+				<methods>
+					<include name="verifyBookmarkLink" />
+					<include name="verifyBookmarkLinkIsWorking" />
+					<include name="verifyBookmarkLinkUrlIsWorking" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name=" BookmarkPortalPage" enabled="false">
+		<classes>
+			<class name="k12.BookmarkPortalPageTest">
+				<methods>
+					<include name="basicsearch" />
+					<include name="verifyBookmarkPortalIsPresent" />
+					<include name="verifyBookmarkAfterAdvancedsearch" />
+					<include name="verifyBookmarkPortalIsWorking" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="HitTermHighlightingTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="displayGroup" value="news" />
+		<classes>
+			<class name="k12.HitTermHighlightingTest">
+				<methods>
+					<include name="verifyHighlightedTermsInDocument" />
+					<include name="verifyHighlightedTermsInDocumentFromViewAll" />
+					<include name="verifyKeyWordIsNotHighLightedInSearchResults" />
+					<include name="verifyKeyWordIsNotHighlightedInViewAll" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="IntegrateLimitExpandBar" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.IntegrateLimitExpandBarTest">
+				<methods>
+					<include name="verifyLimitSearchNotPresentInHomepage" />
+					<include name="verifyLimitSearchNotPresentInDetailPage" />
+					<include name="verifyDisplaygroupsPresentAlongWithLimitSearch" />
+					<include name="verifyViewAllResultsPresentAlongWithLimitSearch" />
+					<include name="verifyBasicSearchPresentAlongWithLimitSearch" />
+					<include name="verifyLimitSearchPortletPresent" />
+					<include name="verifyLimitBydocumentIsPresent" />
+					<include name="verifyMoreDisplayed" />
+					<include name="verifyLessLink" />
+					<include name="verifyLessLinkDisplaying5Items" />
+					<include name="verifyClickingOnTermsNavigatesPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="SearchWithinResultsTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.SearchWithinResultsTest">
+				<methods>
+					<include name="verifySearchBoxInSidebarInViewAllPage" />
+					<include name="canUserEnterDataInSearchBox" />
+					<include name="verifyFullTextOnSearchTermsDisplayed" />
+					<include name="verifyUserInViewAllAfterResultsSearch" />
+					<include name="verifySearchOptionForOtherTabs" />
+					<include name="verifyHitcountAfterLimitingResults" />
+					<include name="verifySearchLimitedAcrossOtherTabs" />
+					<include name="verifyLimiterModifiedByWithinSearch" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="TextDocumentDownload" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="criticalThinkingDocuments_searchTerm"
+			value="Emphasis on Diversity" />
+		<classes>
+			<class name="k12.TextDocumentDownloadTest">
+				<methods>
+					<include name="verifyDownloadOptionAvailable" />
+					<include name="checkDownloadedHtmlDocument" />
+					<include name="checkHtmlDocumentOfCriticalThinkingDocuments" />
+					<include name="verifyHtmlDocumentForAllDisplayGroups" />
+					<include name="verifyRelatedTopicsAndToolsNotAvailableInHtmlDocument" />
+				</methods>
+			</class>
+		</classes>
+	</test><!--
+	
+	Not yet implemented
+	-->
+	<!--
+		<test name="HomePageSpotlightTest" enabled="false"> <parameter
+		name="searchTerm" value="war" /> <classes> <class
+		name="k12.HomePageSpotlightTest"> <methods> <include
+		name="verifySpotlightPortletPage" /> <include
+		name="verifyImageInPortlet" /> <include
+		name="verifyDocumentTitleOrPortalPageTile" /> <include
+		name="verifyPageLeadToDetailedViewPage" /> <include
+		name="verifySnippetForDocumentLink" /> <include
+		name="verifySnippetForPortalPageTilte" /> <include
+		name="verifyReadMoreLink" /> <include name="readMoreLinkDetailPage" />
+		<include name="verifyPortalOrDocumentCountInSpotlight" /> <include
+		name="verifyEachItemIsAppearedAsNumber" /> <include
+		name="verifySpotlightUpdates" /> <include
+		name="verifySpotlightUpdatesForAllFive" /> <include
+		name="verifyGreyedOutForCurrentPage" /> <include
+		name="verifyPortletForViewAllPage" /> <include
+		name="verifySpotlightNavigation" /> <include
+		name="veriyfLinkNavigationInSpotlight" /> </methods> </class>
+		</classes> </test>
+	-->
+
+	<test name="MultimediaDocumentDownloadTest" enabled="false">
+		<parameter name="searchTerm" value="video" />
+		<parameter name="searchTermForImages" value="elephant" />
+		<parameter name="searchTermForAudio" value="audio" />
+		<parameter name="videos" value="videos" />
+		<parameter name="audio" value="audio" />
+		<parameter name="images" value="images" />
+		<classes>
+			<class name="k12.MultimediaDocumentDownloadTest">
+				<methods>
+					<include name="verifyToolsAvailableForVideos" />
+					<include name="verifyToolsAreAccessible" />
+					<!--
+						clarifications required
+					-->
+					<!--
+						<include name="verifyPrintDocumentForVideos" /> <include
+						name="checkDetailsForDownloadAndTranslateForVideos" /> <include
+						name="verifyToolsAvailableForAudio" /> <include
+						name="verifyPrintDocumentForAudio" /> <include
+						name="verifyToolsAvailableForImages" /> <include
+						name="verifyPrintDocumentForImages" /> <include
+						name="verifyRelatedTopicsAndToolsNotAvailableInHtmlDocument" />
+						<include name="verifyNextPreviousLinksNotAvailableInHtmlDocument"
+						/>
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ConstructAndSubmitLimitedSearchTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="news" value="news" />
+		<parameter name="magazines" value="magazines" />
+		<parameter name="images" value="images" />
+		<parameter name="newsPublicationTitle" value="The New York Times" />
+		<parameter name="newsDocType" value="Editorial" />
+		<parameter name="newsSubject" value="United States" />
+		<parameter name="limitByQueryForNews"
+			value="ACID (14223820) and PU 'The New York Times' and SU 'United States'" />
+		<parameter name="magazinesPublicationTitle" value="American Libraries" />
+		<parameter name="magazinesDocType" value="Brief article" />
+		<parameter name="magazinesSubject" value="Book reviews" />
+		<parameter name="limitByQueryForMagazines"
+			value="ACID 14223813 NOT (RE Y OR ACID 14223278) and PU 'American Libraries' and TY 'Brief article' and SU 'Book reviews'" />
+		<parameter name="imagesPublicationTitle" value="" />
+		<parameter name="imagesDocType" value="Photograph" />
+		<parameter name="imagesSubject" value="American soldiers" />
+		<parameter name="limitByQueryForImages"
+			value="DGID 14223265 NOT ACID (14186762 OR 14170065 OR 14170008 OR 14170029) and TY 'Photograph' and SU 'American soldiers'" />
+		<classes>
+			<class name="k12.ConstructAndSubmitLimitedSearchTest">
+				<methods>
+					<include name="verifyLimitSearchByPresent" />
+					<include name="verifyCountAfterLimitSearch" />
+					<include name="verifyLimitByPublicationTitleWorking" />
+					<include name="verifyResultsAreReducedWithMoreLimiters" />
+					<!--
+						Not yet implemented
+					-->
+					<!--
+						<include name="verifyLimitByResultsCountForNews" /> <include
+						name="verifyLimitByResultsCountForOtherDisplayGroups" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="AccessSearchTipsTest" enabled="false">
+		<classes>
+			<class name="k12.AccessSearchTipsTest">
+				<methods>
+					<include name="verifyResourcesLinkIsAccessible" />
+					<include name="verifySearchTipsPageDisplayed" />
+					<!--
+						Not yet implemented
+					-->
+					<!--
+						<include name="verifySearchTipsOpensInNewWindow" /> <include
+						name="verifySpeakerIconsAvailableInSearchTipsPage" /> <include
+						name="verifySearchTipsWindowCanBeClosed" /> <include
+						name="verifyBreadcrumbInResourcesPage" /> <include
+						name="verifyHomePageNavigationViaBreadcrumb" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="CreateAPABookCitableTypeTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.CreateAPABookCitableTypeTest">
+				<methods>
+					<include name="verifyCitationToolsAvailable" />
+					<include name="verifyAPARadioButtonAvailable" />
+					<!--
+						Not yet received APA citation rules
+					-->
+					<!--
+						<include name="verifyAPACitationInDocument" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="DisplayQueryFormattingTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="humour" value="humour" />
+		<parameter name="fromMonth" value="March" />
+		<parameter name="fromDate" value="2" />
+		<parameter name="fromYear" value="1980" />
+		<parameter name="toMonth" value="December" />
+		<parameter name="toDate" value="10" />
+		<parameter name="toYear" value="2005" />
+		<parameter name="army" value="army" />
+		<parameter name="docType" value="Article" />
+		<parameter name="basic" value="Basic" />
+		<parameter name="intermediate" value="Intermediate" />
+		<parameter name="searchTermWithStopword" value="dog corp cat" />
+		<parameter name="searchTermWithNaughtyword" value="dog minfuck" />
+		<parameter name="searchTermWithStopAndNaughtywords" value="dog corp cat mindfuck aspects" />
+		<parameter name="searchTermForPortalPage" value="adoption" />
+		<classes>
+			<class name="k12.DisplayQueryFormattingTest">
+				<methods>
+					<include name="verifyMsgForKeywordSearch" />
+					<!--
+						Not yet implemented in the application
+					-->
+					<!--
+						<include name="verifyMsgWithDateCombinationSearch" /> <include
+						name="checkDateFormatInMsg" /> <include
+						name="verifyMsgWithAllCombinationsOfInput" /> <include
+						name="verifyMsgWithStopWordSearch" /> <include
+						name="verifySearchMsgWithNaughtyWords" /> <include
+						name="verifySearchMsgWithStopAndNaughtyWords" /> <include
+						name="verifyMsgDisplayedAfterSearchFromPortalViewAll" /> <include
+						name="verifyMsgExistsAfterPortalPageNavigation" /> <include
+						name="verifyMsgExistsInViewAllNavigation" /> <include
+						name="verifyMsgExistsAfterDetailedPageNavigation" /> <include
+						name="verifyMsgChangesAfterSearchingByRelatedSubjects" /> <include
+						name="verifyMsgAfterLimitBySearch" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="AccessToolsForWrappingItUpTest" enabled="false">
+		<classes>
+			<class name="k12.AccessToolsForWrappingItUpTest">
+				<methods>
+					<include name="verifyResourcesLinkIsAccessible" />
+					<!--
+						Not yet implemented
+					-->
+					<!--
+						<include name="checkDetailsDisplayedInWrappingItUp" /> <include
+						name="verifyBreadcrumbInResourcesPage" /> <include
+						name="verifyWrappingUpLinksOpensInNewWindow" /> <include
+						name="verifyUrlOfNewWindow" /> <include
+						name="verifyOtherToolsArePresent" /> <include
+						name="verifyFooterLinksAnBasicSearchAccessible" />
+					-->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="LibraryLinksTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<parameter name="displayedGroup" value="reference" />
+		<parameter name="displayGroup"
+			value="audio,video,reference,primarysources,news,websites,magazines,images,viewpoints,statistics,journals" />
+		<classes>
+			<class name="k12.LibraryLinksTest">
+				<methods>
+					<include name="verifyLibraryLinksAvailability" />
+					<include name="verifyLinksUnderLibrarySection" />
+					<include name="verifyLibraryLinksAvailabilityForAllGroups" />
+					<include name="verifyLinksInPortalPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="AccessLessonPlanBuilderTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.AccessLessonPlanBuilderTest">
+				<methods>
+					<include name="verifyResourcesPage" />
+					<include name="verifyLessonPlanBuilderSelection" />
+					<include name="verifyNewWindowIsOpened" />
+					<include name="verifyNewWindowIsClosed" />
+					<include name="verifyHomePageNavigation" />
+					<include name="verifyBreadCrumbDisplay" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="AccessResearchGuideTest" enabled="false">
+		<parameter name="linksInResearchGuide"
+			value="How to Cite a Source,How to Organize a Report,How to Build an Argument,How to Write a Conclusion,How to Write a Thesis Statement,How to Create a Visual,How to Footnote,Distinguishing Fact from Opinion and Bias from Reason,Between Primary and Secondary Sources,Evaluating Information Sources,Review the Author's/Publisher's Credentials and Affiliations,Identify the Article's Supporting Material,Student Resource Center and Critical Thinking" />
+		<classes>
+			<class name="k12.AccessResearchGuideTest">
+				<methods>
+					<include name="verifyResearchToolsOption" />
+					<include name="verifyResearchToolsPage" />
+					<include name="verifyResearchGuideTab" />
+					<include name="verifyResearchGuideLinks" />
+					<include name="verifyEachLinkAccessbility" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="AccessResourcesPageTest" enabled="false">
+		<classes>
+			<class name="k12.AccessResourcesPageTest">
+				<methods>
+					<include name="verifyResourcesLinkIsPresentAndAccesible" />
+					<include name="verifyTabsUnderResourceLink" />
+					<include name="verifyBasicSearchAndFooterArePresent" />
+					<include name="verifyOptionsForGettingStarted" />
+					<include name="verifyOptionsForWrappingItUp" />
+					<include name="verifyOptionsForResearchGuide" />
+					<include name="verifyBreadCrumb" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ViewAllImagesWithFeaturedTest" enabled="false">
+		<parameter name="searchTerm" value="adoption" />
+		<parameter name="relevanceOption" value="Relevance" />
+		<parameter name="documentTitleOption" value="Document Title" />
+		<classes>
+			<class name="k12.ViewAllImagesWithFeaturedTest">
+				<methods>
+					<include name="basicSearchAndPortalNav" />
+					<include name="verifyDefaultSortForImages" />
+					<include name="verifyChangeInSortForImages" />
+					<include name="verifyRelevanceSortForImages" />
+					<include name="verifyWhenTabsAreChanged" />
+					<include name="verifyPaginationOfHandPickedItems" />
+					<include name="verifyDetailedPageOfHandPickedItem" />
+					<include name="verifyPaginationWithRelavence" />
+					<include name="verifyPaginationWithRelavenceFromOtherSort" />
+					<include name="verifyHandPickedItemsOnSearchPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="ViewTopicportalPageWithAllPortalsTest" enabled="true">
+		<parameter name="searchTerm" value="adoption" />
+		<classes>
+			<class name="k12.ViewTopicportalPageWithAllPortalsTest">
+				<methods>
+					<include name="verifyUserisInportalPageAfterclickingTopic" />
+					<include name="verifyPortletsInPortalPage" />
+					<include name="verifyPageforKeywordNotHavingPortalPage" />
+					<include name="verifyPortletsFromOceanServices" />
+					<include name="verifyDifferentMethodsForNavigationToPortalPage" />
+					<include name="verifyBasicSearchOptionFromPortalPage" />
+					<include name="verifyBreadcrumb" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+<test name="AccessHomeworkHelperTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		<classes>
+			<class name="k12.AccessHomeworkHelperTest">
+				<methods>
+					<include name="verifyResourcesLinkAccesible" />
+					<include name="verifyClickingOnHomeworkHelper" />
+					<include name="verifyClickingOnGaleSchools" />
+					<include name="verifyNewTabClosable" />
+					<include name="verifyNavigationThroughBreadcurmb" />
+					<include name="verifyBreadcrumb" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+<!--<test name="ViewAllWebsitesWithFeatured" enabled="false">
+		<parameter name="searchTerm" value="adoption" />
+		<classes>
+			<class name="k12.ViewAllWebsitesWithFeaturedTest">
+				<methods>
+					<include name="verifyDefaultsortRelevanceInViewall" />
+					<include name="verifyFeaturedItemsAfterChangingSort" />
+					<include name="verifyClickingfeatureItemnavigatesToFeaturedPage" />
+					<include name="verifyFeaturedWebsitesNotpresentInSearchResultsPageBucket" />
+					<include name="verifyEditorpickBucketItemwithFeaturedBucketItem" />
+					<include name="verifyFeaturedwebsitesAppearOntheTopOfList" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	--><!--<test name="BrowseCurriculumStandardsTest" enabled="false">
+		
+		<classes>
+			<class name="k12.BrowseCurriculumStandardsTest">
+				<methods>
+					<include name="verifyClickingonResourcesLink" />
+					<include name="verifySelectingCurriculumStandards" />
+					<include name="verifyCountryLinkPresent" />
+					<include name="verifyNationalStandardsLinkispresent" />
+					<include name="verifyNationalStandards" />
+					<include name="verifyClickingNationalStandards" />
+					<include name="verifyNationalStandardsPopupClosable" />
+					<include name="verifyStateStandardsLink" />
+					<include name="verifyClickingStateStandards" />
+					<include name="verifyClickingOnListOfStates" />
+					<include name="verifyStateStandardsPoppupClosable" />
+					<include name="verifyNavigationThroughBreadcurmb" />
+					<include name="verifyBreadcrumb" />
+					
+
+				</methods>
+			</class>
+		</classes>
+	</test>-->
+		<test name="TextDocumentTranslateText" enabled="false">
+		<parameter name="searchTerm" value="Emphasis on Diversity" />
+		
+		<classes>
+			<class name="k12.TextDocumentTranslateText">
+				<methods>
+					<include name="verifyTitleOfTranslatedDocument" />
+					<include name="verifyWordsToKnowAvailable" />
+					<include name="verifyCitationIsPresent" />
+					<include name="verifyGaleDocumentNoIsPresent" />
+					<include name="verifyDisclaimerIsPresent" />
+					<include name="verifyNoreadSpeakerLinksPresent" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="TranslateDesclaimerTest" enabled="false">
+		<parameter name="searchTerm" value="war" />
+		
+		<classes>
+			<class name="k12.TranslateDesclaimerTest">
+				<methods>
+					<include name="verifyTranslateOptionAvailable" />
+					<include name="verifyNewWindowOpening" />
+					<include name="verifyDisclaimerIsLink" />
+					<!--<include name="verifyBottomDisclaimer" />
+					--><include name="verifyDisclaimerOnTopOfWindow" />
+					<include name="verifyDisclaiamerLanguageIsEnglish" />
+					<!--<include name="verifyBottomDesclaimerDoesntHaveLink" />
+				--></methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

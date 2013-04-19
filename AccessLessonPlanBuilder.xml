@@ -1,0 +1,17 @@
+<suite name="AccessLessonPlanBuilder">
+	<parameter name="searchTerm" value="war" />
+	<test name="AccessLessonPlanBuilderTest" enabled="true">
+		<classes>
+			<class name="k12.AccessLessonPlanBuilderTest">
+				<methods>
+					<include name="verifyResourcesPage" />
+					<include name="verifyLessonPlanBuilderSelection" />
+					<include name="verifyNewWindowIsOpened" />
+					<include name="verifyNewWindowIsClosed" />
+					<include name="verifyHomePageNavigation" />
+					<include name="verifyBreadCrumbDisplay" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

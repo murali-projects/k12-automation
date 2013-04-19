@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TranslateDesclaimerTest" failures="0" tests="5" time="61.361" errors="0">
+  <properties/>
+  <testcase name="verifyTranslateOptionAvailable" time="6.101" classname="k12.TranslateDesclaimerTest"/>
+  <testcase name="verifyNewWindowOpening" time="7.725" classname="k12.TranslateDesclaimerTest"/>
+  <testcase name="verifyDisclaimerIsLink" time="13.734" classname="k12.TranslateDesclaimerTest"/>
+  <testcase name="verifyDisclaimerOnTopOfWindow" time="12.64" classname="k12.TranslateDesclaimerTest"/>
+  <testcase name="verifyDisclaiamerLanguageIsEnglish" time="12.422" classname="k12.TranslateDesclaimerTest"/>
+</testsuite>

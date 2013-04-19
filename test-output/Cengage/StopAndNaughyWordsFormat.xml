@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StopAndNaughyWordsFormat" failures="0" tests="3" time="40.886" errors="0">
+  <properties/>
+  <testcase name="validateSearchIdentifierForStopWordsinSearchString" time="5.047" classname="k12.StopAndNaughyWordsFormatTest"/>
+  <testcase name="validateSearchIndentifierForNaughtyWordsinSearchString" time="4.156" classname="k12.StopAndNaughyWordsFormatTest"/>
+  <testcase name="verifySearchIdentifierForNaughtyWordsJoinedWithSplChar" time="26.872" classname="k12.StopAndNaughyWordsFormatTest"/>
+</testsuite>

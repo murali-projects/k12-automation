@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="k12.HitCountTest" failures="1" tests="21" time="22.743" errors="0">
+  <properties/>
+  <testcase name="verifyReferenceArticleCountisDisplayed" time="5.151" classname="k12.HitCountTest"/>
+  <testcase name="verifyReferenceArticleCountisDisplayedAfterClicking" time="8.179" classname="k12.HitCountTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div/div[6]/div/div/div/div/h3 not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div/div[6]/div/div/div/div/h3 not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+	at webPageContainers4Testing.HitCount.verifyCountisDisplayedAfterClickingViewAll(HitCount.java:36)
+	at k12.HitCountTest.verifyReferenceArticleCountisDisplayedAfterClicking(HitCountTest.java:27)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="validateReferenceArticleCount" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyMagazineseCountisDisplayed" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyMagazinesCountisDisplayedAfterClicking" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateMagazinesCount" time="0.015" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAudioCountisDisplayed" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAudioCountisDisplayedAfterClicking" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateAudioCount" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyVideoCountisDisplayed" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyVideoCountisDisplayedAfterClicking" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateVideoCount" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNewsCountisDisplayed" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNewsCountisDisplayedAfterClicking" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateNewsCount" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAcademicJournalsCountisDisplayed" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyAcademicJournalsCountisDisplayedAfterClicking" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateAcademicJournalsCount" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrimarySourcesCountisDisplayed" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPrimarySourcesCountisDisplayedAfterClicking" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validatePrimarySourcesCount" time="0.0" classname="k12.HitCountTest">
+    <skipped/>
+  </testcase>
+</testsuite>

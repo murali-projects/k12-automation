@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="k12.ViewAllWebsitesOnSearchResultsPageTest" failures="1" tests="10" time="2965.043" errors="0">
+  <properties/>
+  <testcase name="basicSearch" time="2.843" classname="k12.ViewAllWebsitesOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForWebsitesIsDispalyed" time="2952.656" classname="k12.ViewAllWebsitesOnSearchResultsPageTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.ViewAllWebsitesOnSearchResultsPageTest.viewAllLinkForWebsitesIsDispalyed(ViewAllWebsitesOnSearchResultsPageTest.java:32)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="viewAllLinkForWebsitesIsWorking" time="0.0" classname="k12.ViewAllWebsitesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="viewAllNavigationForWebsites" time="0.0" classname="k12.ViewAllWebsitesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDocumentDisplayPageResultsForWebsites" time="0.0" classname="k12.ViewAllWebsitesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNextLinkForWebsites" time="0.0" classname="k12.ViewAllWebsitesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyNextLinkIsworkingForWebsites" time="0.0" classname="k12.ViewAllWebsitesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPreviousLinkForWebsites" time="0.0" classname="k12.ViewAllWebsitesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyPreviousLinkIsworkingForWebsites" time="0.0" classname="k12.ViewAllWebsitesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateDocumentTitlesWithDB" time="0.0" classname="k12.ViewAllWebsitesOnSearchResultsPageTest">
+    <skipped/>
+  </testcase>
+</testsuite>

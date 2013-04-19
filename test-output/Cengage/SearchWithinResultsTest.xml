@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SearchWithinResultsTest" failures="0" tests="8" time="131.437" errors="0">
+  <properties/>
+  <testcase name="verifySearchBoxInSidebarInViewAllPage" time="10.178" classname="k12.SearchWithinResultsTest"/>
+  <testcase name="canUserEnterDataInSearchBox" time="10.068" classname="k12.SearchWithinResultsTest"/>
+  <testcase name="verifyFullTextOnSearchTermsDisplayed" time="14.377" classname="k12.SearchWithinResultsTest"/>
+  <testcase name="verifyUserInViewAllAfterResultsSearch" time="15.734" classname="k12.SearchWithinResultsTest"/>
+  <testcase name="verifySearchOptionForOtherTabs" time="22.104" classname="k12.SearchWithinResultsTest"/>
+  <testcase name="verifyHitcountAfterLimitingResults" time="15.324" classname="k12.SearchWithinResultsTest"/>
+  <testcase name="verifyLimiterModifiedByWithinSearch" time="18.15" classname="k12.SearchWithinResultsTest"/>
+  <testcase name="verifySearchLimitedAcrossOtherTabs" time="17.728" classname="k12.SearchWithinResultsTest"/>
+</testsuite>

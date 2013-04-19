@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllWebsitesWithFeatured" failures="2" tests="6" time="175.96" errors="0">
+  <properties/>
+  <testcase name="verifyDefaultsortRelevanceInViewall" time="41.585" classname="k12.ViewAllWebsitesWithFeaturedTest"/>
+  <testcase name="verifyFeaturedItemsAfterChangingSort" time="41.211" classname="k12.ViewAllWebsitesWithFeaturedTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //table[@id=&amp;apos;searchResults&amp;apos;]/tbody/tr[1]/td[2]/h3/a not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //table[@id='searchResults']/tbody/tr[1]/td[2]/h3/a not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+	at webPageContainers4Testing.ViewAllWebsitesWithFeatured.verifyFeaturedItemsAfterChangingSort(ViewAllWebsitesWithFeatured.java:72)
+	at k12.ViewAllWebsitesWithFeaturedTest.verifyFeaturedItemsAfterChangingSort(ViewAllWebsitesWithFeaturedTest.java:49)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyClickingfeatureItemnavigatesToFeaturedPage" time="0.0" classname="k12.ViewAllWebsitesWithFeaturedTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyFeaturedWebsitesNotpresentInSearchResultsPageBucket" time="0.0" classname="k12.ViewAllWebsitesWithFeaturedTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyEditorpickBucketItemwithFeaturedBucketItem" time="0.016" classname="k12.ViewAllWebsitesWithFeaturedTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyFeaturedwebsitesAppearOntheTopOfList" time="7.543" classname="k12.ViewAllWebsitesWithFeaturedTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@id=&amp;apos;associatedTopics&amp;apos;]/div/ul/li[1]/h3/a not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@id='associatedTopics']/div/ul/li[1]/h3/a not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at webPageElements4Testing.Link.click(Link.java:32)
+	at webPageContainers4Testing.ViewAllWebsitesWithFeatured.verifyFeaturedwebsitesAppearOntheTopOfList(ViewAllWebsitesWithFeatured.java:57)
+	at k12.ViewAllWebsitesWithFeaturedTest.verifyFeaturedwebsitesAppearOntheTopOfList(ViewAllWebsitesWithFeaturedTest.java:40)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="k12.ViewVideosDocumentTest" failures="0" tests="5" time="97.588" errors="0">
+  <properties/>
+  <testcase name="clickDocumentVideoDisplayGroup" time="18.249" classname="k12.ViewVideosDocumentTest"/>
+  <testcase name="verifyDocumentTitleInDetailedPage" time="11.046" classname="k12.ViewVideosDocumentTest"/>
+  <testcase name="verifyVideoPlayedWithoutErrors" time="15.421" classname="k12.ViewVideosDocumentTest"/>
+  <testcase name="verifyVideoCaptionAvailable" time="11.281" classname="k12.ViewVideosDocumentTest"/>
+  <testcase name="verifyVideoFromViewAll" time="17.498" classname="k12.ViewVideosDocumentTest"/>
+</testsuite>

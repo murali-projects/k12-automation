@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DownloadDocumentInHTMLFormat" failures="1" tests="6" time="8.343" errors="0">
+  <properties/>
+  <testcase name="verifyDownloadOptionAvailable" time="0.703" classname="k12.DownloadDocumentInHTMLFormatTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at k12.DownloadDocumentInHTMLFormatTest.verifyDownloadOptionAvailable(DownloadDocumentInHTMLFormatTest.java:27)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyDownloadOptionAvailableFromViewAll" time="0.0" classname="k12.DownloadDocumentInHTMLFormatTest">
+    <skipped/>
+  </testcase>
+  <testcase name="DownlaodHtmlFile" time="0.0" classname="k12.DownloadDocumentInHTMLFormatTest">
+    <skipped/>
+  </testcase>
+  <testcase name="VerifyDownloadedFileIsHtmlOrNot" time="0.0" classname="k12.DownloadDocumentInHTMLFormatTest">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyDownloadLink" time="0.0" classname="k12.DownloadDocumentInHTMLFormatTest">
+    <skipped/>
+  </testcase>
+  <testcase name="chooseHtmlOption" time="0.0" classname="k12.DownloadDocumentInHTMLFormatTest">
+    <skipped/>
+  </testcase>
+</testsuite>

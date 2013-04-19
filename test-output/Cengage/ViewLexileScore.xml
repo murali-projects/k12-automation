@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewLexileScore" failures="0" tests="7" time="79.321" errors="0">
+  <properties/>
+  <testcase name="verifyLexileScoreIsDisplayedForNews" time="16.717" classname="k12.ViewLexileScoreTest"/>
+  <testcase name="verifyLexileScoreIsDisplayedForMagazines" time="12.265" classname="k12.ViewLexileScoreTest"/>
+  <testcase name="verifyLexileScoreIsDisplayedForAcademicJournals" time="12.014" classname="k12.ViewLexileScoreTest"/>
+  <testcase name="verifyLexileScoreNotDisplayedForReference" time="11.031" classname="k12.ViewLexileScoreTest"/>
+  <testcase name="verifyLexileScoreNotDisplayedForViewPoints" time="9.936" classname="k12.ViewLexileScoreTest"/>
+  <testcase name="verifyLexileScoreNotDisplayedForPrimarySources" time="9.593" classname="k12.ViewLexileScoreTest"/>
+  <testcase name="verifyLexileScoreNotDisplayedForAudios" time="3.89" classname="k12.ViewLexileScoreTest"/>
+</testsuite>

@@ -1,0 +1,17 @@
+<suite name="FindOutMorePortlet">
+	<parameter name="searchTerm" value="Emphasis on Diversity" />
+	<test name="FindOutMorePortletTest" enabled="true">
+		<classes>
+			<class name="k12.FindOutMorePortletTest">
+				<methods>
+					<include name="verifyViewPointRecords" />
+					<include name="verifyDetailedViewPage" />
+					<include name="verifyFindOutMorePortletIsDisplayed" />
+					<include name="verifyAssignmentTextIsDisplayed" />
+					<include name="verifySubjectSearchIsDisplayed" />
+					<include name="verifySamePortletIsNotDisplayed" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Search using Operators" failures="1" tests="14" time="9.108" errors="0">
+  <properties/>
+  <testcase name="validateCaseInsensitive" time="5.437" classname="k12.SearchUsingOperatorsTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //div[@class=&amp;apos;transcript&amp;apos;] not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //div[@class='transcript'] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.DefaultSelenium.getText(DefaultSelenium.java:427)
+	at webPageElements4Testing.TextLabel.getLabelText(TextLabel.java:13)
+	at webPageContainers4Testing.SearchUsingOperators.getResults(SearchUsingOperators.java:30)
+	at webPageContainers4Testing.SearchUsingOperators.verifyCaseInsensitive(SearchUsingOperators.java:37)
+	at k12.SearchUsingOperatorsTest.validateCaseInsensitive(SearchUsingOperatorsTest.java:21)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="validateSingleWildCharacterSearchOperator" time="0.0" classname="k12.SearchUsingOperatorsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateMultipleWildCharacterSearchOperator" time="0.0" classname="k12.SearchUsingOperatorsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateBooleanOrSearchOperator" time="0.0" classname="k12.SearchUsingOperatorsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateBooleanNotSearchOperator" time="0.0" classname="k12.SearchUsingOperatorsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateBooleanAndSearchOperator" time="0.015" classname="k12.SearchUsingOperatorsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateNestedSearchOperator" time="0.0" classname="k12.SearchUsingOperatorsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateWithinProximitySearchOperator" time="0.0" classname="k12.SearchUsingOperatorsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateNearProximitySearchOperator" time="0.0" classname="k12.SearchUsingOperatorsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateDateRangeOperator" time="0.0" classname="k12.SearchUsingOperatorsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateGreaterThanEqualToOperator" time="0.0" classname="k12.SearchUsingOperatorsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateGreaterThanOperator" time="0.0" classname="k12.SearchUsingOperatorsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateLessThanOperator" time="0.0" classname="k12.SearchUsingOperatorsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="validateLessThanEqualToOperator" time="0.0" classname="k12.SearchUsingOperatorsTest">
+    <skipped/>
+  </testcase>
+</testsuite>

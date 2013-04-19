@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ViewAllNewsOnSearchResultsPageTest" failures="1" tests="10" time="41.308" errors="0">
+  <properties/>
+  <testcase name="basicSearch" time="4.124" classname="k12.ViewAllNewsOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForNewsIsDispalyed" time="0.062" classname="k12.ViewAllNewsOnSearchResultsPageTest"/>
+  <testcase name="viewAllLinkForNewsIsWorking" time="5.624" classname="k12.ViewAllNewsOnSearchResultsPageTest"/>
+  <testcase name="viewAllNavigationForNews" time="0.032" classname="k12.ViewAllNewsOnSearchResultsPageTest"/>
+  <testcase name="verifyDocumentDisplayPageResultsForNews" time="0.063" classname="k12.ViewAllNewsOnSearchResultsPageTest"/>
+  <testcase name="verifyNextLinkForNews" time="0.062" classname="k12.ViewAllNewsOnSearchResultsPageTest"/>
+  <testcase name="verifyNextLinkIsworkingForNews" time="5.281" classname="k12.ViewAllNewsOnSearchResultsPageTest"/>
+  <testcase name="verifyPreviousLinkForNews" time="0.031" classname="k12.ViewAllNewsOnSearchResultsPageTest"/>
+  <testcase name="verifyPreviousLinkIsworkingForNews" time="5.405" classname="k12.ViewAllNewsOnSearchResultsPageTest"/>
+  <testcase name="validateDocumentTitlesWithDB" time="17.139" classname="k12.ViewAllNewsOnSearchResultsPageTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="Timed out after 8000ms">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: Timed out after 8000ms
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.waitForPageToLoad(DefaultSelenium.java:627)
+	at webPageContainers4Testing.ViewAllNewsOnSearchResultsPage.validateWithDatabase(ViewAllNewsOnSearchResultsPage.java:107)
+	at k12.ViewAllNewsOnSearchResultsPageTest.validateDocumentTitlesWithDB(ViewAllNewsOnSearchResultsPageTest.java:83)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DisablePdfDownloadforImagesTest" failures="0" tests="7" time="136.195" errors="0">
+  <properties/>
+  <testcase name="verifyDownloadOptionAvailableForImageStatisticAndWebsites" time="14.814" classname="k12.DisablePdfDownloadforImagesTest"/>
+  <testcase name="verify3optionsavailableForDownload" time="34.872" classname="k12.DisablePdfDownloadforImagesTest"/>
+  <testcase name="verifyPdfRadioButtonNotAvailable" time="14.939" classname="k12.DisablePdfDownloadforImagesTest"/>
+  <testcase name="verifyPdfOptionFromKeyboard" time="17.92" classname="k12.DisablePdfDownloadforImagesTest"/>
+  <testcase name="verifyRadioButtonForallOtherDisplayGroups" time="16.655" classname="k12.DisablePdfDownloadforImagesTest"/>
+  <testcase name="verifyPdfFunctionsForAllotherBuckets" time="14.908" classname="k12.DisablePdfDownloadforImagesTest"/>
+  <testcase name="verifyPdfNotSelectableForImageStatisticsAndWebsite" time="14.345" classname="k12.DisablePdfDownloadforImagesTest"/>
+</testsuite>
